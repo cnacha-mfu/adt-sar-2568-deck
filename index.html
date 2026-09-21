@@ -22,7 +22,7 @@
 }
 *{box-sizing:border-box}
 html{color-scheme:light}
-body{margin:0;background:#0B1624;color:var(--ink);font-family:var(--sans);font-size:14px}
+body{margin:0;background:#0B1624;color:var(--ink);font-family:var(--sans);font-size:19.6px}
 img{max-width:100%}
 [hidden]{display:none!important}
 
@@ -36,20 +36,20 @@ img{max-width:100%}
 .s.dark .t,.s.dark .sub,.s.dark .txt{color:#F2F5F9}
 .s.dark .sub{color:#B9C6D8}
 .s.dark .head{border-bottom-color:rgba(255,255,255,.18)}
-.pg{position:absolute;right:22px;bottom:14px;font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.08em}
+.pg{position:absolute;right:22px;bottom:14px;font-family:var(--mono);font-size:15.4px;color:var(--mute);letter-spacing:.08em}
 .s.dark .pg{color:#8FA3BC}
-.brand{position:absolute;left:52px;bottom:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.brand{position:absolute;left:52px;bottom:12px;font-family:var(--mono);font-size:14.7px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .s.dark .brand{color:#8FA3BC}
 
 /* nav */
 #bar{position:fixed;left:50%;bottom:13px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;background:rgba(8,26,46,.86);border:1px solid rgba(203,211,223,.25);border-radius:999px;padding:7px 14px;z-index:50;backdrop-filter:blur(6px)}
-#bar button{background:none;border:0;color:#E6ECF3;font-family:var(--mono);font-size:14px;cursor:pointer;padding:3px 8px;border-radius:6px;line-height:1}
+#bar button{background:none;border:0;color:#E6ECF3;font-family:var(--mono);font-size:19.6px;cursor:pointer;padding:3px 8px;border-radius:6px;line-height:1}
 #bar button:hover{background:rgba(255,255,255,.12)}
 #bar button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #dots{display:flex;gap:5px}
 #dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:background .15s,transform .15s}
 #dots i.on{background:var(--gold);transform:scale(1.3)}
-#cnt{font-family:var(--mono);font-size:12px;color:var(--gold-l);letter-spacing:.06em;min-width:46px;text-align:center}
+#cnt{font-family:var(--mono);font-size:16.8px;color:var(--gold-l);letter-spacing:.06em;min-width:46px;text-align:center}
 
 /* overview grid */
 #grid{display:none;padding:32px;gap:20px;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));max-width:1500px;margin:0 auto}
@@ -57,24 +57,24 @@ body.overview #viewport{display:none}
 body.overview #grid{display:grid}
 .thumb{position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;cursor:pointer;border:1px solid rgba(203,211,223,.22);background:var(--paper)}
 .thumb:hover{border-color:var(--gold)}
-.thumb .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(8,26,46,.88);color:#E6ECF3;font-size:12px;padding:6px 9px;display:flex;gap:8px}
+.thumb .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(8,26,46,.88);color:#E6ECF3;font-size:16.8px;padding:6px 9px;display:flex;gap:8px}
 .thumb .cap b{font-family:var(--mono);color:var(--gold);font-weight:500}
 .thumb .inner{position:absolute;top:0;left:0;width:1280px;height:720px;transform-origin:top left;pointer-events:none}
 
 /* typography */
-.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);font-weight:500}
+.eyebrow{font-family:var(--mono);font-size:16.1px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);font-weight:500}
 .s.dark .eyebrow{color:var(--gold)}
-h1.t{font-size:31px;font-weight:600;margin:4px 0 0;letter-spacing:-.01em;line-height:1.18;text-wrap:balance}
-.sub{font-size:15px;color:var(--mute);font-weight:300;margin-top:3px;line-height:1.4}
+h1.t{font-size:38.8px;font-weight:600;margin:4px 0 0;letter-spacing:-.01em;line-height:1.18;text-wrap:balance}
+.sub{font-size:21px;color:var(--mute);font-weight:300;margin-top:3px;line-height:1.4}
 .head{border-bottom:1px solid var(--rule);padding-bottom:9px;margin-bottom:13px;flex:0 0 auto}
 .body{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}
 .body.row{flex-direction:row}
 .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
-.lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.lbl{font-family:var(--mono);font-size:14.7px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500}
 .gold{color:var(--gold-d)} .navy{color:var(--navy)} .green{color:var(--green)} .red{color:var(--red)} .teal{color:var(--teal)}
 b{font-weight:600}
-.note{font-size:12px;color:var(--mute);font-weight:300;line-height:1.45}
-.txt{font-size:13.5px;font-weight:300;color:var(--ink2);line-height:1.5}
+.note{font-size:16.8px;color:var(--mute);font-weight:300;line-height:1.45}
+.txt{font-size:18.9px;font-weight:300;color:var(--ink2);line-height:1.5}
 .txt b{color:var(--ink)}
 
 /* primitives */
@@ -87,43 +87,43 @@ b{font-weight:600}
 .row{display:flex;gap:13px;min-height:0}
 .grow{flex:1 1 0;min-width:0}
 .col{display:flex;flex-direction:column;gap:10px}
-table.t{width:100%;border-collapse:collapse;font-size:13px}
-table.t th{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:500;text-align:left;padding:0 6px 5px 0;border-bottom:1px solid var(--rule)}
+table.t{width:100%;border-collapse:collapse;font-size:18.2px}
+table.t th{font-family:var(--mono);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:500;text-align:left;padding:0 6px 5px 0;border-bottom:1px solid var(--rule)}
 table.t td{padding:4.5px 6px 4.5px 0;border-bottom:1px solid var(--rule2);font-weight:300;vertical-align:top}
 table.t td.n,table.t th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:400}
 table.t tr.hl td{background:var(--hi);font-weight:400}
-.big{font-family:var(--mono);font-size:34px;font-weight:600;line-height:1;color:var(--navy);letter-spacing:-.02em}
-.big small{font-size:14px;font-weight:400;color:var(--mute);letter-spacing:0;margin-left:3px}
+.big{font-family:var(--mono);font-size:42.5px;font-weight:600;line-height:1;color:var(--navy);letter-spacing:-.02em}
+.big small{font-size:19.6px;font-weight:400;color:var(--mute);letter-spacing:0;margin-left:3px}
 .card.n .big{color:#fff}
 .kpi{display:flex;flex-direction:column;gap:5px}
-.kpi .d{font-size:12px;color:var(--mute);font-weight:300;line-height:1.35}
+.kpi .d{font-size:16.8px;color:var(--mute);font-weight:300;line-height:1.35}
 .card.n .kpi .d{color:#B9C6D8}
-.tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:var(--gold-l);color:var(--gold-d);font-weight:500}
+.tag{display:inline-block;font-family:var(--mono);font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:var(--gold-l);color:var(--gold-d);font-weight:500}
 .tag.b{background:var(--hi);color:var(--navy)}
 .tag.g{background:#E1F0E6;color:var(--green)}
 .tag.r{background:#F6E0E0;color:var(--red)}
 .ph{position:relative;border-radius:4px;overflow:hidden;background:#D8DEE6;min-height:0}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.ph .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(8,26,46,.85),rgba(8,26,46,0));color:#F2F5F9;font-size:11.5px;padding:18px 10px 8px;font-weight:300;line-height:1.3}
+.ph .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(8,26,46,.85),rgba(8,26,46,0));color:#F2F5F9;font-size:16.1px;padding:18px 10px 8px;font-weight:300;line-height:1.3}
 ul.b{margin:0;padding-left:18px}
-ul.b li{margin:0 0 5px;font-size:13.5px;font-weight:300;color:var(--ink2);line-height:1.45}
+ul.b li{margin:0 0 5px;font-size:18.9px;font-weight:300;color:var(--ink2);line-height:1.45}
 ul.b li b{color:var(--ink)}
 .step{display:flex;align-items:stretch;gap:0}
 .step .st{flex:1 1 0;min-width:0;background:#fff;border:1px solid var(--rule2);padding:9px 10px;position:relative}
 .step .st+.st{border-left:0}
-.step .st .num{font-family:var(--mono);font-size:10px;color:var(--gold-d);letter-spacing:.12em}
-.step .st .nm{font-size:13px;font-weight:500;color:var(--ink);line-height:1.3;margin-top:2px}
-.step .st .who{font-size:11.5px;color:var(--mute);font-weight:300;margin-top:2px}
+.step .st .num{font-family:var(--mono);font-size:14px;color:var(--gold-d);letter-spacing:.12em}
+.step .st .nm{font-size:18.2px;font-weight:500;color:var(--ink);line-height:1.3;margin-top:2px}
+.step .st .who{font-size:16.1px;color:var(--mute);font-weight:300;margin-top:2px}
 .bar{height:8px;background:var(--rule2);border-radius:99px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--navy);border-radius:99px}
 .bar i.g{background:var(--gold)}
 .chart{display:flex;align-items:flex-end;gap:10px;height:100%}
 .chart .c{flex:1 1 0;display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}
-.chart .c .v{font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+.chart .c .v{font-family:var(--mono);font-size:16.1px;color:var(--ink2)}
 .chart .c .bx{width:100%;background:var(--navy-m);border-radius:3px 3px 0 0}
 .chart .c .bx.g{background:var(--gold)}
 .chart .c .bx.m{background:#9AAABF}
-.chart .c .l{font-size:11px;color:var(--mute);font-weight:300;text-align:center;line-height:1.2}
+.chart .c .l{font-size:15.4px;color:var(--mute);font-weight:300;text-align:center;line-height:1.2}
 </style>
 </head>
 <body>
@@ -134,7 +134,7 @@ ul.b li b{color:var(--ink)}
     <div style="flex:0 0 560px;position:relative;overflow:hidden">
       <img src="img/raise-2-2026.jpg" alt="ADT RAISE-2 Open Day &amp; Hackathon 2026" style="width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)">
       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,42,68,0) 55%,rgba(15,42,68,1) 100%)"></div>
-      <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(8,26,46,.9),rgba(8,26,46,0));padding:40px 18px 14px;font-size:11.5px;font-weight:300;color:#C9D4E2">RAISE-2 Open Day &amp; Hackathon · ก.ค. 2569 · ภาพ: adt.mfu.ac.th</div>
+      <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(8,26,46,.9),rgba(8,26,46,0));padding:40px 18px 14px;font-size:16.1px;font-weight:300;color:#C9D4E2">RAISE-2 Open Day &amp; Hackathon · ก.ค. 2569 · ภาพ: adt.mfu.ac.th</div>
     </div>
     <div style="flex:1 1 0;padding:46px 52px 40px 44px;display:flex;flex-direction:column">
       <div style="display:flex;align-items:center;gap:14px">
@@ -142,13 +142,13 @@ ul.b li b{color:var(--ink)}
         <img src="img/adt-logo.png" alt="ADT" style="height:40px">
       </div>
       <div class="eyebrow" style="margin-top:34px">รายงานการประเมินตนเอง · EdPEx · ปีการศึกษา 2568</div>
-      <h1 class="t" style="font-size:38px;line-height:1.15;margin-top:8px">สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์<br><span style="font-weight:300;font-size:22px;color:#B9C6D8">School of Applied Digital Technology · มหาวิทยาลัยแม่ฟ้าหลวง</span></h1>
-      <div style="margin-top:22px;font-size:16px;font-weight:300;color:#DCE4EE;line-height:1.5">จาก "การเล่ากิจกรรม" สู่ <b style="color:#F3E3B8">แนวทางที่เป็นระบบและมีประสิทธิผล</b><br>นำเสนอต่อคณะกรรมการตรวจประเมินคุณภาพการศึกษา · ตรวจเยี่ยมพื้นที่ <b>24 กันยายน 2569</b></div>
+      <h1 class="t" style="font-size:41.8px;line-height:1.15;margin-top:8px">สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์<br><span style="font-weight:300;font-size:27.5px;color:#B9C6D8">School of Applied Digital Technology · มหาวิทยาลัยแม่ฟ้าหลวง</span></h1>
+      <div style="margin-top:22px;font-size:22.4px;font-weight:300;color:#DCE4EE;line-height:1.5">จาก "การเล่ากิจกรรม" สู่ <b style="color:#F3E3B8">แนวทางที่เป็นระบบและมีประสิทธิผล</b><br>นำเสนอต่อคณะกรรมการตรวจประเมินคุณภาพการศึกษา · ตรวจเยี่ยมพื้นที่ <b>24 กันยายน 2569</b></div>
       <div style="flex:1"></div>
       <div class="row" style="gap:10px">
-        <div class="card n" style="flex:1;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)"><div class="lbl">ผลปี 2567</div><div class="big" style="color:#F2F5F9;font-size:28px;margin-top:4px">Band 1</div><div class="note" style="margin-top:4px">กระบวนการ / ผลลัพธ์</div></div>
-        <div class="card n" style="flex:1;border-color:var(--gold);background:rgba(200,149,43,.14)"><div class="lbl" style="color:var(--gold-l)">เป้าหมายปี 2568</div><div class="big" style="color:var(--gold-l);font-size:28px;margin-top:4px">ระดับ 3+</div><div class="note" style="margin-top:4px;color:#F3E3B8">ปิดโอกาสในการปรับปรุงครบทุกข้อ</div></div>
-        <div class="card n" style="flex:1.2;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)"><div class="lbl">นำเสนอโดย</div><div style="font-size:15px;font-weight:500;margin-top:4px">รศ.ดร.นชา ชลดำรงค์กุล</div><div class="note">คณบดี และทีมผู้บริหารสำนักวิชา</div></div>
+        <div class="card n" style="flex:1;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)"><div class="lbl">ผลปี 2567</div><div class="big" style="color:#F2F5F9;font-size:35px;margin-top:4px">Band 1</div><div class="note" style="margin-top:4px">กระบวนการ / ผลลัพธ์</div></div>
+        <div class="card n" style="flex:1;border-color:var(--gold);background:rgba(200,149,43,.14)"><div class="lbl" style="color:var(--gold-l)">เป้าหมายปี 2568</div><div class="big" style="color:var(--gold-l);font-size:35px;margin-top:4px">ระดับ 3+</div><div class="note" style="margin-top:4px;color:#F3E3B8">ปิดโอกาสในการปรับปรุงครบทุกข้อ</div></div>
+        <div class="card n" style="flex:1.2;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)"><div class="lbl">นำเสนอโดย</div><div style="font-size:21px;font-weight:500;margin-top:4px">รศ.ดร.นชา ชลดำรงค์กุล</div><div class="note">คณบดี และทีมผู้บริหารสำนักวิชา</div></div>
       </div>
     </div>
   </div>
@@ -171,7 +171,7 @@ ul.b li b{color:var(--ink)}
         <div class="card kpi grow k"><div class="lbl">MoU ระดับสำนักวิชา</div><div class="big">6<small>ฉบับ</small></div><div class="d">6 มหาวิทยาลัย · 5 ประเทศ</div></div>
       </div>
       <div class="card" style="padding:10px 14px">
-        <table class="t" style="font-size:12.5px">
+        <table class="t" style="font-size:17.5px">
           <tr><th style="width:24%">ระดับ</th><th>หลักสูตร (ตาราง OP1)</th><th style="width:26%">สมรรถนะหลัก</th></tr>
           <tr><td>ป.ตรี (5)</td><td>วิศวกรรมคอมพิวเตอร์ · วิศวกรรมซอฟต์แวร์ · วิศวกรรมดิจิทัลและการสื่อสาร · เทคโนโลยีดิจิทัลและนวัตกรรมทางธุรกิจ (DTBI) · มัลติมีเดียและการสร้างภาพเคลื่อนไหว (MTA)</td><td rowspan="3" style="vertical-align:middle">บูรณาการวิศวกรรมกับ AI/GenAI · IoT · VR/AR · Cloud<br><b>EMI</b> ทุกหลักสูตร<br>เครือข่ายอุตสาหกรรม/นานาชาติ</td></tr>
           <tr><td>ป.โท (2)</td><td>Digital Transformation Technology (M.Sc.) · วิศวกรรมคอมพิวเตอร์ (M.Eng.)</td></tr>
@@ -183,7 +183,7 @@ ul.b li b{color:var(--ink)}
       <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/bulgaria-experts.jpg" alt="ความร่วมมือกับผู้เชี่ยวชาญจากบัลแกเรีย"><div class="cap">ความร่วมมือทางวิชาการกับผู้เชี่ยวชาญนานาชาติ (ก.พ. 2569)</div></div>
       <div class="card g" style="padding:10px 12px">
         <div class="lbl">หน่วยวิจัยและเครือข่าย</div>
-        <div class="txt" style="font-size:12.5px;margin-top:3px"><b>CCC</b> — ทุน EU/Erasmus+ 3 โครงการ (CENTRAL · ASEAN FACTORI 4.0 · DigiHealth-Asia) · <b>AIE</b> — M-BurnScar (ทุน UK) · กลุ่มวิจัย <b>HiTech</b> · ประเทศคู่ MoU: เดนมาร์ก อินเดีย ปากีสถาน ไต้หวัน เกาหลีใต้</div>
+        <div class="txt" style="font-size:17.5px;margin-top:3px"><b>CCC</b> — ทุน EU/Erasmus+ 3 โครงการ (CENTRAL · ASEAN FACTORI 4.0 · DigiHealth-Asia) · <b>AIE</b> — M-BurnScar (ทุน UK) · กลุ่มวิจัย <b>HiTech</b> · ประเทศคู่ MoU: เดนมาร์ก อินเดีย ปากีสถาน ไต้หวัน เกาหลีใต้</div>
       </div>
     </div>
   </div>
@@ -191,532 +191,609 @@ ul.b li b{color:var(--ink)}
 
 <!-- 03 ทิศทางองค์กร -->
 <section class="s" data-cap="วิสัยทัศน์ · TEAM · SO 8 ข้อ">
-  <div class="head"><div class="eyebrow">P.1ก(2) · หมวด 2.1ข · ทิศทางองค์กร</div><h1 class="t">วิสัยทัศน์เดียว ค่านิยม T.E.A.M. และวัตถุประสงค์เชิงกลยุทธ์ 8 ข้อ ที่ทุกหมวดบูรณาการกลับมาหา</h1><div class="sub">ควบรวม SO จาก 14 เหลือ 8 ข้อ (ตาราง 2-2) · ตัวชี้วัด 33 ตัวผูกแผนพัฒนา มฟล. ฉบับที่ 5 ติดตามผ่านระบบ BI</div></div>
+  <div class="head"><div class="eyebrow">P.1ก(2) · หมวด 2.1ข · ทิศทางองค์กร</div><h1 class="t">วิสัยทัศน์เดียว ค่านิยม T.E.A.M. และ SO 8 ข้อ ที่ทุกหมวดบูรณาการกลับมาหา</h1><div class="sub">ควบรวม SO จาก 14 เหลือ 8 ข้อ · ตัวชี้วัด 33 ตัวผูกแผนพัฒนา มฟล. ติดตามผ่านระบบ BI</div></div>
   <div class="body row" style="gap:14px">
-    <div class="col" style="flex:0 0 420px;gap:10px">
+    <div class="col" style="flex:0 0 430px;gap:10px">
       <div class="card n" style="padding:14px 16px">
         <div class="lbl">วิสัยทัศน์</div>
-        <div style="font-size:16.5px;font-weight:500;line-height:1.4;margin-top:4px">ผู้นำด้านการศึกษา วิจัย และนวัตกรรมดิจิทัล เพื่อขับเคลื่อน <span style="color:var(--gold-l)">Digital Valley</span> แห่งภาคเหนือของประเทศไทย</div>
+        <div style="font-size:22.4px;font-weight:500;line-height:1.4;margin-top:4px">ผู้นำด้านการศึกษา วิจัย และนวัตกรรมดิจิทัล เพื่อขับเคลื่อน <span style="color:var(--gold-l)">Digital Valley</span> แห่งภาคเหนือ</div>
       </div>
-      <div class="card" style="padding:12px 14px">
+      <div class="card" style="padding:12px 14px;flex:1">
         <div class="lbl">ค่านิยม MFU First + T.E.A.M.</div>
         <div class="row" style="gap:8px;margin-top:8px">
-          <div class="grow" style="text-align:center"><div class="big" style="font-size:26px;color:var(--gold-d)">T</div><div class="note" style="font-size:11.5px">Trust<br>เชื่อมั่น ไว้วางใจ</div></div>
-          <div class="grow" style="text-align:center"><div class="big" style="font-size:26px;color:var(--gold-d)">E</div><div class="note" style="font-size:11.5px">Excellence<br>มุ่งความเป็นเลิศ</div></div>
-          <div class="grow" style="text-align:center"><div class="big" style="font-size:26px;color:var(--gold-d)">A</div><div class="note" style="font-size:11.5px">Agility<br>คล่องตัว</div></div>
-          <div class="grow" style="text-align:center"><div class="big" style="font-size:26px;color:var(--gold-d)">M</div><div class="note" style="font-size:11.5px">Mutual Respect<br>เคารพซึ่งกัน</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:32.5px;color:var(--gold-d)">T</div><div class="note" style="font-size:15.4px">Trust</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:32.5px;color:var(--gold-d)">E</div><div class="note" style="font-size:15.4px">Excellence</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:32.5px;color:var(--gold-d)">A</div><div class="note" style="font-size:15.4px">Agility</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:32.5px;color:var(--gold-d)">M</div><div class="note" style="font-size:15.4px">Mutual Respect</div></div>
         </div>
-        <div class="note" style="margin-top:8px;border-top:1px solid var(--rule2);padding-top:6px"><span class="tag">Learning</span> ปี 2568 ทบทวน T จาก "Teamwork" เป็น "Trust" หลังรับฟังบุคลากร · การรับรู้ค่านิยม <b>4.15</b> / วิสัยทัศน์ <b>4.23</b> (เป้า 4)</div>
+        <div class="note" style="margin-top:8px;border-top:1px solid var(--rule2);padding-top:6px"><span class="tag">Learning</span> ปี 2568 ปรับ T จาก Teamwork เป็น Trust จากเสียงบุคลากร · การรับรู้ค่านิยม <b>4.15</b> · วิสัยทัศน์ <b>4.23</b> (เป้า 4)</div>
       </div>
-      <div class="card k" style="padding:10px 14px"><div class="lbl">พันธกิจ 5 ด้าน</div><div class="txt" style="font-size:12.5px;margin-top:3px">บัณฑิตทักษะดิจิทัล+คุณธรรม · วิจัย/นวัตกรรมตอบโจทย์ภูมิภาค · โครงสร้างพื้นฐานเทคโนโลยี · ความร่วมมือรัฐ-เอกชน-ชุมชน (ระบบนิเวศ Digital Valley) · ความเป็นนานาชาติ</div></div>
     </div>
     <div class="grow col" style="gap:8px">
       <div class="lbl">วัตถุประสงค์เชิงกลยุทธ์ (SO) 8 ข้อ · ตาราง 2-2</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1">
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO1</div><div class="txt" style="font-size:12.5px"><b>ผู้นำวิจัยและเทคโนโลยีเชิงลึก</b> AI · IoT · Digital Health (ARIC)</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO2</div><div class="txt" style="font-size:12.5px"><b>วิจัยตอบโจทย์พื้นที่ + ทุนภายนอก</b> ทุนภายนอก 12.14 ลบ. (เป้า 6.5)</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO3</div><div class="txt" style="font-size:12.5px"><b>บัณฑิตคุณภาพสูง หลักสูตรมาตรฐานสากล</b> ปรับปรุง 3 หลักสูตรครบวงรอบ</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO4</div><div class="txt" style="font-size:12.5px"><b>เรียนรู้ตลอดชีวิต + ความเป็นสากล</b> Non-degree · EMI · Outbound 4.23%</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO5</div><div class="txt" style="font-size:12.5px"><b>สมรรถนะอาจารย์และบุคลากร</b> ป.เอก 78.9% · ตำแหน่งวิชาการ 57.9%</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO6</div><div class="txt" style="font-size:12.5px"><b>ศูนย์ถ่ายทอดความรู้สู่สังคม + Tech Startup</b> ผู้รับบริการ &gt;310 คน</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO7</div><div class="txt" style="font-size:12.5px"><b>เครือข่ายชาติ/นานาชาติที่มีกิจกรรมต่อเนื่อง</b> MoU 6 ฉบับ 5 ประเทศ</div></div>
-        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:11px">SO8</div><div class="txt" style="font-size:12.5px"><b>บริหารองค์กรมีประสิทธิภาพ ยั่งยืน</b> เบิกจ่าย 52.54% vs มฟล. 34.10%</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO1</div><div class="txt" style="font-size:17.5px"><b>ผู้นำวิจัยเชิงลึก</b> AI · IoT · Digital Health · ARIC</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO2</div><div class="txt" style="font-size:17.5px"><b>วิจัยตอบโจทย์พื้นที่</b> ทุนภายนอก 12.14 ลบ. (เป้า 6.5)</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO3</div><div class="txt" style="font-size:17.5px"><b>บัณฑิตคุณภาพสูง</b> ปรับปรุง 3 หลักสูตรครบวงรอบ</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO4</div><div class="txt" style="font-size:17.5px"><b>เรียนรู้ตลอดชีวิต + สากล</b> Non-degree · EMI · Outbound 4.23%</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO5</div><div class="txt" style="font-size:17.5px"><b>สมรรถนะบุคลากร</b> ป.เอก 78.9% · ตำแหน่งวิชาการ 57.9%</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO6</div><div class="txt" style="font-size:17.5px"><b>ถ่ายทอดความรู้สู่สังคม</b> ผู้รับบริการ &gt;310 คน</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO7</div><div class="txt" style="font-size:17.5px"><b>เครือข่ายนานาชาติ</b> MoU 6 ฉบับ 5 ประเทศ</div></div>
+        <div class="card" style="padding:9px 12px"><div class="mono gold" style="font-size:15.4px">SO8</div><div class="txt" style="font-size:17.5px"><b>บริหารมีประสิทธิภาพ</b> เบิกจ่าย 52.54% vs มฟล. 34.10%</div></div>
       </div>
-      <div class="note">ทุกหมวดกระบวนการ (1–6) ระบุว่าตอบ SO ข้อใด และผลลัพธ์ในหมวด 7 จัดกลุ่มตาม SO เดียวกัน = <b>Integration</b> ที่ตรวจสอบย้อนกลับได้</div>
     </div>
   </div>
 </section>
 
-<!-- 04 จาก Band 1 สู่ระบบ -->
-<section class="s" data-cap="สิ่งที่เปลี่ยนในปี 2568: ADLI">
-  <div class="head"><div class="eyebrow">การตอบสนองต่อรายงานป้อนกลับปี 2567 · โอกาสในการปรับปรุงทุกข้อมีคำตอบ</div><h1 class="t">ปี 2567 เราเล่า "กิจกรรม" — ปี 2568 เราแสดง "กระบวนการ" ที่มี A·D·L·I ครบ และพิสูจน์ประสิทธิผลด้วยตัวเลข</h1><div class="sub">โอกาสในการปรับปรุงทุกข้อในรายงานป้อนกลับปี 2567 ถูกจับคู่กับสิ่งที่ทำจริงในปี 2568 (จำลองประเมินตนเองแล้ว) · ระบบใหม่เหล่านี้ใช้งานอยู่และตรวจสอบได้บนเว็บ adt.mfu.ac.th</div></div>
+<!-- 04 ADLI ก -->
+<section class="s" data-cap="สิ่งที่เปลี่ยนในปี 2568: Approach · Deployment">
+  <div class="head"><div class="eyebrow">การตอบสนองต่อรายงานป้อนกลับปี 2567 · โอกาสในการปรับปรุงทุกข้อมีคำตอบ</div><h1 class="t">ปี 2567 เราเล่า "กิจกรรม" — ปี 2568 เราแสดง "กระบวนการ" ที่มีผู้รับผิดชอบ รอบเวลา และตัวชี้วัด</h1><div class="sub">โอกาสในการปรับปรุงทุกข้อในรายงานป้อนกลับปี 2567 ถูกจับคู่กับสิ่งที่ทำจริงในปี 2568 (จำลองประเมินตนเองแล้ว)</div></div>
   <div class="body row" style="gap:12px">
     <div class="grow col" style="gap:10px">
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="border-top:3px solid var(--navy);padding:10px 12px"><div class="lbl">A · Approach · แนวทางที่เป็นระบบ</div>
-          <ul class="b" style="margin-top:5px;font-size:12.5px">
-            <li><b>ผังกระบวนการ 9 ชุด</b> ครบหมวด 1–6: ทิศทาง+TEAM · วางแผนกลยุทธ์ · แผนปฏิบัติการ · รับฟังลูกค้า · บริหารตัวชี้วัด · KM · กำลังคน · Design Cycle · ความเสี่ยง</li>
-            <li>ทุกผังระบุ <b>ปัจจัยนำเข้า → ขั้นตอน (ผู้ทำ · รอบเวลา · ตัวชี้วัด) → ผลผลิต</b> + วงรอบป้อนกลับ (SIPOC/5W1H)</li>
-            <li><b>ประกาศสำนักวิชา 5 ฉบับ</b> ลงนามคณบดี: ธรรมาภิบาลข้อมูล · สิทธิประโยชน์บุคลากร · ผู้ส่งมอบ+SLA · Priority Scoring · + ทะเบียนความเสี่ยง ปค.4/ปค.5 ของจริง</li>
-          </ul></div>
-        <div class="card grow" style="border-top:3px solid var(--teal);padding:10px 12px"><div class="lbl">D · Deployment · ถ่ายทอดสู่การปฏิบัติ ครอบคลุม ทั่วถึง</div>
-          <ul class="b" style="margin-top:5px;font-size:12.5px">
-            <li><b>สายตรงคณบดี</b> 5 หมวดเรื่อง ไม่ระบุตัวตนได้ SLA 3–5 วันทำการ · <b>ADT Check-in / Office Status</b> แดชบอร์ดเรียลไทม์ทุกคน</li>
-            <li>แผนปฏิบัติการ 28 รายการครอบคลุม <b>8 หลักสูตร · คณะทำงาน 6 ชุด</b> รายงานรายไตรมาส · e-Portfolio ทุก 6 เดือนทุกคน</li>
-            <li>ประชุม/สัมมนาสำนักวิชา 38 → 40 → 43 คน · บอร์ดรายเดือน 11 ครั้ง · BCP ซ้อมทุกปี · เว็บ/ข่าว ~20 รายการ</li>
-          </ul></div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="border-top:3px solid var(--gold);padding:10px 12px"><div class="lbl">L · Learning · ประเมินและปรับปรุงด้วยข้อมูลจริง</div>
-          <ul class="b" style="margin-top:5px;font-size:12.5px">
-            <li>ผลไม่บรรลุเป้า → ปรับ critical step: ซ้อมอพยพ 3.00 → <b>1.50 นาที</b> แก้ครบ 5 ข้อ · Non-degree รุ่น 2 ปรับ <b>5 มาตรการ</b> จากผลรุ่น 1</li>
-            <li>เสียงบุคลากร → ค่านิยม T: Teamwork → <b>Trust</b> · SO 14 → <b>8 ข้อ</b> · ปิดหลักสูตร วท.บ. วิทยาการคอมพิวเตอร์ฯ (ปรับพอร์ต)</li>
-            <li>กำกับดูแล → บอร์ดตีกลับร่าง MoU (2 → 5 ปี) · แบ่งปัน: Workshop "Becoming an Associate Professor" · KM 81.25%</li>
-          </ul></div>
-        <div class="card grow" style="border-top:3px solid var(--green);padding:10px 12px"><div class="lbl">I · Integration · สอดคล้อง OP และหมวดอื่น</div>
-          <ul class="b" style="margin-top:5px;font-size:12.5px">
-            <li><b>คู่เทียบ 3 ระดับ</b>: BI มฟล. 15 สำนักวิชา · เครือข่าย AUN Benchmark คณะไอที 12 สถาบัน · Scopus/OpenAlex/THE</li>
-            <li>SO 8 ข้อ → KPI 33 ตัวผูกแผน มฟล. → <b>งบ 2569 จัดสรรตาม Priority Scoring</b> (วิจัย 17.5% สูงสุด) → ผลลัพธ์หมวด 7 จัดกลุ่มตาม SO</li>
-            <li>ทุกตารางหมวด 7 ระบุ <b>กระบวนการต้นทาง</b> (Cause → Effect) · ความเสี่ยงสูงสุด (ผู้สืบทอด) ตอบด้วยแผนกำลังคน 5.1 + ARIC</li>
-          </ul></div>
-      </div>
-      <div class="card y" style="padding:9px 14px"><div class="txt" style="font-size:12.5px"><b>ตัวแยกระดับ 2 → 3:</b> ทุกกระบวนการมีหลักฐานว่า "ได้ผล" — เช่น Lean ลดเวลาบริการ 25.80% (เป้า 25) · KM 81.25% (เป้า 70) · Uptime 99.99% · โครงการปิดจบบรรลุเป้า 8/8 พึงพอใจ 89.67% · <b>ตัวแยก 3 → 4:</b> ถ่ายทอดทั่วถึง + วงรอบเรียนรู้ + คู่เทียบภายนอกจริง</div></div>
+      <div class="card grow" style="border-top:3px solid var(--navy);padding:12px 14px"><div class="lbl">A · Approach · แนวทางที่เป็นระบบ</div>
+        <ul class="b" style="margin-top:8px">
+          <li><b>ผังกระบวนการ 9 ชุด</b> ครบหมวด 1–6 — ทุกผังระบุ <b>ปัจจัยนำเข้า → ขั้นตอน (ผู้ทำ · รอบเวลา · ตัวชี้วัด) → ผลผลิต</b> + วงรอบป้อนกลับ (SIPOC/5W1H)</li>
+          <li><b>ประกาศสำนักวิชา 5 ฉบับ</b> ลงนามคณบดี: ธรรมาภิบาลข้อมูล · สิทธิประโยชน์บุคลากร · ผู้ส่งมอบ+SLA · Priority Scoring · ทะเบียนความเสี่ยง ปค.4/ปค.5 ของจริง</li>
+        </ul></div>
+      <div class="card grow" style="border-top:3px solid var(--teal);padding:12px 14px"><div class="lbl">D · Deployment · ถ่ายทอดสู่การปฏิบัติ ครอบคลุม ทั่วถึง</div>
+        <ul class="b" style="margin-top:8px">
+          <li><b>สายตรงคณบดี</b> 5 หมวดเรื่อง ไม่ระบุตัวตนได้ SLA 3–5 วันทำการ · <b>ADT Check-in / Office Status</b> แดชบอร์ดเรียลไทม์ทุกคน</li>
+          <li>แผนปฏิบัติการ 28 รายการครอบคลุม <b>8 หลักสูตร · คณะทำงาน 6 ชุด</b> · e-Portfolio ทุก 6 เดือนทุกคน · บอร์ดรายเดือน 11 ครั้ง</li>
+        </ul></div>
     </div>
-    <div class="col" style="flex:0 0 330px;gap:8px">
-      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/dean-hotline.png" alt="สายตรงคณบดี" style="object-fit:cover;object-position:top"><div class="cap">สายตรงคณบดี (DIRECT TO DEAN) — adt.mfu.ac.th/dean-hotline</div></div>
-      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/checkin.png" alt="ADT Check-in dashboard"><div class="cap">ADT Check-in / Office Status — แดชบอร์ดการปฏิบัติงานเรียลไทม์</div></div>
+    <div class="col" style="flex:0 0 400px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/wf_4_1.png" alt="ผังกระบวนการบริหารตัวชี้วัด" style="object-fit:contain;background:#fff"><div class="cap">ตัวอย่างผังกระบวนการ 4.1 บริหารตัวชี้วัด (1 ใน 9 ชุด)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/dean-hotline.png" alt="สายตรงคณบดี" style="object-position:top"><div class="cap">สายตรงคณบดี — adt.mfu.ac.th/dean-hotline</div></div>
     </div>
   </div>
 </section>
 
-<!-- 05 หมวด 1 -->
-<section class="s" data-cap="หมวด 1 การนำองค์กร">
-  <div class="head"><div class="eyebrow">หมวด 1 · การนำองค์กร</div><h1 class="t">ผู้นำกำหนดทิศทางเป็นวงจร 5 ขั้น สื่อสารสองทางผ่านช่องทางที่มี SLA และกำกับดูแลผ่านบอร์ดรายเดือน</h1><div class="sub">ตาราง 1.1-1 / 1.1-2 / 1.2-1 · ผลลัพธ์ในตาราง 7.4-1</div></div>
-  <div class="body row" style="gap:14px">
+<!-- 04b ADLI ข -->
+<section class="s" data-cap="สิ่งที่เปลี่ยนในปี 2568: Learning · Integration">
+  <div class="head"><div class="eyebrow">การตอบสนองต่อรายงานป้อนกลับปี 2567 · ตัวแยกระดับ 3 → 4</div><h1 class="t">ทุกกระบวนการมีวงรอบเรียนรู้ที่ปรับด้วยข้อมูลจริง และบูรณาการกับ OP กลยุทธ์ งบประมาณ และผลลัพธ์</h1><div class="sub">ตัวแยกระดับ 2 → 3 คือประสิทธิผลที่วัดได้ · ตัวแยก 3 → 4 คือถ่ายทอดทั่วถึง + วงรอบเรียนรู้ + คู่เทียบภายนอกจริง</div></div>
+  <div class="body row" style="gap:12px">
     <div class="grow col" style="gap:10px">
+      <div class="card grow" style="border-top:3px solid var(--gold);padding:12px 14px"><div class="lbl">L · Learning · ประเมินและปรับปรุงด้วยข้อมูลจริง</div>
+        <ul class="b" style="margin-top:8px">
+          <li>ผลไม่บรรลุเป้า → ปรับ critical step: ซ้อมอพยพ 3.00 → <b>1.50 นาที</b> · Non-degree รุ่น 2 ปรับ <b>5 มาตรการ</b> จากผลรุ่น 1</li>
+          <li>เสียงบุคลากร → ค่านิยม T: Teamwork → <b>Trust</b> · SO 14 → <b>8 ข้อ</b> · ปิดหลักสูตรที่ไม่ตอบกลยุทธ์</li>
+          <li>กำกับดูแล → บอร์ดตีกลับร่าง MoU (2 → 5 ปี) · แบ่งปันผ่าน KM 81.25%</li>
+        </ul></div>
+      <div class="card grow" style="border-top:3px solid var(--green);padding:12px 14px"><div class="lbl">I · Integration · สอดคล้อง OP และหมวดอื่น</div>
+        <ul class="b" style="margin-top:8px">
+          <li><b>คู่เทียบ 3 ระดับ</b>: BI มฟล. 15 สำนักวิชา · AUN Benchmark คณะไอที 12 สถาบัน · Scopus/OpenAlex/THE</li>
+          <li>SO 8 ข้อ → KPI 33 ตัว → <b>งบ 2569 จัดสรรตาม Priority Scoring</b> → ผลลัพธ์หมวด 7 จัดกลุ่มตาม SO (Cause → Effect)</li>
+        </ul></div>
+    </div>
+    <div class="col" style="flex:0 0 400px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/wf_6_2.png" alt="ผังกระบวนการบริหารความเสี่ยง" style="object-fit:contain;background:#fff"><div class="cap">ผังกระบวนการ 6.2 บริหารความเสี่ยง — มีวงรอบป้อนกลับ (Learning)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0;border:1px solid var(--rule)"><img src="img/checkin.png" alt="ADT Check-in dashboard"><div class="cap">ADT Check-in / Office Status — แดชบอร์ดเรียลไทม์</div></div>
+    </div>
+  </div>
+</section>
+<!-- 05 หมวด 1 ก -->
+<section class="s" data-cap="หมวด 1 การนำองค์กร · ทิศทางและการสื่อสาร">
+  <div class="head"><div class="eyebrow">หมวด 1 · การนำองค์กร · 1.1 การนำองค์กรโดยผู้นำระดับสูง</div><h1 class="t">ผู้นำกำหนดทิศทางเป็นวงจร 5 ขั้น และสื่อสารสองทางผ่านช่องทางที่มีมาตรฐานเวลาตอบ</h1><div class="sub">ตาราง 1.1-1 วงจรทิศทางองค์กร · ตาราง 1.1-2 ช่องทางสื่อสาร · ผลลัพธ์ตาราง 7.4-1</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
       <div class="step">
         <div class="st"><div class="num">01</div><div class="nm">ทบทวนบริบท/ความคาดหวัง</div><div class="who">คณบดี + บอร์ด · ปีละครั้ง</div></div>
-        <div class="st"><div class="num">02</div><div class="nm">กำหนด/ปรับวิสัยทัศน์ ค่านิยม SO</div><div class="who">กรรมการแผนกลยุทธ์ · ต.ค.</div></div>
-        <div class="st"><div class="num">03</div><div class="nm">ถ่ายทอดสู่บุคลากร นศ. คู่ความร่วมมือ</div><div class="who">ประชุมสำนักวิชา · เว็บ · Town Hall</div></div>
+        <div class="st"><div class="num">02</div><div class="nm">กำหนดวิสัยทัศน์ ค่านิยม SO</div><div class="who">กก.แผนกลยุทธ์ · ต.ค.</div></div>
+        <div class="st"><div class="num">03</div><div class="nm">ถ่ายทอดสู่บุคลากร นศ. คู่ความร่วมมือ</div><div class="who">ประชุมสำนักวิชา · เว็บ</div></div>
         <div class="st"><div class="num">04</div><div class="nm">ลงมือผ่านคณะทำงาน 6 ชุด</div><div class="who">รายไตรมาส · KPI รายชุด</div></div>
         <div class="st"><div class="num">05</div><div class="nm">วัดการรับรู้และทบทวน</div><div class="who">แบบสำรวจ · ปีละครั้ง</div></div>
       </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">ช่องทางสื่อสารสองทาง (ตาราง 1.1-2)</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th>ช่องทาง</th><th>มาตรฐาน</th><th class="n">ผล 2568</th></tr>
-            <tr><td>สายตรงคณบดี (ไม่ระบุตัวตนได้)</td><td>ตอบ 3–5 วันทำการ</td><td class="n">1 กรณี แก้ไขในกำหนด</td></tr>
-            <tr><td>ประชุม/สัมมนาสำนักวิชา (Town Hall)</td><td>ภาคละครั้ง</td><td class="n">38 · 40 · 43 คน</td></tr>
-            <tr><td>ข่าวเว็บ + FB</td><td>&le;24 ชม.</td><td class="n">~20 ข่าว · เข้าถึง 664,124</td></tr>
-            <tr><td>Alumni Meetup</td><td>ปีละครั้ง</td><td class="n">120+ คน</td></tr>
-          </table>
-        </div>
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">ธรรมาภิบาล · ความเสี่ยง · จริยธรรม (1.2)</div>
-          <ul class="b" style="margin-top:6px;font-size:12.5px">
-            <li><b>บอร์ดประจำสำนักวิชา รายเดือน</b> — 2568 ประชุม 11 ครั้ง · 2569 (ถึง ก.ค.) 7 ครั้ง มีรายงานครบ</li>
-            <li>กำกับเชิงเนื้อหาจริง: <b>ตีกลับร่าง MoU Huddersfield</b> (2 → 5 ปี, เงื่อนไขยกเลิก, ระดับผู้ลงนาม)</li>
-            <li>ประเมินผู้นำ 4 ระดับ · คำรับรองคณบดี 2567 บรรลุ <b>14/24 (อันดับ 6/15)</b></li>
-            <li>ทะเบียนความเสี่ยง ปค.4/ปค.5: 2568 = 4 รายการ ทำครบ 5/5 · 2569 = 7 รายการ (สูง 1 = ผู้สืบทอด)</li>
-            <li>ผิดจรรยาบรรณ/ข้อร้องเรียนจริยธรรม <b>0</b> ทุกกลุ่ม ทุกปี</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col" style="flex:0 0 300px;gap:8px">
-      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/healthtech-gold.jpg" alt="คณบดีรับรางวัล HealthTech Ecosystem Supporter Gold"><div class="cap">คณบดีรับรางวัล HealthTech Ecosystem Supporter – Gold Level (6 มิ.ย. 2569)</div></div>
-      <div class="row" style="gap:8px">
-        <div class="card n kpi grow" style="padding:9px 11px"><div class="lbl">เชื่อมั่นผู้นำ</div><div class="big" style="font-size:26px">4.38</div><div class="d">เป้า 4.00</div></div>
-        <div class="card n kpi grow" style="padding:9px 11px"><div class="lbl">รับรู้วิสัยทัศน์</div><div class="big" style="font-size:26px">4.23</div><div class="d">TEAM 4.15</div></div>
-        <div class="card n kpi grow" style="padding:9px 11px"><div class="lbl">ธรรมาภิบาล</div><div class="big" style="font-size:26px">4.54</div><div class="d">สื่อสารใน 4.38</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 06 หมวด 2 -->
-<section class="s" data-cap="หมวด 2 กลยุทธ์">
-  <div class="head"><div class="eyebrow">หมวด 2 · กลยุทธ์ · Integration: SO → แผนปฏิบัติการ → งบประมาณ → ตัวชี้วัด</div><h1 class="t">กลยุทธ์ถูกแปลงเป็นแผนปฏิบัติการ 28 รายการ จัดสรรงบด้วยเกณฑ์ที่ประกาศไว้ล่วงหน้า และติดตามผลจริงรายโครงการ</h1><div class="sub">ตาราง 2-1 กระบวนการวางแผน 6 ขั้น · ประกาศสำนักวิชา เรื่อง เกณฑ์การจัดลำดับความสำคัญของโครงการและการจัดสรรงบประมาณเชิงกลยุทธ์ (Strategic Priority Scoring)</div></div>
-  <div class="body row" style="gap:14px">
-    <div class="grow col" style="gap:10px">
-      <div class="step">
-        <div class="st"><div class="num">01 · ต.ค.</div><div class="nm">วิเคราะห์สภาพแวดล้อม (PEST/SWOT)</div><div class="who">กก.แผนกลยุทธ์ · รองคณบดี</div></div>
-        <div class="st"><div class="num">02</div><div class="nm">ทบทวน SO 8 ข้อ + ค่าเป้า</div><div class="who">คณบดี + ประธานหลักสูตร 8</div></div>
-        <div class="st"><div class="num">03</div><div class="nm">เสนอโครงการ · ให้คะแนน Priority</div><div class="who">หัวหน้าคณะทำงาน 6 ชุด</div></div>
-        <div class="st"><div class="num">04</div><div class="nm">จัดสรรงบตามคะแนน · ส่วนนโยบายและแผน</div><div class="who">บอร์ดประจำสำนักวิชาอนุมัติ</div></div>
-        <div class="st"><div class="num">05 · รายไตรมาส</div><div class="nm">ติดตาม Q1–Q4 + Final Report</div><div class="who">เลขานุการ · ระบบติดตาม มฟล.</div></div>
-        <div class="st"><div class="num">06 · ปลายปี</div><div class="nm">ทบทวน/ปรับแผน (Trigger-based)</div><div class="who">บอร์ด · 3 กรณีจริงปี 2568</div></div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">Strategic Priority Scoring · น้ำหนัก 4 มิติ</div>
-          <div class="col" style="gap:6px;margin-top:6px">
-            <div><div class="row" style="justify-content:space-between"><span class="txt" style="font-size:12.5px">Strategic Fit (ตอบ SO/SC)</span><span class="mono" style="font-size:12px">40</span></div><div class="bar"><i style="width:40%"></i></div></div>
-            <div><div class="row" style="justify-content:space-between"><span class="txt" style="font-size:12.5px">Impact / Value</span><span class="mono" style="font-size:12px">30</span></div><div class="bar"><i style="width:30%"></i></div></div>
-            <div><div class="row" style="justify-content:space-between"><span class="txt" style="font-size:12.5px">Feasibility</span><span class="mono" style="font-size:12px">15</span></div><div class="bar"><i class="g" style="width:15%"></i></div></div>
-            <div><div class="row" style="justify-content:space-between"><span class="txt" style="font-size:12.5px">Efficiency</span><span class="mono" style="font-size:12px">15</span></div><div class="bar"><i class="g" style="width:15%"></i></div></div>
-          </div>
-          <div class="note" style="margin-top:6px">เกณฑ์ตัดสิน: &ge;4.0 สูง · 3.0–3.99 กลาง · &lt;3.0 ทบทวน — ใช้จัดสรรงบปีงบ 2569 ทุกโครงการ</div>
-        </div>
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">การจัดสรรงบปีงบ 2569 · 1,440,000 บาท (ผูก SO/ARIC)</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th>ด้าน</th><th class="n">บาท</th><th class="n">%</th></tr>
-            <tr><td>แผนระดับสำนักวิชา</td><td class="n">404,000</td><td class="n">28.1</td></tr>
-            <tr class="hl"><td>วิจัย (สูงสุด · SO1/SO2)</td><td class="n">252,000</td><td class="n">17.5</td></tr>
-            <tr><td>บริการวิชาการ (SO6)</td><td class="n">175,000</td><td class="n">12.2</td></tr>
-            <tr><td>กิจกรรมนักศึกษา (SO3)</td><td class="n">130,000</td><td class="n">9.0</td></tr>
-            <tr><td>วิเทศสัมพันธ์ (SO4/SO7)</td><td class="n">119,000</td><td class="n">8.3</td></tr>
-            <tr><td>ประชาสัมพันธ์ + หลักสูตร 6</td><td class="n">360,000</td><td class="n">25.0</td></tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="col" style="flex:0 0 300px;gap:8px">
-      <div class="card n" style="padding:12px 14px">
-        <div class="lbl">แผนปฏิบัติการ 2568 · ผลจริง</div>
-        <div class="big" style="margin-top:4px">28<small style="color:#B9C6D8">รายการ · 2,360,582 บ.</small></div>
-        <div class="note" style="margin-top:4px">ระบบกลาง มฟล. 24 โครงการ · ระบบสำนักวิชา 26 โครงการ (เสร็จ 13)</div>
-        <div class="row" style="gap:8px;margin-top:10px">
-          <div class="grow"><div class="lbl">บรรลุเป้า</div><div class="big" style="font-size:24px">8/8</div></div>
-          <div class="grow"><div class="lbl">พึงพอใจ</div><div class="big" style="font-size:24px">89.67<small style="color:#B9C6D8">%</small></div></div>
-          <div class="grow"><div class="lbl">เบิกจ่าย</div><div class="big" style="font-size:24px">92.5<small style="color:#B9C6D8">%</small></div></div>
-        </div>
-        <div class="note" style="margin-top:6px">จาก Final Report 8 โครงการที่ตรวจรับแล้ว: KPI 100% ใน 7 โครงการ · ผู้เข้าร่วมจริง 362 คน + 6 ทีม</div>
-      </div>
-      <div class="card y" style="padding:10px 12px"><div class="lbl">โอกาสเชิงกลยุทธ์ / Intelligent Risk</div><div class="txt" style="font-size:12.5px;margin-top:3px"><b>ARIC</b> ศูนย์ AI &amp; Robotics 2570–2574 — หารือผู้ทรงคุณวุฒิ 4 ท่าน ประเมินผลได้-ผลเสีย 5 ข้อค้นพบ + แผนความเสี่ยง (สไลด์ 14)</div></div>
-      <div class="card" style="padding:10px 12px"><div class="lbl">การคาดการณ์ (ตาราง 2-4)</div><div class="txt" style="font-size:12.5px;margin-top:3px">ค่าเป้าคำรับรอง 2568/2569 + ค่าคาดการณ์ 2570 ครบ 6 ตัวชี้วัดหลัก พร้อมคู่เทียบ · ปรับแผนเมื่อผลต่ำกว่าเกณฑ์กระตุ้น: MoU active 40/80 · ต้นแบบ 1/4 · กิจกรรมชุมชน (ช่องว่างการรายงาน)</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 07 หมวด 3 -->
-<section class="s" data-cap="หมวด 3 ลูกค้า">
-  <div class="head"><div class="eyebrow">หมวด 3 · ลูกค้า · เสียงของลูกค้า (VOC) → ความผูกพัน</div><h1 class="t">รับฟังลูกค้า 7 กลุ่มผ่านช่องทางที่มีมาตรฐานบริการ และรายงานความพึงพอใจตรงไปตรงมา — 3 ตัวเหนือเป้า 6 ตัวต่ำกว่าเป้า</h1><div class="sub">ตาราง 3.1 กระบวนการ VOC 5 ขั้น · ตาราง 3.2–3.3 ช่องทาง/มาตรฐาน · ผลลัพธ์ตาราง 7.2-1 (เต็ม 5 เป้า 4)</div></div>
-  <div class="body row" style="gap:14px">
-    <div class="grow col" style="gap:10px">
-      <div class="step">
-        <div class="st"><div class="num">01</div><div class="nm">จำแนกกลุ่มลูกค้า 3 มิติ</div><div class="who">กก.ประจำสำนักวิชา · ปีละครั้ง</div></div>
-        <div class="st"><div class="num">02</div><div class="nm">รับฟังตามช่องทาง/มาตรฐาน</div><div class="who">คณะทำงานกิจการ นศ./PR · ต่อเนื่อง</div></div>
-        <div class="st"><div class="num">03</div><div class="nm">รวบรวม-วิเคราะห์ (แบบสำรวจ+ร้องเรียน)</div><div class="who">เลขานุการ · ภาคละครั้ง</div></div>
-        <div class="st"><div class="num">04</div><div class="nm">ตอบสนอง/แก้ไข ตาม SLA</div><div class="who">คณบดี · 3–5 วันทำการ</div></div>
-        <div class="st"><div class="num">05</div><div class="nm">ทบทวนช่องทางและเกณฑ์จำแนก</div><div class="who">บอร์ด · ปลายปี</div></div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">ความพึงพอใจ 2568 · ตาราง 7.2-1 (เป้า 4.00)</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th>ตัวชี้วัด</th><th class="n">2567</th><th class="n">2568</th><th>สถานะ</th></tr>
-            <tr><td>ผู้ใช้บัณฑิต (ตอบกลับ 21.53% สูงกว่าค่าเฉลี่ย มฟล.)</td><td class="n">4.37</td><td class="n">4.37</td><td><span class="tag g">เหนือเป้า</span></td></tr>
-            <tr><td>ผู้รับบริการวิชาการ</td><td class="n">—</td><td class="n">4.52</td><td><span class="tag g">เหนือเป้า</span></td></tr>
-            <tr><td>การจัดการข้อร้องเรียน</td><td class="n">—</td><td class="n">4.25</td><td><span class="tag g">เหนือเป้า</span></td></tr>
-            <tr><td>ห้องปฏิบัติการ</td><td class="n">3.47</td><td class="n">3.85</td><td><span class="tag b">ฟื้นตัว</span></td></tr>
-            <tr><td>อาจารย์ที่ปรึกษา (ให้คำปรึกษา / ให้ข้อมูล)</td><td class="n">3.92</td><td class="n">3.72 / 3.56</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
-            <tr><td>หลักสูตรและการเรียนการสอน · งานบริการสำนักวิชา</td><td class="n">—</td><td class="n">3.61 · 3.72</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
-            <tr><td>การสื่อสารองค์กร · วิธีรับฟังเสียงลูกค้า</td><td class="n">3.64</td><td class="n">3.56 · 3.43</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
-          </table>
-        </div>
-        <div class="col" style="flex:0 0 250px;gap:8px">
-          <div class="card k" style="padding:9px 12px"><div class="lbl">การเรียนรู้จากตัวที่ต่ำกว่าเป้า (Fact-based)</div><div class="txt" style="font-size:12px;margin-top:3px">ตัวกระตุ้น: ผลไม่บรรลุเป้า → ปรับ <b>critical step</b> ที่ขั้น 02–04: revamp เว็บ (≤3 คลิก) · โครงการสื่อ PR เลขที่ 20 (156,600 บ.) · มาตรฐานอาจารย์ที่ปรึกษา ≥1 ครั้ง/ภาค · แบบสำรวจลูกค้าฉบับใหม่ปี 2568</div></div>
-          <div class="card k" style="padding:9px 12px"><div class="lbl">ความเป็นธรรม · กลุ่มเปราะบาง</div><div class="txt" style="font-size:12px;margin-top:3px">นักศึกษากลุ่มเปราะบาง <b>5 คน</b> ได้รับดูแล/ทุน/กิจกรรมครบทุกคน · ข้อร้องเรียน 2568 <b>1 เรื่อง</b> แก้ไขในกำหนด ไม่เกิดซ้ำ</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="col" style="flex:0 0 280px;gap:8px">
-      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/alumni-meetup.jpg" alt="IT &amp; ADT Alumni Meetup 2026"><div class="cap">IT &amp; ADT Alumni Meetup 2026 — ศิษย์เก่า 120+ คน (พ.ค. 2569)</div></div>
-      <div class="row" style="gap:8px">
-        <div class="card n kpi grow" style="padding:9px 11px"><div class="lbl">เข้าถึงเพจ FB</div><div class="big" style="font-size:22px">664,124</div><div class="d">ส.ค. 68–ก.ค. 69</div></div>
-        <div class="card n kpi grow" style="padding:9px 11px"><div class="lbl">คงอยู่ ป.ตรี / บว.</div><div class="big" style="font-size:22px">85.3 / 100<small style="color:#B9C6D8">%</small></div><div class="d">เป้า 75</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 08 หมวด 4 -->
-<section class="s" data-cap="หมวด 4 การวัด วิเคราะห์ KM">
-  <div class="head"><div class="eyebrow">หมวด 4 · การวัด วิเคราะห์ และการจัดการความรู้ · จาก Band 1 ปี 2567 สู่ระบบตัวชี้วัดที่มีคู่เทียบภายนอก</div><h1 class="t">ตัวชี้วัด 33 ตัวถูกเลือกด้วยเกณฑ์ ติดตามผ่านแดชบอร์ด และเปรียบเทียบกับแหล่งภายนอก 3 ระดับที่ระบุชื่อได้</h1><div class="sub">ตาราง 4.1-1 กระบวนการบริหารตัวชี้วัด 6 ขั้น (5W1H) · ตาราง 4.1-2 แหล่งข้อมูลเชิงเปรียบเทียบ · ตาราง 4.2-3 KM 5 ขั้น</div></div>
-  <div class="body row" style="gap:14px">
-    <div class="grow col" style="gap:10px">
-      <div class="step">
-        <div class="st"><div class="num">01</div><div class="nm">เลือก KPI ด้วยเกณฑ์ 4 ข้อ</div><div class="who">เชื่อม SO · SMART · มีคู่เทียบ · ครอบคลุมพันธกิจ</div></div>
-        <div class="st"><div class="num">02</div><div class="nm">กำหนด Data Owner + นิยาม</div><div class="who">เลขานุการ · ศูนย์ ICT</div></div>
-        <div class="st"><div class="num">03</div><div class="nm">เก็บ/ทวนสอบ 5 มิติ</div><div class="who">Data Owner · รายไตรมาส</div></div>
-        <div class="st"><div class="num">04</div><div class="nm">แดชบอร์ด BI + Check-in</div><div class="who">Leading รายวัน · Lagging รายไตรมาส</div></div>
-        <div class="st"><div class="num">05</div><div class="nm">ทบทวน 4 เวที (Why-Why/Fishbone)</div><div class="who">Operational · Mid-year · Annual · Strategic</div></div>
-        <div class="st"><div class="num">06</div><div class="nm">จัดลำดับปรับปรุง/นวัตกรรม</div><div class="who">ผลกระทบ × เร่งด่วน × เป็นไปได้</div></div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">แหล่งข้อมูลเชิงเปรียบเทียบ 3 ระดับ (ตาราง 4.1-2)</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th>ระดับ</th><th>แหล่ง</th><th>ใช้เทียบ</th></tr>
-            <tr><td>ภายใน มฟล.</td><td>ระบบ BI มฟล. — 15 สำนักวิชา</td><td>Exit Exam · ภาวะมีงานทำ · Scopus · เบิกจ่าย · อัตรากำลัง</td></tr>
-            <tr class="hl"><td>เครือข่ายวิชาชีพ</td><td><b>AUN Benchmark คณะไอที 12 สถาบัน</b> (benchmark.it.msu.ac.th)</td><td>EdPEx ระดับสำนักวิชา — กำลังป้อนข้อมูลปีแรก</td></tr>
-            <tr><td>ภายนอก/สากล</td><td>Scopus/SciVal · <b>OpenAlex</b> · สป.อว. · THE</td><td>ผลงานตีพิมพ์ CS เทียบ 7 สถาบัน (สไลด์ 13)</td></tr>
-          </table>
-          <div class="lbl" style="margin-top:12px">ตัวชี้วัดนำ (Leading) / ตัวชี้วัดตาม (Lagging) · ตาราง 4.1-1</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th style="width:22%">ชั้น</th><th>ตัวชี้วัด</th><th style="width:26%">รอบติดตาม · เวที</th></tr>
-            <tr><td><span class="tag b">Leading</span></td><td>สถานะปฏิบัติงาน Check-in · ความคืบหน้าโครงการ Q1–Q4 (26 โครงการ) · เรื่องผ่านสายตรงคณบดี · เบิกจ่ายสะสม (52.54%) · ผู้เข้าร่วมกิจกรรม (362 คน)</td><td>รายวัน/รายไตรมาส · Operational review</td></tr>
-            <tr><td><span class="tag">Lagging</span></td><td>ภาวะมีงานทำ 64.48 · Scopus/อาจารย์ 0.58 · ความพึงพอใจลูกค้า 3.43–4.52 · คงอยู่บุคลากร 100 · ทุนภายนอก 12.14 ลบ.</td><td>รายปี · Annual + Strategic review</td></tr>
-          </table>
-          <div class="note" style="margin-top:8px">ตัวชี้วัดนำเตือนก่อนสิ้นปี → ปรับแผนได้ทัน (2.2ข Trigger-based) · ตัวชี้วัดตามยืนยันประสิทธิผลในหมวด 7</div>
-        </div>
-        <div class="col" style="flex:0 0 300px;gap:8px">
-          <div class="card" style="padding:9px 12px">
-            <div class="lbl">KPI 33 ตัว ณ ก.ค. 2569 (BI)</div>
-            <div class="row" style="gap:6px;margin-top:6px;align-items:flex-end">
-              <div class="grow" style="text-align:center"><div class="big green" style="font-size:24px">8</div><div class="note" style="font-size:11px">บรรลุ</div></div>
-              <div class="grow" style="text-align:center"><div class="big red" style="font-size:24px">5</div><div class="note" style="font-size:11px">ต่ำกว่าเป้า</div></div>
-              <div class="grow" style="text-align:center"><div class="big" style="font-size:24px;color:var(--mute)">12</div><div class="note" style="font-size:11px">รอรอบรายงาน</div></div>
-              <div class="grow" style="text-align:center"><div class="big" style="font-size:24px">32.0<small>%</small></div><div class="note" style="font-size:11px">Progress (มฟล. 32.71)</div></div>
-            </div>
-          </div>
-          <div class="card k" style="padding:9px 12px"><div class="lbl">KM · ธรรมาภิบาลข้อมูล</div><div class="txt" style="font-size:12px;margin-top:3px">คลังหลักฐาน AUN-QA <b>~1,063 รายการ</b> · ความสำเร็จ KM <b>81.25%</b> (เป้า 70) · Workshop "Becoming an Associate Professor" · ประกาศธรรมาภิบาลข้อมูล + สำรอง/กู้คืนตาม BCP · Uptime <b>99.99%</b></div></div>
-        </div>
-      </div>
-    </div>
-    <div class="col" style="flex:0 0 250px;gap:8px">
-      <div class="card n" style="flex:1;padding:12px 14px">
-        <div class="lbl">Result Linkage</div>
-        <div class="txt" style="font-size:12.5px;color:#DCE4EE;margin-top:6px">ทุกตัวชี้วัดในหมวด 7 ระบุ <b style="color:#fff">กระบวนการต้นทาง</b> (หมวด 1–6) · ค่าเป้าหมาย · แนวโน้ม 3–5 ปี · คู่เทียบ · ตัวที่ลดลงมีสาเหตุและมาตรการกำกับ</div>
-        <div style="border-top:1px solid rgba(255,255,255,.18);margin:10px 0"></div>
-        <div class="lbl">ตัวอย่างการทบทวนที่นำไปสู่การปรับปรุง</div>
-        <ul class="b" style="margin-top:6px"><li style="color:#DCE4EE;font-size:12px">Mid-year ก.พ. 69: ภาวะมีงานทำต่ำกว่าเป้า → Why-Why → เพิ่มโครงการทักษะตลาดแรงงาน 7 โครงการ (548,200 บ.)</li><li style="color:#DCE4EE;font-size:12px">Annual: ตัวชี้วัดกิจกรรมชุมชน 1/5 = ช่องว่างการรายงาน ไม่ใช่ผลงาน → แก้ Data Dictionary</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 09 หมวด 5 -->
-<section class="s" data-cap="หมวด 5 บุคลากร">
-  <div class="head"><div class="eyebrow">หมวด 5 · บุคลากร · จุดเด่นที่กรรมการรับรองปี 2567 + ระบบที่เพิ่มในปี 2568</div><h1 class="t">วางแผนกำลังคนจากขีดความสามารถ × อัตรากำลัง คงอยู่ 100% ลาออกปีแรก 0% และซื่อตรงกับตัวชี้วัดที่ยังต่ำกว่าเป้า</h1><div class="sub">ตาราง 5-1 กระบวนการวางแผนกำลังคน 6 ขั้น · ตาราง 5-4 การสืบทอดตำแหน่ง · ผลลัพธ์ตาราง 7.3-1</div></div>
-  <div class="body row" style="gap:14px">
-    <div class="grow col" style="gap:10px">
-      <div class="step">
-        <div class="st"><div class="num">01</div><div class="nm">ประเมิน Capability (UKPSF/MFUPSF)</div><div class="who">ประธานหลักสูตร · ปีละครั้ง</div></div>
-        <div class="st"><div class="num">02</div><div class="nm">ประเมิน Capacity (FTES/อาจารย์)</div><div class="who">เลขานุการ · ส่วนการเจ้าหน้าที่</div></div>
-        <div class="st"><div class="num">03</div><div class="nm">คัดกรองคำขออัตราด้วยเกณฑ์ 3 ข้อ</div><div class="who">บอร์ดประจำสำนักวิชา</div></div>
-        <div class="st"><div class="num">04</div><div class="nm">สรรหา (LinkedIn) · ค่ายพนักงานใหม่ · พี่เลี้ยง</div><div class="who">คณะทำงานบุคลากร</div></div>
-        <div class="st"><div class="num">05</div><div class="nm">พัฒนา · e-Portfolio ทุก 6 เดือน</div><div class="who">งบ 10,000/6,000 บ./คน</div></div>
-        <div class="st"><div class="num">06</div><div class="nm">ประเมินความผูกพัน · ทบทวนแผน</div><div class="who">แบบสำรวจ · ปีละครั้ง</div></div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">ผลลัพธ์บุคลากร 2568 · ตาราง 7.3-1</div>
-          <table class="t" style="font-size:12px;margin-top:4px">
-            <tr><th>ตัวชี้วัด</th><th class="n">2566</th><th class="n">2567</th><th class="n">2568</th><th class="n">เป้า</th></tr>
-            <tr class="hl"><td>อัตราคงอยู่ (%)</td><td class="n">97.37</td><td class="n">100</td><td class="n">100</td><td class="n">90</td></tr>
-            <tr class="hl"><td>ลาออกในปีแรก (%)</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
-            <tr class="hl"><td>ตำแหน่งวิชาการ (%)</td><td class="n">37.50</td><td class="n">53.65</td><td class="n">57.89</td><td class="n">35</td></tr>
-            <tr class="hl"><td>อาจารย์ ป.เอก (%)</td><td class="n">79.49</td><td class="n">76.92</td><td class="n">78.94</td><td class="n">78</td></tr>
-            <tr><td>พึงพอใจสภาพแวดล้อม / เพื่อนร่วมงาน / สิ่งสนับสนุน</td><td class="n">—</td><td class="n">—</td><td class="n">4.07 / 4.52 / 4.00</td><td class="n">4</td></tr>
-            <tr><td><span class="red">พัฒนาสมรรถนะ สายวิชาการ / สนับสนุน (%)</span></td><td class="n">—</td><td class="n">—</td><td class="n red">70.27 / 27.27</td><td class="n">75</td></tr>
-            <tr><td><span class="red">PSF/UKPSF สะสม (คน)</span></td><td class="n">—</td><td class="n">—</td><td class="n red">2</td><td class="n">19</td></tr>
-          </table>
-        </div>
-        <div class="col" style="flex:0 0 250px;gap:8px">
-          <div class="card k" style="padding:9px 12px"><div class="lbl">การเรียนรู้ · ตัวที่ต่ำกว่าเป้า</div><div class="txt" style="font-size:12px;margin-top:3px">PSF 2/19 และสมรรถนะสายสนับสนุน 27.27% → ปรับขั้น 05: จัดกลุ่มยื่น PSF เป็นรุ่น + ผูกงบพัฒนา 6,000 บ./คน กับแผนรายบุคคลใน e-Portfolio · ติดตามในบอร์ดรายเดือน</div></div>
-          <div class="card k" style="padding:9px 12px"><div class="lbl">การสืบทอดตำแหน่ง (ตาราง 5-4)</div><div class="txt" style="font-size:12px;margin-top:3px">อายุงาน ≥20 ปี <b>15 คน (31%)</b> · เกษียณ 1 ราย ปี 2569 · ลาศึกษาต่อ 3 · ศิษย์เก่ารับทุน ป.โท 1 · ความเสี่ยงสูงสุดปี 2569 = ผู้สืบทอดอาจารย์ผู้เชี่ยวชาญ (ปค.5)</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="col" style="flex:0 0 270px;gap:8px">
-      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/baisrisukwan.jpg" alt="พิธีบายศรีสู่ขวัญ"><div class="cap">พิธีบายศรีสู่ขวัญ — วัฒนธรรมองค์กรตามค่านิยม T.E.A.M. (ก.พ. 2569)</div></div>
-      <div class="card n" style="padding:10px 12px"><div class="lbl">ประกาศสิทธิประโยชน์และสวัสดิการ (ลงนามคณบดี)</div><div class="txt" style="font-size:12px;color:#DCE4EE;margin-top:3px">ค่าตอบแทนวิจัย · ค่าตีพิมพ์ · ค่าเดินทางนำเสนอต่างประเทศ · คณะทำงาน 6 ชุดประเมิน 0/5/10/15 ปีละ 2 ครั้ง · ความผูกพัน <b style="color:#fff">4.69</b> · แผนพัฒนาบุคลากร <b style="color:#fff">4.62</b></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 10 หมวด 6 -->
-<section class="s" data-cap="หมวด 6 การปฏิบัติการ">
-  <div class="head"><div class="eyebrow">หมวด 6 · การปฏิบัติการ · Design Cycle · ประสิทธิผลกระบวนการ · ความปลอดภัยและความต่อเนื่อง</div><h1 class="t">ออกแบบหลักสูตรและบริการจากข้อกำหนดลูกค้า วัดประสิทธิภาพกระบวนการเป็นตัวเลข และปรับปรุงจากผลจริง</h1><div class="sub">Requirement Deployment 5 ขั้น + Design Cycle 6 ขั้น (Technology Foresight: AI · IoT · Cloud · Blockchain · Agile) · ตาราง 6.2 บริหารความเสี่ยง 5 ด้าน (S/O/F/C/H)</div></div>
-  <div class="body row" style="gap:14px">
-    <div class="grow col" style="gap:10px">
-      <div class="row" style="gap:10px">
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">Design Cycle ที่ใช้จริงปี 2568</div>
-          <ul class="b" style="margin-top:6px;font-size:12.5px">
-            <li>ปรับปรุงหลักสูตรครบวงรอบ 5 ปี <b>3 หลักสูตร (MTA · SE · CE)</b> — ผู้ทรงคุณวุฒิภายนอก 3–5 ท่าน/หลักสูตร (25–29 ก.ย. 68) → สภามหาวิทยาลัยอนุมัติ <b>21 ม.ค. 69</b> → เสนอ กมอ.</li>
-            <li>บริการใหม่ <b>Non-degree ADT2025</b> (285 ชม.) Co-Design กับ บ.ซัมมิท คอมพิวเตอร์ เทียบ SFIA · งบภายนอก <b>1,200,000 บ.</b> · รุ่น 1 สำเร็จ 22/40 · Job-Ready 65% → รุ่น 2 ปรับ <b>5 มาตรการ</b> (AI-First · Hackathon · Pre-test · 20 สัปดาห์ · Skill Transcript 2.0)</li>
-          </ul>
-        </div>
-        <div class="card grow" style="padding:10px 12px">
-          <div class="lbl">การเรียนรู้ระดับกระบวนการ · ซ้อมอพยพอาคาร S7</div>
-          <div class="row" style="gap:10px;margin-top:8px;align-items:center">
-            <div style="text-align:center"><div class="lbl">6 ก.พ. 2568</div><div class="big red" style="font-size:30px">3.00<small>นาที</small></div><div class="note" style="font-size:11px">ไม่ผ่าน 5 ข้อ</div></div>
-            <div class="mono" style="font-size:22px;color:var(--gold)">&rarr;</div>
-            <div style="text-align:center"><div class="lbl">12 ก.พ. 2569</div><div class="big green" style="font-size:30px">1.50<small>นาที</small></div><div class="note" style="font-size:11px">แก้ครบ 5 ข้อ (เกณฑ์ ≤5)</div></div>
-            <div class="txt grow" style="font-size:12px">แก้ที่ critical step: จุดรวมพล · ผู้นำทางรายชั้น · สัญญาณเตือน · ป้ายเส้นทาง · การนับคน — ประเมินโดย จป.วิชาชีพ</div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="gap:10px;flex:1">
-        <div class="card kpi grow k"><div class="lbl">Lean ลดรอบเวลาบริการ</div><div class="big">25.80<small>%</small></div><div class="d">28.57 → 33 → 25.80 · เป้า 25 บรรลุ</div></div>
-        <div class="card kpi grow k"><div class="lbl">ครุภัณฑ์ปีงบ 69 ส่งมอบตามข้อกำหนด</div><div class="big">6/6</div><div class="d">100% · ประกาศบริหารผู้ส่งมอบ + SLA · ผู้ส่งมอบ 4 กลุ่ม</div></div>
-        <div class="card kpi grow k"><div class="lbl">ทะเบียนความเสี่ยง ปค.4/ปค.5</div><div class="big">4 <small>→</small> 7</div><div class="d">2568 กิจกรรม 5/5 KPI 8/8 · 2569 สูง 1 รายการ · รายงานปีละ 2 ครั้ง</div></div>
-        <div class="card kpi grow k"><div class="lbl">BCP · RTO</div><div class="big">2<small>ชม. IT</small></div><div class="d">การเงิน/การสอน 24 ชม. · 7 เหตุการณ์ · BIA 5 ด้าน · คณบดีหัวหน้าทีม + Call Tree</div></div>
-      </div>
-      <div class="note">สหกิจศึกษาครบ 100% ทุกหลักสูตร · คุณภาพการสอน 97.83% (เป้า 85) · ผู้ส่งมอบ/คู่ความร่วมมือหลัก: บ.ซัมมิท คอมพิวเตอร์ · สมาคมการค้าเฮลท์เทคไทย (MoU 11 ก.ย. 69) · Huawei · depa</div>
-    </div>
-    <div class="col" style="flex:0 0 300px;gap:8px">
-      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/mou-healthtech.jpg" alt="พิธีลงนาม MoU กับสมาคมการค้าเฮลท์เทคไทย"><div class="cap">ลงนามบันทึกข้อตกลงกับสมาคมการค้าเฮลท์เทคไทย (11 ก.ย. 2569)</div></div>
-      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/iot1.jpg" alt="Workshop IoT Innovation"><div class="cap">Workshop IoT Innovation Creation — ห้องปฏิบัติการ S7 (ส.ค. 2569)</div></div>
-    </div>
-  </div>
-</section>
-<!-- 11 หมวด 7.1 -->
-<section class="s" data-cap="7.1 ผลลัพธ์การเรียนรู้">
-  <div class="head"><div class="eyebrow">หมวด 7.1 · ผลลัพธ์ด้านการเรียนรู้ของผู้เรียนและกระบวนการ · LeTCI · ต้นทาง: หมวด 6.1 / 3.1</div><h1 class="t">ผลการเรียนรู้: ผลงานและรางวัลนักศึกษาสูงกว่าเป้าชัดเจน ภาวะมีงานทำและสำเร็จตามแผนต่ำกว่าเป้าและมีมาตรการกำกับ</h1><div class="sub">ตาราง 7.1-1 / 7.1-2 · แท่งน้ำเงิน = ADT · แท่งเขียว = คู่เทียบ · เส้นประ = ค่าเป้าหมาย · ↑ สูงดี</div></div>
-  <div class="body row" style="gap:12px">
-    <div class="col" style="flex:0 0 560px;gap:8px">
-      <div class="row" style="gap:8px;flex:1">
-        <div class="card grow" style="padding:8px 10px 6px"><div class="lbl">ภาวะมีงานทำภายใน 1 ปี (%) · ฐาน มีงานทำ/ผู้ตอบ</div><svg viewBox="0 0 300 190" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="160" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="160" x2="238" y2="160" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">%</text><rect x="43.2" y="56.1" width="16.32" height="103.9" fill="#1C4670" rx="2"/><text x="51.3" y="52.1" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">78.72</text><text x="59.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2565</text><rect x="94.2" y="65.8" width="16.32" height="94.2" fill="#1C4670" rx="2"/><text x="102.3" y="61.8" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">71.36</text><text x="110.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2566</text><rect x="145.2" y="72.9" width="16.32" height="87.1" fill="#1C4670" rx="2"/><text x="153.3" y="68.9" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">65.98</text><text x="161.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2567</text><rect x="194.7" y="74.9" width="16.32" height="85.1" fill="#1C4670" rx="2"/><text x="202.8" y="70.9" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">64.48</text><rect x="214.0" y="64.2" width="16.32" height="95.8" fill="#A8D08D" rx="2"/><text x="222.2" y="60.2" font-size="10.5" fill="#3F6B2A" text-anchor="middle">72.6</text><text x="212.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="67.6" x2="238" y2="67.6" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="241" y="71.1" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 70</text><path d="M206,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="220" y="16" font-size="9.5" fill="#1C4670">สูงดี</text><rect x="244" y="148" width="10" height="10" fill="#A8D08D"/><text x="257" y="157" font-size="9" fill="#6B7690">มฟล. 72.6</text></svg><div class="note" style="font-size:11px">ลดต่อเนื่อง 4 ปี ต่ำกว่า มฟล. 72.6 → Why-Why: ตลาดดิจิทัลหด/ศึกษาต่อ · มาตรการ: โครงการทักษะตลาดแรงงาน 7 โครงการ 548,200 บ. + เลขที่ 21 (225,240 บ.)</div></div>
-        <div class="card grow" style="padding:8px 10px 6px"><div class="lbl">สำเร็จการศึกษาตามแผน ป.ตรี (%)</div><svg viewBox="0 0 300 190" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="160" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="160" x2="238" y2="160" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">%</text><rect x="43.2" y="66.5" width="16.32" height="93.5" fill="#1C4670" rx="2"/><text x="51.3" y="62.5" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">70.85</text><text x="59.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2565</text><rect x="94.2" y="46.1" width="16.32" height="113.9" fill="#1C4670" rx="2"/><text x="102.3" y="42.1" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">86.26</text><text x="110.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2566</text><rect x="145.2" y="85.1" width="16.32" height="74.9" fill="#1C4670" rx="2"/><text x="153.3" y="81.1" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">56.71</text><text x="161.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2567</text><rect x="196.2" y="102.0" width="16.32" height="58.0" fill="#1C4670" rx="2"/><text x="204.3" y="98.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">43.97</text><text x="212.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="67.6" x2="238" y2="67.6" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="241" y="71.1" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 70</text><path d="M206,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="220" y="16" font-size="9.5" fill="#1C4670">สูงดี</text></svg><div class="note" style="font-size:11px">บว. 0 → 35.71 → 7.14 → 8.33 (เป้า 25, ฐานเล็ก 1/12) · มาตรการ: ระบบติดตามรายภาค + คำร้องทบทวนผลการศึกษา · คงอยู่ ป.ตรี 85.28 / บว. 100</div></div>
-      </div>
-      <div class="row" style="gap:8px;flex:1">
-        <div class="card grow" style="padding:8px 10px 6px"><div class="lbl">ผลงานตีพิมพ์ นศ.บัณฑิตศึกษา ต่อ นศ.ทั้งหมด (%)</div><svg viewBox="0 0 300 190" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="160" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="160" x2="238" y2="160" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">%</text><rect x="43.2" y="96.0" width="16.32" height="64.0" fill="#1C4670" rx="2"/><text x="51.3" y="92.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">36.36</text><text x="59.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2565</text><rect x="94.2" y="100.0" width="16.32" height="60.0" fill="#1C4670" rx="2"/><text x="102.3" y="96.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">34.09</text><text x="110.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2566</text><rect x="145.2" y="70.2" width="16.32" height="89.8" fill="#1C4670" rx="2"/><text x="153.3" y="66.2" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">51.02</text><text x="161.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2567</text><rect x="196.2" y="57.9" width="16.32" height="102.1" fill="#1C4670" rx="2"/><text x="204.3" y="53.9" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">58</text><text x="212.5" y="174" font-size="10.5" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="116.0" x2="238" y2="116.0" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="241" y="119.5" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 25</text><path d="M206,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="220" y="16" font-size="9.5" fill="#1C4670">สูงดี</text></svg><div class="note" style="font-size:11px">ผลงาน ป.โท 18 + ป.เอก 11 = 29 ชิ้น (Scopus 26 · TCI 3) · สอบป้องกันผ่าน 100%</div></div>
-        <div class="card grow" style="padding:8px 10px">
-          <div class="lbl">Exit Exam 2568 (ป.ตรี) · %S · ตาราง 7.1-2</div>
-          <table class="t" style="font-size:11.5px;margin-top:4px">
-            <tr><th>วิชา</th><th class="n">ผู้สอบ</th><th class="n">%S</th><th class="n">เป้า · คู่เทียบ</th></tr>
-            <tr><td>ภาษาอังกฤษ (ENG)</td><td class="n">169</td><td class="n red">14.2</td><td class="n">60 · มฟล. 35.8</td></tr>
-            <tr><td>IT</td><td class="n">24</td><td class="n">62.5</td><td class="n">60</td></tr>
-            <tr><td>GE</td><td class="n">148</td><td class="n red">39.2</td><td class="n">60</td></tr>
-            <tr><td>MAJOR (รายสาขา 47.1–100)</td><td class="n">82</td><td class="n">61.0</td><td class="n">60</td></tr>
-          </table>
-          <div class="note" style="font-size:11px;margin-top:3px">ENG ต่ำกว่าเป้าและคู่เทียบ → ติวเข้ม + EMI ทุกหลักสูตร · คุณภาพการสอน 97.83% (เป้า 85)</div>
-        </div>
-      </div>
-    </div>
-    <div class="grow col" style="gap:8px">
-      <div class="row" style="gap:8px;flex:1">
-        <div class="ph grow"><img src="img/design-athon.jpg" alt="Physical UI Design-athon 2026"><div class="cap">Grand Prize + รองอันดับ 1 · PHYSICAL UI DESIGN-ATHON 2026 (NSM × ACM SIGCHI)</div></div>
-        <div class="ph grow"><img src="img/ted-venture.jpg" alt="TED Venture Catalyst 2026"><div class="cap">Venture Catalyst 2026 · Startup Thailand League ชนะเลิศภาคเหนือ</div></div>
-      </div>
-      <div class="row" style="gap:8px;flex:1">
-        <div class="ph grow"><img src="img/huawei-ict.jpg" alt="Huawei ICT Competition"><div class="cap">รองชนะเลิศอันดับ 2 เอเชีย-แปซิฟิก · Huawei ICT Competition 2025-26</div></div>
-        <div class="col grow" style="gap:8px">
-          <div class="card n kpi" style="padding:9px 11px;flex:1"><div class="lbl">รางวัลนักศึกษา 2568</div><div class="big" style="font-size:26px">&ge;8<small style="color:#B9C6D8">รายการ</small></div><div class="d">ระดับชาติ/นานาชาติ · DIT Award 2026 · Hitachi Young Leaders · Digilife S3</div></div>
-          <div class="card n kpi" style="padding:9px 11px;flex:1"><div class="lbl">แลกเปลี่ยน Outbound / ทักษะเท่าทันอนาคต</div><div class="big" style="font-size:26px">4.23<small style="color:#B9C6D8">% · 4.51</small></div><div class="d">เป้า 3.5 / 4.25 บรรลุ · Inbound 2.00 (เป้า 6.6)</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 12 หมวด 7.2-7.4 -->
-<section class="s" data-cap="7.2–7.4 ลูกค้า · บุคลากร · การนำองค์กร">
-  <div class="head"><div class="eyebrow">หมวด 7.2–7.4 · ลูกค้า · บุคลากร · การนำองค์กรและธรรมาภิบาล · ต้นทาง: หมวด 3 / 5 / 1</div><h1 class="t">บุคลากรคงอยู่ 100% ตำแหน่งวิชาการเหนือเป้าเกือบสองเท่า ผู้ใช้บัณฑิตพึงพอใจ 4.37 และการนำองค์กรมีตัวเลขครบทุกมิติเป็นครั้งแรก</h1><div class="sub">ตาราง 7.2-1 / 7.3-1 / 7.4-1 · ปี 2567 กรรมการระบุ "ไม่แสดงแนวโน้ม" ทุกตัวด้านการนำองค์กร — ปี 2568 มีค่าฐานและเป้าครบ</div></div>
-  <div class="body row" style="gap:12px">
-    <div class="col" style="flex:0 0 520px;gap:8px">
-      <div class="card" style="padding:8px 10px 6px;flex:1"><div class="lbl">บุคลากร: ตำแหน่งวิชาการ (%) เทียบเป้า 35 · ต้นทาง 5.1 / KM</div><svg viewBox="0 0 480 200" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="170" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="170" x2="418" y2="170" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">%</text><rect x="51.3" y="113.2" width="30.72" height="56.8" fill="#1C4670" rx="2"/><text x="66.6" y="109.2" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">30</text><text x="82.0" y="184" font-size="10.5" fill="#10192A" text-anchor="middle">2565</text><rect x="147.3" y="99.0" width="30.72" height="71.0" fill="#1C4670" rx="2"/><text x="162.6" y="95.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">37.5</text><text x="178.0" y="184" font-size="10.5" fill="#10192A" text-anchor="middle">2566</text><rect x="243.3" y="68.4" width="30.72" height="101.6" fill="#1C4670" rx="2"/><text x="258.6" y="64.4" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">53.65</text><text x="274.0" y="184" font-size="10.5" fill="#10192A" text-anchor="middle">2567</text><rect x="339.3" y="60.4" width="30.72" height="109.6" fill="#1C4670" rx="2"/><text x="354.6" y="56.4" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">57.89</text><text x="370.0" y="184" font-size="10.5" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="103.7" x2="418" y2="103.7" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="421" y="107.2" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 35</text><path d="M386,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="400" y="16" font-size="9.5" fill="#1C4670">สูงดี</text></svg><div class="note" style="font-size:11px">ป.เอก 76.31 → 79.49 → 76.92 → 78.94 (เป้า 78) · คงอยู่ 85.96 → 97.37 → 100 → 100 · ลาออกปีแรก 0% ทุกปี</div></div>
-      <div class="row" style="gap:8px">
-        <div class="card kpi grow k" style="padding:9px 11px"><div class="lbl">ผู้ใช้บัณฑิต</div><div class="big" style="font-size:24px">4.37</div><div class="d">3.82 → 4.32 → 4.37 → 4.37 · เป้า 4</div></div>
-        <div class="card kpi grow k" style="padding:9px 11px"><div class="lbl">ผู้รับบริการวิชาการ</div><div class="big" style="font-size:24px">4.52</div><div class="d">หน่วยงานใช้บริการต่อเนื่อง 2 → 7 แห่ง</div></div>
-        <div class="card kpi grow k" style="padding:9px 11px"><div class="lbl">โครงการปิดจบ</div><div class="big" style="font-size:24px">8/8</div><div class="d">พึงพอใจ 89.67% · ≥4.0 = 7/8</div></div>
-      </div>
-    </div>
-    <div class="grow col" style="gap:8px">
-      <div class="card" style="padding:9px 12px">
-        <div class="lbl">7.4 การนำองค์กร ธรรมาภิบาล จริยธรรม (เต็ม 5 · เป้า 4)</div>
-        <table class="t" style="font-size:12px;margin-top:4px">
-          <tr><th>ตัวชี้วัด</th><th class="n">2568</th><th>ตัวชี้วัด</th><th class="n">2568</th></tr>
-          <tr><td>ความเชื่อมั่นต่อผู้นำ</td><td class="n">4.38</td><td>ผิดกฎหมาย/จรรยาบรรณ (บุคลากร)</td><td class="n">0%</td></tr>
-          <tr><td>การสื่อสารภายใน</td><td class="n">4.38</td><td>ร้องเรียนจริยธรรม ผู้บริหาร/อาจารย์/สนับสนุน</td><td class="n">0 / 0 / 0</td></tr>
-          <tr><td>การรับรู้วิสัยทัศน์ / TEAM</td><td class="n">4.23 / 4.15</td><td>ทักท้วงตรวจสอบภายใน / สตง.</td><td class="n">1 / 0</td></tr>
-          <tr><td>ระบบกำกับดูแล / ผู้บริหาร</td><td class="n">4.54 / 4.54</td><td>Town Hall (คน)</td><td class="n">38 · 40 · 43</td></tr>
-          <tr><td>คำรับรองคณบดี 2567 บรรลุ</td><td class="n">14/24 · อันดับ 6/15</td><td>บริการวิชาการสู่สังคม (รายการ / ผู้รับ)</td><td class="n">5 / &gt;310 คน</td></tr>
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">ช่องทางสื่อสารสองทาง (ตาราง 1.1-2)</div>
+        <table class="t" style="font-size:17.5px;margin-top:6px">
+          <tr><th>ช่องทาง</th><th>มาตรฐาน</th><th class="n">ผล 2568</th></tr>
+          <tr><td>สายตรงคณบดี (ไม่ระบุตัวตนได้)</td><td>ตอบ 3–5 วันทำการ</td><td class="n">1 กรณี แก้ไขในกำหนด</td></tr>
+          <tr><td>ประชุม/สัมมนาสำนักวิชา (Town Hall)</td><td>ภาคละครั้ง</td><td class="n">38 · 40 · 43 คน</td></tr>
+          <tr><td>ข่าวเว็บ + Facebook</td><td>&le;24 ชม.</td><td class="n">~20 ข่าว · เข้าถึง 664,124</td></tr>
+          <tr><td>Alumni Meetup</td><td>ปีละครั้ง</td><td class="n">120+ คน</td></tr>
         </table>
       </div>
-      <div class="row" style="gap:8px;flex:1">
-        <div class="ph grow"><img src="img/school-outreach.jpg" alt="Digital Skill AI &amp; Coding Course"><div class="cap">Digital Skill AI &amp; Coding Course — นักเรียน 104 คน ร.ร.ดำรงราษฎร์สงเคราะห์ (มิ.ย. 2569)</div></div>
-        <div class="ph grow"><img src="img/medihack.jpg" alt="ADT MediHack 2026"><div class="cap">ADT MediHack 2026 — 75 นักศึกษา พัฒนานวัตกรรมสุขภาพ (ก.พ. 2569)</div></div>
-      </div>
     </div>
-  </div>
-</section>
-
-<!-- 13 หมวด 7.5 -->
-<section class="s" data-cap="7.5 การเงิน วิจัย ตลาด">
-  <div class="head"><div class="eyebrow">หมวด 7.5 · งบประมาณ การเงิน ตลาด และกลยุทธ์ · ต้นทาง: หมวด 2 / 6.2 / 4.1 · คู่เทียบภายนอกจริง</div><h1 class="t">เบิกจ่ายและทุนภายนอกเหนือเป้า ผลงานตีพิมพ์เทียบเคียงได้กับสถาบันชั้นนำระดับภูมิภาค แต่ Scopus ต่ออาจารย์ยังต่ำกว่าเป้า</h1><div class="sub">ตาราง 7.5-1 / 7.5-2 / 7.5-3 · OpenAlex primary field = Computer Science ดึง 20 ก.ค. 2569 · BI มฟล. ณ ก.ค. 2569</div></div>
-  <div class="body row" style="gap:12px">
-    <div class="card" style="flex:0 0 470px;padding:8px 10px 6px"><div class="lbl">ผลงานตีพิมพ์ Computer Science รวม 5 ปี (2564–2568) · OpenAlex · 7 สถาบัน</div><svg viewBox="0 0 440 360" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><text x="106" y="36.6" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">มหาสารคาม</text><rect x="112" y="15.4" width="263.0" height="34.4" fill="#A8D08D" rx="2"/><text x="380.0" y="36.6" font-size="11" font-weight="600" fill="#10192A">265</text><text x="106" y="85.7" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">ศิลปากร</text><rect x="112" y="64.5" width="181.6" height="34.4" fill="#A8D08D" rx="2"/><text x="298.6" y="85.7" font-size="11" font-weight="600" fill="#10192A">183</text><text x="106" y="134.9" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">วลัยลักษณ์</text><rect x="112" y="113.7" width="147.9" height="34.4" fill="#A8D08D" rx="2"/><text x="264.9" y="134.9" font-size="11" font-weight="600" fill="#10192A">149</text><text x="106" y="184.0" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">บูรพา</text><rect x="112" y="162.8" width="135.9" height="34.4" fill="#A8D08D" rx="2"/><text x="252.9" y="184.0" font-size="11" font-weight="600" fill="#10192A">137</text><text x="106" y="233.1" font-size="11" fill="#10192A" text-anchor="end" font-weight="600">มฟล. (ADT)</text><rect x="112" y="211.9" width="131.0" height="34.4" fill="#1C4670" rx="2"/><text x="248.0" y="233.1" font-size="11" font-weight="600" fill="#10192A">132</text><text x="106" y="282.3" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">นเรศวร</text><rect x="112" y="261.1" width="121.1" height="34.4" fill="#A8D08D" rx="2"/><text x="238.1" y="282.3" font-size="11" font-weight="600" fill="#10192A">122</text><text x="106" y="331.4" font-size="11" fill="#10192A" text-anchor="end" font-weight="400">อุบลราชธานี</text><rect x="112" y="310.2" width="50.6" height="34.4" fill="#A8D08D" rx="2"/><text x="167.6" y="331.4" font-size="11" font-weight="600" fill="#10192A">51</text><rect x="112" y="352" width="10" height="6" fill="#1C4670"/><text x="125" y="358" font-size="8.5" fill="#6B7690">ADT/มฟล.</text><rect x="182" y="352" width="10" height="6" fill="#A8D08D"/><text x="195" y="358" font-size="8.5" fill="#6B7690">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text></svg><div class="note" style="font-size:11px">ADT/มฟล. รายปี 23 · 36 · 28 · 21 · 24 = 132 ชิ้น — ใกล้เคียงบูรพา (137) นเรศวร (122) · Scopus สะสม ADT 692 = อันดับ 2 ของ มฟล.</div></div>
-    <div class="grow col" style="gap:8px">
-      <div class="row" style="gap:8px;flex:1">
-        <div class="card grow" style="padding:8px 10px 6px"><div class="lbl">ผลเบิกจ่ายงบประมาณโดยรวม (%) · ปีงบ 2566–2569</div><svg viewBox="0 0 320 230" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="200" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="200" x2="258" y2="200" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">%</text><rect x="44.1" y="51.3" width="17.92" height="148.7" fill="#1C4670" rx="2"/><text x="53.0" y="47.3" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">86.48</text><text x="62.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">ปีงบ 66</text><rect x="100.1" y="50.5" width="17.92" height="149.5" fill="#1C4670" rx="2"/><text x="109.0" y="46.5" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">86.94</text><text x="118.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">ปีงบ 67</text><rect x="156.1" y="62.6" width="17.92" height="137.4" fill="#1C4670" rx="2"/><text x="165.0" y="58.6" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">79.91</text><text x="174.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">ปีงบ 68</text><rect x="212.1" y="49.0" width="17.92" height="151.0" fill="#1C4670" rx="2"/><text x="221.0" y="45.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">87.8</text><text x="230.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">ปีงบ 69</text><line x1="34" y1="53.8" x2="258" y2="53.8" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="261" y="57.3" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 85</text><path d="M226,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="240" y="16" font-size="9.5" fill="#1C4670">สูงดี</text></svg><div class="note" style="font-size:11px">เบิกจ่ายสะสม ณ ก.ค. 69 <b>52.54%</b> vs มฟล. <b>34.10%</b> (กรอบ 45,998,595.68 บ.) · 2568 ต่ำจากงบ Q4 ล่าช้า → เร่งรัดรายไตรมาส</div></div>
-        <div class="card grow" style="padding:8px 10px 6px"><div class="lbl">Scopus ต่ออาจารย์ (ชิ้น/คน) · เป้า 1.5</div><svg viewBox="0 0 320 230" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="200" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="200" x2="258" y2="200" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="9" fill="#6B7690" text-anchor="end">ชิ้น/คน</text><rect x="44.1" y="178.5" width="17.92" height="21.5" fill="#1C4670" rx="2"/><text x="53.0" y="174.5" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">0.25</text><text x="62.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">2565</text><rect x="100.1" y="175.1" width="17.92" height="24.9" fill="#1C4670" rx="2"/><text x="109.0" y="171.1" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">0.29</text><text x="118.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">2566</text><rect x="156.1" y="71.0" width="17.92" height="129.0" fill="#1C4670" rx="2"/><text x="165.0" y="67.0" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">1.5</text><text x="174.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">2567</text><rect x="212.1" y="150.1" width="17.92" height="49.9" fill="#1C4670" rx="2"/><text x="221.0" y="146.1" font-size="10.5" font-weight="600" fill="#10192A" text-anchor="middle">0.58</text><text x="230.0" y="214" font-size="10.5" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="71.0" x2="258" y2="71.0" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="261" y="74.5" font-size="9.5" font-weight="600" fill="#E07B22">เป้า 1.5</text><path d="M226,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="240" y="16" font-size="9.5" fill="#1C4670">สูงดี</text></svg><div class="note" style="font-size:11px">2568 ต่ำกว่าเป้า → มาตรการ: ทุนภายใน 1,561,364 บ. · ค่าตอบแทนตีพิมพ์ · Workshop รศ. · Co-authorship 12 (เป้า 6 บรรลุ)</div></div>
-      </div>
+    <div class="col" style="flex:0 0 330px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/healthtech-gold.jpg" alt="คณบดีรับรางวัล HealthTech Ecosystem Supporter Gold"><div class="cap">คณบดีรับรางวัล HealthTech Ecosystem Supporter – Gold (มิ.ย. 2569)</div></div>
       <div class="row" style="gap:8px">
-        <div class="card kpi grow n" style="padding:9px 11px"><div class="lbl">ทุนวิจัยภายนอก (KPI BI)</div><div class="big" style="font-size:24px">12.14<small style="color:#B9C6D8">ลบ.</small></div><div class="d">เป้า 6.5 · IP ถ่ายทอด 15.79% (เป้า 9)</div></div>
-        <div class="card kpi grow n" style="padding:9px 11px"><div class="lbl">รายได้ค่าเล่าเรียน/ธรรมเนียม</div><div class="big" style="font-size:24px">133.14<small style="color:#B9C6D8">ลบ.</small></div><div class="d">129.79 → 133.14 · รับใหม่ 534/360 (148%)</div></div>
-        <div class="card kpi grow n" style="padding:9px 11px"><div class="lbl">ต้นทุนต่อผู้เรียน (บาท/ปี)</div><div class="big" style="font-size:24px">15.4k–39.5k</div><div class="d">MTA 15,446 · CE 27,932 · SE 33,344 · DTBI 39,525</div></div>
-        <div class="card kpi grow n" style="padding:9px 11px"><div class="lbl">วิจัยตอบโจทย์พื้นที่ / นวัตกรรม</div><div class="big" style="font-size:24px">7 <small style="color:#B9C6D8">/ 3</small></div><div class="d">เป้า 3 / 1 · ต้นแบบ 1 (เป้า 4) ต่ำกว่าเป้า</div></div>
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">เชื่อมั่นผู้นำ</div><div class="big" style="font-size:32.5px">4.38</div><div class="d">เป้า 4</div></div>
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">รับรู้วิสัยทัศน์</div><div class="big" style="font-size:32.5px">4.23</div><div class="d">TEAM 4.15</div></div>
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">สื่อสารภายใน</div><div class="big" style="font-size:32.5px">4.38</div><div class="d">เป้า 4</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 14 ARIC -->
+<!-- 06 หมวด 1 ข -->
+<section class="s" data-cap="หมวด 1 · ธรรมาภิบาล ความเสี่ยง จริยธรรม">
+  <div class="head"><div class="eyebrow">หมวด 1 · 1.2 การกำกับดูแลองค์กรและการสร้างประโยชน์ให้สังคม</div><h1 class="t">บอร์ดประจำสำนักวิชากำกับดูแลรายเดือน ทบทวนความเสี่ยงด้วยทะเบียนจริง และไม่มีกรณีผิดจริยธรรม</h1><div class="sub">ตาราง 1.2-1 ระบบกำกับดูแล 5 มิติ · ทะเบียนความเสี่ยง ปค.4/ปค.5 · ตาราง 1.2-2 Key Communities</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow row" style="gap:12px">
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">ธรรมาภิบาลและการประเมินผู้นำ</div>
+        <ul class="b" style="margin-top:8px">
+          <li><b>บอร์ดรายเดือน</b> — 2568 ประชุม 11 ครั้ง · 2569 (ถึง ก.ค.) 7 ครั้ง มีรายงานครบทุกครั้ง</li>
+          <li>กำกับเชิงเนื้อหาจริง: <b>ตีกลับร่าง MoU Huddersfield</b> (2 → 5 ปี, เงื่อนไขยกเลิก, ระดับผู้ลงนาม)</li>
+          <li>ประเมินผู้นำ 4 ระดับ · คำรับรองคณบดี 2567 บรรลุ <b>14/24 (อันดับ 6/15)</b></li>
+          <li>ระบบกำกับดูแล <b>4.54</b> · ผู้บริหาร <b>4.54</b> (เต็ม 5 เป้า 4)</li>
+        </ul>
+      </div>
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">ความเสี่ยง · จริยธรรม · สังคม</div>
+        <ul class="b" style="margin-top:8px">
+          <li>ทะเบียนความเสี่ยง 2568: <b>4 รายการ</b> กิจกรรม 5/5 ตัวชี้วัด 8/8 · 2569: <b>7 รายการ</b> (สูง 1 = ผู้สืบทอดอาจารย์ผู้เชี่ยวชาญ)</li>
+          <li>ผิดจรรยาบรรณ / ข้อร้องเรียนจริยธรรม <b>0</b> ทุกกลุ่ม ทุกปี · ทักท้วงตรวจสอบภายใน 1 (กำลังแก้)</li>
+          <li>Key Communities 4 กลุ่ม · ผู้รับบริการเยาวชน/ครู <b>&gt;230 คน</b> จาก 4 กิจกรรม</li>
+          <li>รางวัล <b>HealthTech Ecosystem Supporter (Gold)</b> 6 มิ.ย. 69</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col" style="flex:0 0 330px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/school-outreach.jpg" alt="Digital Skill AI &amp; Coding Course"><div class="cap">AI &amp; Coding Course — นักเรียน 104 คน (มิ.ย. 2569)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/depa.jpg" alt="ความร่วมมือกับ depa"><div class="cap">ความร่วมมือกับ depa (พ.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 หมวด 2 ก -->
+<section class="s" data-cap="หมวด 2 กลยุทธ์ · กระบวนการ">
+  <div class="head"><div class="eyebrow">หมวด 2 · กลยุทธ์ · 2.1 การจัดทำกลยุทธ์</div><h1 class="t">วางแผนกลยุทธ์เป็นวงจร 6 ขั้น และจัดลำดับโครงการด้วยเกณฑ์ที่ประกาศไว้ล่วงหน้า</h1><div class="sub">ตาราง 2-1 · ประกาศสำนักวิชา เรื่อง เกณฑ์การจัดลำดับความสำคัญของโครงการและการจัดสรรงบประมาณ (Strategic Priority Scoring)</div></div>
+  <div class="body col" style="gap:12px">
+    <div class="step">
+      <div class="st"><div class="num">01 · ต.ค.</div><div class="nm">วิเคราะห์ PEST/SWOT</div><div class="who">กก.แผนกลยุทธ์</div></div>
+      <div class="st"><div class="num">02</div><div class="nm">ทบทวน SO 8 ข้อ + ค่าเป้า</div><div class="who">คณบดี · ประธานหลักสูตร 8</div></div>
+      <div class="st"><div class="num">03</div><div class="nm">เสนอโครงการ · ให้คะแนน</div><div class="who">หัวหน้าคณะทำงาน 6 ชุด</div></div>
+      <div class="st"><div class="num">04</div><div class="nm">จัดสรรงบตามคะแนน</div><div class="who">บอร์ดอนุมัติ · ส่วนนโยบายและแผน</div></div>
+      <div class="st"><div class="num">05 · ไตรมาส</div><div class="nm">ติดตาม Q1–Q4 + Final Report</div><div class="who">เลขานุการ · ระบบ มฟล.</div></div>
+      <div class="st"><div class="num">06 · ปลายปี</div><div class="nm">ปรับแผน (Trigger-based)</div><div class="who">บอร์ด · 3 กรณีปี 2568</div></div>
+    </div>
+    <div class="row" style="gap:12px;flex:1">
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">Strategic Priority Scoring · น้ำหนัก 4 มิติ</div>
+        <div class="col" style="gap:8px;margin-top:10px">
+          <div><div class="row" style="justify-content:space-between"><span class="txt">Strategic Fit (ตอบ SO/SC)</span><span class="mono">40</span></div><div class="bar"><i style="width:40%"></i></div></div>
+          <div><div class="row" style="justify-content:space-between"><span class="txt">Impact / Value</span><span class="mono">30</span></div><div class="bar"><i style="width:30%"></i></div></div>
+          <div><div class="row" style="justify-content:space-between"><span class="txt">Feasibility</span><span class="mono">15</span></div><div class="bar"><i class="g" style="width:15%"></i></div></div>
+          <div><div class="row" style="justify-content:space-between"><span class="txt">Efficiency</span><span class="mono">15</span></div><div class="bar"><i class="g" style="width:15%"></i></div></div>
+        </div>
+        <div class="note" style="margin-top:10px">เกณฑ์ตัดสิน: &ge;4.0 สูง · 3.0–3.99 กลาง · &lt;3.0 ทบทวน — ใช้จัดสรรงบปีงบ 2569 ทุกโครงการ</div>
+      </div>
+      <div class="card grow y" style="padding:12px 14px">
+        <div class="lbl">โอกาสเชิงกลยุทธ์ · Intelligent Risk · การคาดการณ์</div>
+        <ul class="b" style="margin-top:8px">
+          <li><b>ARIC</b> ศูนย์ AI &amp; Robotics 2570–2574 — หารือผู้ทรงคุณวุฒิ 4 ท่าน ประเมินผลได้-ผลเสีย 5 ข้อค้นพบ + แผนความเสี่ยง (สไลด์ 22)</li>
+          <li>ค่าเป้าคำรับรอง 2568/2569 + <b>ค่าคาดการณ์ 2570</b> ครบ 6 ตัวชี้วัดหลัก พร้อมคู่เทียบ (ตาราง 2-4)</li>
+          <li>ปรับแผนเมื่อต่ำกว่าเกณฑ์กระตุ้น: MoU active 40/80 · ต้นแบบ 1/4 · กิจกรรมชุมชน (ช่องว่างการรายงาน)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 หมวด 2 ข -->
+<section class="s" data-cap="หมวด 2 · แผนปฏิบัติการและงบประมาณ">
+  <div class="head"><div class="eyebrow">หมวด 2 · 2.2 การนำกลยุทธ์ไปปฏิบัติ · Integration: SO → โครงการ → งบ → ผล</div><h1 class="t">แผนปฏิบัติการ 28 รายการ จัดสรรงบตาม SO และวัดผลจริงรายโครงการ: บรรลุเป้า 8/8 พึงพอใจ 89.67%</h1><div class="sub">แผน 28 รายการ 2,360,582 บาท · ระบบกลาง มฟล. 24 โครงการ · ระบบสำนักวิชา 26 โครงการ (เสร็จ 13) · Final Report 8 โครงการ</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="card grow" style="padding:12px 14px">
+      <div class="lbl">การจัดสรรงบปีงบ 2569 · 1,440,000 บาท (ผูก SO / ARIC)</div>
+      <table class="t" style="font-size:18.2px;margin-top:6px">
+        <tr><th>ด้าน</th><th class="n">บาท</th><th class="n">%</th></tr>
+        <tr><td>แผนระดับสำนักวิชา</td><td class="n">404,000</td><td class="n">28.1</td></tr>
+        <tr class="hl"><td>วิจัย (สูงสุด · SO1/SO2)</td><td class="n">252,000</td><td class="n">17.5</td></tr>
+        <tr><td>บริการวิชาการ (SO6)</td><td class="n">175,000</td><td class="n">12.2</td></tr>
+        <tr><td>กิจกรรมนักศึกษา (SO3)</td><td class="n">130,000</td><td class="n">9.0</td></tr>
+        <tr><td>วิเทศสัมพันธ์ (SO4/SO7)</td><td class="n">119,000</td><td class="n">8.3</td></tr>
+        <tr><td>ประชาสัมพันธ์ (SC7)</td><td class="n">80,000</td><td class="n">5.6</td></tr>
+        <tr><td>หลักสูตร 6 หลักสูตร</td><td class="n">280,000</td><td class="n">19.4</td></tr>
+      </table>
+    </div>
+    <div class="col" style="flex:0 0 420px;gap:10px">
+      <div class="card n" style="padding:14px 16px;flex:1">
+        <div class="lbl">ผลจริงจาก Final Report 8 โครงการที่ตรวจรับแล้ว</div>
+        <div class="row" style="gap:10px;margin-top:12px">
+          <div class="grow"><div class="lbl">บรรลุเป้า</div><div class="big" style="font-size:37.5px">8/8</div></div>
+          <div class="grow"><div class="lbl">พึงพอใจ</div><div class="big" style="font-size:37.5px">89.67<small style="color:#B9C6D8">%</small></div></div>
+          <div class="grow"><div class="lbl">เบิกจ่าย</div><div class="big" style="font-size:37.5px">92.5<small style="color:#B9C6D8">%</small></div></div>
+        </div>
+        <div class="note" style="margin-top:12px">KPI 100% ใน 7 โครงการ (อีก 1 = 98.25%) · ผู้เข้าร่วมจริง 362 คน + 6 ทีม · เบิกจ่ายจริง 437,507.82 บ.</div>
+      </div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/raise2-openday.jpg" alt="RAISE-2 Open Day"><div class="cap">RAISE-2 Open Day &amp; Hackathon (ส.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 หมวด 3 ก -->
+<section class="s" data-cap="หมวด 3 ลูกค้า · กระบวนการรับฟัง">
+  <div class="head"><div class="eyebrow">หมวด 3 · ลูกค้า · 3.1 เสียงของลูกค้า</div><h1 class="t">รับฟังลูกค้า 7 กลุ่มผ่านช่องทางที่มีมาตรฐานบริการ และปิดวงจรด้วยการตอบสนองตาม SLA</h1><div class="sub">ตาราง 3.1 กระบวนการ VOC 5 ขั้น · ตาราง 3.2–3.3 ช่องทางและมาตรฐานบริการ</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
+      <div class="step">
+        <div class="st"><div class="num">01</div><div class="nm">จำแนกกลุ่มลูกค้า 3 มิติ</div><div class="who">บอร์ด · ปีละครั้ง</div></div>
+        <div class="st"><div class="num">02</div><div class="nm">รับฟังตามช่องทาง/มาตรฐาน</div><div class="who">คณะทำงาน · ต่อเนื่อง</div></div>
+        <div class="st"><div class="num">03</div><div class="nm">วิเคราะห์แบบสำรวจ + ข้อร้องเรียน</div><div class="who">เลขานุการ · ภาคละครั้ง</div></div>
+        <div class="st"><div class="num">04</div><div class="nm">ตอบสนอง/แก้ไขตาม SLA</div><div class="who">คณบดี · 3–5 วันทำการ</div></div>
+        <div class="st"><div class="num">05</div><div class="nm">ทบทวนช่องทางและเกณฑ์</div><div class="who">บอร์ด · ปลายปี</div></div>
+      </div>
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">ช่องทางเข้าถึงและมาตรฐานบริการ (ตาราง 3.3)</div>
+        <table class="t" style="font-size:17.5px;margin-top:6px">
+          <tr><th>ช่องทาง</th><th>กลุ่มลูกค้า</th><th>มาตรฐาน</th></tr>
+          <tr><td>เว็บ adt.mfu.ac.th (revamp เม.ย. 69)</td><td>ผู้เรียน · ผู้สมัคร · คู่ความร่วมมือ</td><td>ข้อมูลหลักสูตร &le;3 คลิก</td></tr>
+          <tr><td>สายตรงคณบดี</td><td>ทุกกลุ่ม (ไม่ระบุตัวตนได้)</td><td>ตอบ 3–5 วันทำการ</td></tr>
+          <tr><td>Facebook / YouTube</td><td>ผู้เรียน · ศิษย์เก่า · สาธารณะ</td><td>ตอบ &le;24 ชม.</td></tr>
+          <tr><td>อาจารย์ที่ปรึกษา</td><td>นักศึกษาทุกหลักสูตร</td><td>พบ &ge;1 ครั้ง/ภาค</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="col" style="flex:0 0 330px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/alumni-meetup.jpg" alt="IT &amp; ADT Alumni Meetup 2026"><div class="cap">Alumni Meetup 2026 — ศิษย์เก่า 120+ คน</div></div>
+      <div class="row" style="gap:8px">
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">เข้าถึงเพจ FB</div><div class="big" style="font-size:30px">664,124</div><div class="d">ส.ค. 68–ก.ค. 69</div></div>
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">ข้อร้องเรียน 2568</div><div class="big" style="font-size:30px">1</div><div class="d">แก้ไขในกำหนด ไม่เกิดซ้ำ</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 หมวด 3 ข -->
+<section class="s" data-cap="หมวด 3 · ความพึงพอใจและความผูกพัน">
+  <div class="head"><div class="eyebrow">หมวด 3 · 3.2 ความผูกพันของลูกค้า · ผลลัพธ์ตาราง 7.2-1 (เต็ม 5 เป้า 4)</div><h1 class="t">รายงานตรงไปตรงมา: 3 ตัวเหนือเป้า 6 ตัวต่ำกว่าเป้า และทุกตัวที่ต่ำกว่าเป้ามีการปรับ critical step</h1><div class="sub">ตัวกระตุ้นการเรียนรู้แบบ Fact-based: ผลไม่บรรลุเป้า → ทบทวนขั้นตอน 02–04 ของกระบวนการ VOC</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="card grow" style="padding:12px 14px">
+      <table class="t" style="font-size:18.2px">
+        <tr><th>ตัวชี้วัด</th><th class="n">2567</th><th class="n">2568</th><th>สถานะ</th></tr>
+        <tr><td>ผู้ใช้บัณฑิต (ตอบกลับ 21.53% สูงกว่าค่าเฉลี่ย มฟล.)</td><td class="n">4.37</td><td class="n">4.37</td><td><span class="tag g">เหนือเป้า</span></td></tr>
+        <tr><td>ผู้รับบริการวิชาการ</td><td class="n">—</td><td class="n">4.52</td><td><span class="tag g">เหนือเป้า</span></td></tr>
+        <tr><td>การจัดการข้อร้องเรียน</td><td class="n">—</td><td class="n">4.25</td><td><span class="tag g">เหนือเป้า</span></td></tr>
+        <tr><td>ห้องปฏิบัติการ</td><td class="n">3.47</td><td class="n">3.85</td><td><span class="tag b">ฟื้นตัว</span></td></tr>
+        <tr><td>อาจารย์ที่ปรึกษา (ให้คำปรึกษา / ให้ข้อมูล)</td><td class="n">3.92</td><td class="n">3.72 / 3.56</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
+        <tr><td>หลักสูตรและการเรียนการสอน · งานบริการสำนักวิชา</td><td class="n">—</td><td class="n">3.61 · 3.72</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
+        <tr><td>การสื่อสารองค์กร · วิธีรับฟังเสียงลูกค้า</td><td class="n">3.64</td><td class="n">3.56 · 3.43</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
+      </table>
+    </div>
+    <div class="col" style="flex:0 0 380px;gap:10px">
+      <div class="card k" style="padding:12px 14px;flex:1"><div class="lbl">การเรียนรู้จากตัวที่ต่ำกว่าเป้า</div><ul class="b" style="margin-top:8px"><li>เว็บใหม่ ข้อมูล &le;3 คลิก + โครงการสื่อ PR เลขที่ 20 (156,600 บ.)</li><li>มาตรฐานอาจารย์ที่ปรึกษา &ge;1 ครั้ง/ภาค + ระบบคำร้องทบทวนผลการศึกษา</li><li>แบบสำรวจผู้เรียน/ลูกค้าฉบับใหม่ ปีการศึกษา 2568 ครบทุกกลุ่ม</li></ul></div>
+      <div class="row" style="gap:8px">
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">นศ.กลุ่มเปราะบาง</div><div class="big" style="font-size:30px">5<small style="color:#B9C6D8">คน</small></div><div class="d">ดูแล/ทุน/กิจกรรมครบทุกคน</div></div>
+        <div class="card n kpi grow" style="padding:10px 12px"><div class="lbl">คงอยู่ ป.ตรี / บว.</div><div class="big" style="font-size:30px">85 / 100<small style="color:#B9C6D8">%</small></div><div class="d">เป้า 75</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 หมวด 4 ก -->
+<section class="s" data-cap="หมวด 4 · ระบบตัวชี้วัดและคู่เทียบ">
+  <div class="head"><div class="eyebrow">หมวด 4 · การวัด วิเคราะห์ และการจัดการความรู้ · จาก Band 1 ปี 2567 (ให้ความสำคัญสูงสุด)</div><h1 class="t">ตัวชี้วัด 33 ตัวถูกเลือกด้วยเกณฑ์ ติดตามผ่านแดชบอร์ด และเทียบกับแหล่งภายนอก 3 ระดับที่ระบุชื่อได้</h1><div class="sub">ตาราง 4.1-1 กระบวนการบริหารตัวชี้วัด 6 ขั้น (5W1H) · ตาราง 4.1-2 แหล่งข้อมูลเชิงเปรียบเทียบ</div></div>
+  <div class="body col" style="gap:12px">
+    <div class="step">
+      <div class="st"><div class="num">01</div><div class="nm">เลือก KPI ด้วยเกณฑ์ 4 ข้อ</div><div class="who">เชื่อม SO · SMART · มีคู่เทียบ · ครอบคลุมพันธกิจ</div></div>
+      <div class="st"><div class="num">02</div><div class="nm">กำหนด Data Owner + นิยาม</div><div class="who">เลขานุการ · ศูนย์ ICT</div></div>
+      <div class="st"><div class="num">03</div><div class="nm">เก็บ/ทวนสอบ 5 มิติ</div><div class="who">Data Owner · รายไตรมาส</div></div>
+      <div class="st"><div class="num">04</div><div class="nm">แดชบอร์ด BI + Check-in</div><div class="who">Leading รายวัน · Lagging ไตรมาส</div></div>
+      <div class="st"><div class="num">05</div><div class="nm">ทบทวน 4 เวที (Why-Why)</div><div class="who">Operational → Strategic</div></div>
+      <div class="st"><div class="num">06</div><div class="nm">จัดลำดับปรับปรุง/นวัตกรรม</div><div class="who">ผลกระทบ × เร่งด่วน × เป็นไปได้</div></div>
+    </div>
+    <div class="row" style="gap:12px;flex:1">
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">แหล่งข้อมูลเชิงเปรียบเทียบ 3 ระดับ (ตาราง 4.1-2)</div>
+        <table class="t" style="font-size:18.2px;margin-top:6px">
+          <tr><th>ระดับ</th><th>แหล่ง</th><th>ใช้เทียบ</th></tr>
+          <tr><td>ภายใน มฟล.</td><td>ระบบ BI มฟล. — 15 สำนักวิชา</td><td>Exit Exam · ภาวะมีงานทำ · Scopus · เบิกจ่าย · อัตรากำลัง</td></tr>
+          <tr class="hl"><td>เครือข่ายวิชาชีพ</td><td><b>AUN Benchmark คณะไอที 12 สถาบัน</b></td><td>EdPEx ระดับสำนักวิชา — ป้อนข้อมูลปีแรก</td></tr>
+          <tr><td>ภายนอก/สากล</td><td>Scopus/SciVal · <b>OpenAlex</b> · สป.อว. · THE</td><td>ผลงานตีพิมพ์ CS เทียบ 7 สถาบัน</td></tr>
+        </table>
+      </div>
+      <div class="card" style="flex:0 0 380px;padding:12px 14px">
+        <div class="lbl">ตัวชี้วัดนำ / ตัวชี้วัดตาม</div>
+        <div class="row" style="gap:10px;margin-top:8px">
+          <div class="grow"><span class="tag b">Leading</span><div class="txt" style="margin-top:6px">Check-in · ความคืบหน้าโครงการ Q1–Q4 · สายตรงคณบดี · เบิกจ่ายสะสม</div></div>
+          <div class="grow"><span class="tag">Lagging</span><div class="txt" style="margin-top:6px">มีงานทำ · Scopus/อาจารย์ · พึงพอใจลูกค้า · คงอยู่บุคลากร</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 หมวด 4 ข -->
+<section class="s" data-cap="หมวด 4 · ผล KPI · KM · Result Linkage">
+  <div class="head"><div class="eyebrow">หมวด 4 · 4.1ข การวิเคราะห์ทบทวน · 4.2 การจัดการความรู้และสารสนเทศ</div><h1 class="t">ทบทวนผลใน 4 เวที นำไปสู่การปรับปรุงจริง และจัดการความรู้ด้วยคลังหลักฐานกว่า 1,000 รายการ</h1><div class="sub">ตาราง 4.2-3 KM 5 ขั้น · ประกาศธรรมาภิบาลข้อมูล · ทุกตัวชี้วัดหมวด 7 ระบุกระบวนการต้นทาง (Result Linkage)</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
+      <div class="card" style="padding:12px 14px">
+        <div class="lbl">KPI 33 ตัว ณ ก.ค. 2569 (BI มฟล.)</div>
+        <div class="row" style="gap:10px;margin-top:8px;align-items:flex-end">
+          <div class="grow" style="text-align:center"><div class="big green" style="font-size:42.5px">8</div><div class="note">บรรลุ</div></div>
+          <div class="grow" style="text-align:center"><div class="big red" style="font-size:42.5px">5</div><div class="note">ต่ำกว่าเป้า</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:42.5px;color:var(--mute)">12</div><div class="note">รอรอบรายงาน</div></div>
+          <div class="grow" style="text-align:center"><div class="big" style="font-size:42.5px">32.0<small>%</small></div><div class="note">Progress (มฟล. 32.71)</div></div>
+        </div>
+      </div>
+      <div class="card k grow" style="padding:12px 14px"><div class="lbl">KM · ธรรมาภิบาลข้อมูล</div><ul class="b" style="margin-top:8px"><li>คลังหลักฐานตาม AUN-QA <b>~1,063 รายการ</b> · ความสำเร็จ KM <b>81.25%</b> (เป้า 70)</li><li>Workshop "Becoming an Associate Professor" (รศ. ภายใน 4 ท่าน)</li><li>ประกาศธรรมาภิบาลข้อมูล + สำรอง/กู้คืนตาม BCP · Uptime <b>99.99%</b></li></ul></div>
+    </div>
+    <div class="card n" style="flex:0 0 440px;padding:14px 16px">
+      <div class="lbl">ทบทวน → ปรับปรุงจริง (Fact-based)</div>
+      <ul class="b" style="margin-top:8px"><li style="color:#DCE4EE">Mid-year ก.พ. 69: ภาวะมีงานทำต่ำกว่าเป้า → Why-Why → เพิ่มโครงการทักษะตลาดแรงงาน 7 โครงการ (548,200 บ.)</li><li style="color:#DCE4EE">Annual: ตัวชี้วัดกิจกรรมชุมชน 1/5 = ช่องว่างการรายงาน ไม่ใช่ผลงาน → แก้ Data Dictionary</li><li style="color:#DCE4EE">Strategic: ผลตรวจปี 2567 Band 1 → จัดลำดับหมวด 4.1 สูงสุด → ระบบคู่เทียบ 3 ระดับ</li></ul>
+      <div style="border-top:1px solid rgba(255,255,255,.18);margin:12px 0"></div>
+      <div class="lbl">Result Linkage</div>
+      <div class="txt" style="color:#DCE4EE;margin-top:6px">ทุกตัวชี้วัดในหมวด 7 ระบุ <b style="color:#fff">กระบวนการต้นทาง</b> · ค่าเป้าหมาย · แนวโน้ม 3–5 ปี · คู่เทียบ · ตัวที่ลดลงมีสาเหตุและมาตรการ</div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 หมวด 5 ก -->
+<section class="s" data-cap="หมวด 5 บุคลากร · กำลังคนและผลลัพธ์">
+  <div class="head"><div class="eyebrow">หมวด 5 · บุคลากร · 5.1 สภาพแวดล้อมการทำงาน · จุดเด่นที่กรรมการรับรองปี 2567</div><h1 class="t">วางแผนกำลังคนจากขีดความสามารถ × อัตรากำลัง คงอยู่ 100% ลาออกปีแรก 0% ตำแหน่งวิชาการเหนือเป้า</h1><div class="sub">ตาราง 5-1 กระบวนการวางแผนกำลังคน 6 ขั้น · ผลลัพธ์ตาราง 7.3-1</div></div>
+  <div class="body col" style="gap:12px">
+    <div class="step">
+      <div class="st"><div class="num">01</div><div class="nm">Capability (UKPSF/MFUPSF)</div><div class="who">ประธานหลักสูตร · ปีละครั้ง</div></div>
+      <div class="st"><div class="num">02</div><div class="nm">Capacity (FTES/อาจารย์)</div><div class="who">เลขานุการ · ส่วนการเจ้าหน้าที่</div></div>
+      <div class="st"><div class="num">03</div><div class="nm">คัดกรองคำขออัตรา 3 เกณฑ์</div><div class="who">บอร์ดประจำสำนักวิชา</div></div>
+      <div class="st"><div class="num">04</div><div class="nm">สรรหา · ค่ายพนักงานใหม่ · พี่เลี้ยง</div><div class="who">คณะทำงานบุคลากร</div></div>
+      <div class="st"><div class="num">05</div><div class="nm">พัฒนา · e-Portfolio</div><div class="who">ทุก 6 เดือน · 10,000/6,000 บ./คน</div></div>
+      <div class="st"><div class="num">06</div><div class="nm">ประเมินความผูกพัน · ทบทวน</div><div class="who">แบบสำรวจ · ปีละครั้ง</div></div>
+    </div>
+    <div class="card grow" style="padding:12px 14px">
+      <table class="t" style="font-size:18.2px">
+        <tr><th>ตัวชี้วัด (ตาราง 7.3-1)</th><th class="n">2566</th><th class="n">2567</th><th class="n">2568</th><th class="n">เป้า</th><th>สถานะ</th></tr>
+        <tr class="hl"><td>อัตราคงอยู่ (%)</td><td class="n">97.37</td><td class="n">100</td><td class="n">100</td><td class="n">90</td><td><span class="tag g">เหนือเป้า</span></td></tr>
+        <tr class="hl"><td>ลาออกในปีแรก (%)</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td><span class="tag g">บรรลุ</span></td></tr>
+        <tr class="hl"><td>ตำแหน่งวิชาการ (%)</td><td class="n">37.50</td><td class="n">53.65</td><td class="n">57.89</td><td class="n">35</td><td><span class="tag g">เหนือเป้า</span></td></tr>
+        <tr class="hl"><td>อาจารย์ ป.เอก (%)</td><td class="n">79.49</td><td class="n">76.92</td><td class="n">78.94</td><td class="n">78</td><td><span class="tag g">บรรลุ</span></td></tr>
+        <tr><td>พึงพอใจสภาพแวดล้อม / เพื่อนร่วมงาน / สิ่งสนับสนุน</td><td class="n">—</td><td class="n">—</td><td class="n">4.07 / 4.52 / 4.00</td><td class="n">4</td><td><span class="tag g">บรรลุ</span></td></tr>
+        <tr><td>พัฒนาสมรรถนะ สายวิชาการ / สนับสนุน (%)</td><td class="n">—</td><td class="n">—</td><td class="n red">70.27 / 27.27</td><td class="n">75</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
+        <tr><td>PSF/UKPSF สะสม (คน)</td><td class="n">—</td><td class="n">—</td><td class="n red">2</td><td class="n">19</td><td><span class="tag r">ต่ำกว่าเป้า</span></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 14 หมวด 5 ข -->
+<section class="s" data-cap="หมวด 5 · ความผูกพัน สิทธิประโยชน์ การสืบทอด">
+  <div class="head"><div class="eyebrow">หมวด 5 · 5.2 ความผูกพันของบุคลากร · การเรียนรู้จากตัวที่ต่ำกว่าเป้า</div><h1 class="t">ค่านิยม T.E.A.M. ใช้จริงในวัฒนธรรมองค์กร สิทธิประโยชน์เป็นประกาศที่ลงนาม และการสืบทอดตำแหน่งถูกจัดเป็นความเสี่ยงอันดับหนึ่ง</h1><div class="sub">ตาราง 5-4 การสืบทอดตำแหน่ง · ประกาศสำนักวิชา เรื่อง สิทธิประโยชน์และสวัสดิการบุคลากร · ทะเบียนความเสี่ยง 2569</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
+      <div class="row" style="gap:12px;flex:1">
+        <div class="card k grow" style="padding:12px 14px"><div class="lbl">การเรียนรู้ · ตัวที่ต่ำกว่าเป้า</div><ul class="b" style="margin-top:8px"><li>PSF 2/19 → จัดกลุ่มยื่นเป็นรุ่น + ผูกงบพัฒนา 6,000 บ./คน กับแผนรายบุคคลใน e-Portfolio</li><li>สมรรถนะสายสนับสนุน 27.27% → ติดตามในบอร์ดรายเดือน</li></ul></div>
+        <div class="card k grow" style="padding:12px 14px"><div class="lbl">การสืบทอดตำแหน่ง (ตาราง 5-4)</div><ul class="b" style="margin-top:8px"><li>อายุงาน &ge;20 ปี <b>15 คน (31%)</b> · เกษียณ 1 ราย ปี 2569</li><li>ลาศึกษาต่อ 3 · ศิษย์เก่ารับทุน ป.โท 1</li><li>ความเสี่ยงสูงสุดปี 2569 = ผู้สืบทอดอาจารย์ผู้เชี่ยวชาญ (ปค.5)</li></ul></div>
+      </div>
+      <div class="card n" style="padding:12px 14px"><div class="lbl">ประกาศสิทธิประโยชน์และสวัสดิการ (ลงนามคณบดี) · คณะทำงาน 6 ชุด</div><div class="txt" style="color:#DCE4EE;margin-top:6px">ค่าตอบแทนวิจัย · ค่าตีพิมพ์ · ค่าเดินทางนำเสนอต่างประเทศ · ประเมินสมาชิกคณะทำงาน 0/5/10/15 ปีละ 2 ครั้ง · การสร้างความผูกพัน <b style="color:#fff">4.69</b> · แผนพัฒนาบุคลากร <b style="color:#fff">4.62</b> (เต็ม 5)</div></div>
+    </div>
+    <div class="col" style="flex:0 0 380px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/baisrisukwan.jpg" alt="พิธีบายศรีสู่ขวัญ"><div class="cap">พิธีบายศรีสู่ขวัญ — วัฒนธรรมองค์กร T.E.A.M. (ก.พ. 2569)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/open-ideas-training.jpg" alt="Open Ideas to the Digital World"><div class="cap">อบรมบุคลากรและชุมชน "Open Ideas to the Digital World" (ม.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 หมวด 6 ก -->
+<section class="s" data-cap="หมวด 6 การปฏิบัติการ · Design Cycle">
+  <div class="head"><div class="eyebrow">หมวด 6 · การปฏิบัติการ · 6.1 กระบวนการทำงาน</div><h1 class="t">ออกแบบหลักสูตรและบริการจากข้อกำหนดลูกค้า และปรับปรุงจากผลจริงของรุ่นก่อน</h1><div class="sub">Requirement Deployment 5 ขั้น + Design Cycle 6 ขั้น (Technology Foresight: AI · IoT · Cloud · Blockchain · Agile)</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
+      <div class="card grow" style="padding:12px 14px">
+        <div class="lbl">Design Cycle ที่ใช้จริงปี 2568</div>
+        <ul class="b" style="margin-top:8px">
+          <li>ปรับปรุงหลักสูตรครบวงรอบ 5 ปี <b>3 หลักสูตร (MTA · SE · CE)</b> — ผู้ทรงคุณวุฒิภายนอก 3–5 ท่าน/หลักสูตร (ก.ย. 68) → สภามหาวิทยาลัยอนุมัติ <b>21 ม.ค. 69</b> → เสนอ กมอ.</li>
+          <li>บริการใหม่ <b>Non-degree ADT2025</b> (285 ชม.) Co-Design กับ บ.ซัมมิท คอมพิวเตอร์ เทียบ SFIA · งบภายนอก <b>1,200,000 บ.</b></li>
+          <li>รุ่น 1: สำเร็จ 22/40 · Job-Ready 65% → รุ่น 2 ปรับ <b>5 มาตรการ</b> (AI-First · Hackathon · Pre-test · 20 สัปดาห์ · Skill Transcript 2.0)</li>
+          <li>สหกิจศึกษาครบ 100% ทุกหลักสูตร · คุณภาพการสอน <b>97.83%</b> (เป้า 85)</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:12px 14px">
+        <div class="lbl">การเรียนรู้ระดับกระบวนการ · ซ้อมอพยพอาคาร S7</div>
+        <div class="row" style="gap:14px;margin-top:8px;align-items:center">
+          <div style="text-align:center"><div class="lbl">6 ก.พ. 2568</div><div class="big red" style="font-size:40px">3.00<small>นาที</small></div><div class="note">ไม่ผ่าน 5 ข้อ</div></div>
+          <div class="mono" style="font-size:30px;color:var(--gold)">&rarr;</div>
+          <div style="text-align:center"><div class="lbl">12 ก.พ. 2569</div><div class="big green" style="font-size:40px">1.50<small>นาที</small></div><div class="note">แก้ครบ 5 ข้อ</div></div>
+          <div class="txt grow">แก้ที่ critical step: จุดรวมพล · ผู้นำทางรายชั้น · สัญญาณเตือน · ป้ายเส้นทาง · การนับคน — ประเมินโดย จป.วิชาชีพ (เกณฑ์ &le;5 นาที)</div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="flex:0 0 360px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/medihack.jpg" alt="ADT MediHack 2026"><div class="cap">ADT MediHack 2026 — 75 นักศึกษา (ก.พ. 2569)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/iot1.jpg" alt="Workshop IoT Innovation"><div class="cap">Workshop IoT — ห้องปฏิบัติการ S7 (ส.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 หมวด 6 ข -->
+<section class="s" data-cap="หมวด 6 · ประสิทธิผล ความปลอดภัย ผู้ส่งมอบ">
+  <div class="head"><div class="eyebrow">หมวด 6 · 6.2 ประสิทธิผลของการปฏิบัติการ · ความปลอดภัย · ความเสี่ยง · เครือข่ายอุปทาน</div><h1 class="t">วัดประสิทธิภาพกระบวนการเป็นตัวเลข บริหารความเสี่ยงด้วยทะเบียนจริง และมีแผนความต่อเนื่องที่ทดสอบทุกปี</h1><div class="sub">ตาราง 6.2 บริหารความเสี่ยง 5 ขั้น 5 ด้าน (S/O/F/C/H) · BCP · ประกาศการบริหารผู้ส่งมอบและ SLA</div></div>
+  <div class="body row" style="gap:14px">
+    <div class="grow col" style="gap:12px">
+      <div class="row" style="gap:12px;flex:1">
+        <div class="card kpi grow k"><div class="lbl">Lean ลดรอบเวลาบริการ</div><div class="big">25.80<small>%</small></div><div class="d">28.57 → 33 → 25.80 · เป้า 25 บรรลุ</div></div>
+        <div class="card kpi grow k"><div class="lbl">ครุภัณฑ์ปีงบ 69 ส่งมอบตามข้อกำหนด</div><div class="big">6/6</div><div class="d">100% · ผู้ส่งมอบ 4 กลุ่ม · ประกาศ SLA</div></div>
+      </div>
+      <div class="row" style="gap:12px;flex:1">
+        <div class="card kpi grow k"><div class="lbl">ทะเบียนความเสี่ยง ปค.4/ปค.5</div><div class="big">4 <small>→</small> 7</div><div class="d">2568 กิจกรรม 5/5 KPI 8/8 · 2569 สูง 1 · รายงานปีละ 2 ครั้ง</div></div>
+        <div class="card kpi grow k"><div class="lbl">BCP · RTO</div><div class="big">2<small>ชม. IT</small></div><div class="d">การเงิน/การสอน 24 ชม. · 7 เหตุการณ์ · BIA 5 ด้าน · คณบดีหัวหน้าทีม</div></div>
+      </div>
+      <div class="card n" style="padding:12px 14px"><div class="lbl">งบประมาณและเครือข่ายอุปทาน</div><div class="txt" style="color:#DCE4EE;margin-top:6px">งบสำนักวิชา 45,998,595.68 บ. เบิกจ่ายสะสม <b style="color:#fff">52.54%</b> vs มฟล. 34.10% · คู่ความร่วมมือหลัก: ซัมมิท คอมพิวเตอร์ · สมาคมการค้าเฮลท์เทคไทย · Huawei · depa</div></div>
+    </div>
+    <div class="col" style="flex:0 0 360px;gap:10px">
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/mou-healthtech.jpg" alt="พิธีลงนาม MoU กับสมาคมการค้าเฮลท์เทคไทย"><div class="cap">MoU สมาคมการค้าเฮลท์เทคไทย (11 ก.ย. 2569)</div></div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/gw1.jpg" alt="ROS 2 Development workshop"><div class="cap">อบรม ROS 2 กับ GW Advance Solutions (ก.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+<!-- 17 หมวด 7.1 ก -->
+<section class="s" data-cap="7.1 ผลลัพธ์การเรียนรู้ · LeTCI">
+  <div class="head"><div class="eyebrow">หมวด 7.1 · ผลลัพธ์ด้านการเรียนรู้ของผู้เรียน · LeTCI · ต้นทาง: หมวด 6.1 / 3.1</div><h1 class="t">ผลงานตีพิมพ์นักศึกษาสูงกว่าเป้าสองเท่า ภาวะมีงานทำและสำเร็จตามแผนต่ำกว่าเป้าและมีมาตรการกำกับ</h1><div class="sub">แท่งน้ำเงิน = ADT · แท่งเขียว = คู่เทียบ · เส้นประ = ค่าเป้าหมาย · ↑ สูงดี · ตาราง 7.1-1 / 7.1-2</div></div>
+  <div class="body row" style="gap:12px">
+    <div class="card grow" style="padding:10px 12px"><div class="lbl">ภาวะมีงานทำใน 1 ปี (%) · ฐาน มีงานทำ/ผู้ตอบ</div><svg viewBox="0 0 340 280" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="250" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="250" x2="278" y2="250" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">%</text><rect x="45.0" y="75.2" width="19.52" height="174.8" fill="#1C4670" rx="2"/><text x="54.7" y="71.2" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">78.72</text><text x="64.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2565</text><rect x="106.0" y="91.6" width="19.52" height="158.4" fill="#1C4670" rx="2"/><text x="115.7" y="87.6" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">71.36</text><text x="125.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2566</text><rect x="167.0" y="103.5" width="19.52" height="146.5" fill="#1C4670" rx="2"/><text x="176.7" y="99.5" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">65.98</text><text x="186.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2567</text><rect x="226.5" y="106.9" width="19.52" height="143.1" fill="#1C4670" rx="2"/><text x="236.2" y="102.9" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">64.48</text><rect x="249.0" y="88.8" width="19.52" height="161.2" fill="#A8D08D" rx="2"/><text x="258.8" y="84.8" font-size="14.2" fill="#3F6B2A" text-anchor="middle">72.6</text><text x="247.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="94.6" x2="278" y2="94.6" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="281" y="98.1" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 70</text><path d="M246,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="260" y="16" font-size="12.8" fill="#1C4670">สูงดี</text><rect x="284" y="238" width="10" height="10" fill="#A8D08D"/><text x="297" y="247" font-size="12.2" fill="#6B7690">มฟล.</text></svg><div class="note">ลด 4 ปี ต่ำกว่า มฟล. 72.6 → Why-Why: ตลาดดิจิทัลหด/ศึกษาต่อ → 7 โครงการทักษะแรงงาน 548,200 บ.</div></div>
+    <div class="card grow" style="padding:10px 12px"><div class="lbl">สำเร็จการศึกษาตามแผน ป.ตรี (%)</div><svg viewBox="0 0 340 280" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="250" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="250" x2="278" y2="250" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">%</text><rect x="45.0" y="92.7" width="19.52" height="157.3" fill="#1C4670" rx="2"/><text x="54.7" y="88.7" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">70.85</text><text x="64.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2565</text><rect x="106.0" y="58.5" width="19.52" height="191.5" fill="#1C4670" rx="2"/><text x="115.7" y="54.5" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">86.26</text><text x="125.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2566</text><rect x="167.0" y="124.1" width="19.52" height="125.9" fill="#1C4670" rx="2"/><text x="176.7" y="120.1" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">56.71</text><text x="186.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2567</text><rect x="228.0" y="152.4" width="19.52" height="97.6" fill="#1C4670" rx="2"/><text x="237.7" y="148.4" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">43.97</text><text x="247.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="94.6" x2="278" y2="94.6" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="281" y="98.1" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 70</text><path d="M246,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="260" y="16" font-size="12.8" fill="#1C4670">สูงดี</text></svg><div class="note">บว. 8.33 (เป้า 25 ฐาน 1/12) → ติดตามรายภาค + คำร้องทบทวนผล · คงอยู่ ป.ตรี 85.28 / บว. 100</div></div>
+    <div class="card grow" style="padding:10px 12px"><div class="lbl">ผลงานตีพิมพ์ นศ.บัณฑิตศึกษา (%)</div><svg viewBox="0 0 340 280" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="250" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="250" x2="278" y2="250" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">%</text><rect x="45.0" y="142.4" width="19.52" height="107.6" fill="#1C4670" rx="2"/><text x="54.7" y="138.4" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">36.36</text><text x="64.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2565</text><rect x="106.0" y="149.1" width="19.52" height="100.9" fill="#1C4670" rx="2"/><text x="115.7" y="145.1" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">34.09</text><text x="125.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2566</text><rect x="167.0" y="99.0" width="19.52" height="151.0" fill="#1C4670" rx="2"/><text x="176.7" y="95.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">51.02</text><text x="186.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2567</text><rect x="228.0" y="78.3" width="19.52" height="171.7" fill="#1C4670" rx="2"/><text x="237.7" y="74.3" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">58</text><text x="247.5" y="264" font-size="14.2" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="176.0" x2="278" y2="176.0" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="281" y="179.5" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 25</text><path d="M246,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="260" y="16" font-size="12.8" fill="#1C4670">สูงดี</text></svg><div class="note">29 ชิ้น (Scopus 26 · TCI 3) · สอบป้องกันผ่าน 100% · Outbound 4.23% (เป้า 3.5)</div></div>
+  </div>
+</section>
+
+<!-- 18 หมวด 7.1 ข -->
+<section class="s" data-cap="7.1 · Exit Exam และรางวัลนักศึกษา">
+  <div class="head"><div class="eyebrow">หมวด 7.1 · ผลการสอบประมวลความรู้และรางวัลระดับชาติ/นานาชาติ</div><h1 class="t">รางวัลระดับชาติและนานาชาติ 8 รายการในปีเดียว ขณะที่ Exit Exam ภาษาอังกฤษยังเป็นช่องว่างที่ต้องปิด</h1><div class="sub">ตาราง 7.1-2 Exit Exam 2568 (ป.ตรี) · ภาพจาก adt.mfu.ac.th</div></div>
+  <div class="body row" style="gap:12px">
+    <div class="col" style="flex:0 0 400px;gap:10px">
+      <div class="card" style="padding:12px 14px">
+        <div class="lbl">Exit Exam 2568 · %S · เป้า 60</div>
+        <table class="t" style="font-size:18.2px;margin-top:6px">
+          <tr><th>วิชา</th><th class="n">ผู้สอบ</th><th class="n">%S</th><th class="n">คู่เทียบ</th></tr>
+          <tr><td>ภาษาอังกฤษ (ENG)</td><td class="n">169</td><td class="n red">14.2</td><td class="n">มฟล. 35.8</td></tr>
+          <tr><td>IT</td><td class="n">24</td><td class="n">62.5</td><td class="n">—</td></tr>
+          <tr><td>GE</td><td class="n">148</td><td class="n red">39.2</td><td class="n">—</td></tr>
+          <tr><td>MAJOR (รายสาขา 47–100)</td><td class="n">82</td><td class="n">61.0</td><td class="n">—</td></tr>
+        </table>
+        <div class="note" style="margin-top:8px">ENG ต่ำกว่าเป้าและคู่เทียบ → ติวเข้ม + EMI ทุกหลักสูตร · คุณภาพการสอน 97.83% (เป้า 85)</div>
+      </div>
+      <div class="card n kpi" style="padding:12px 14px;flex:1"><div class="lbl">รางวัลนักศึกษา 2568</div><div class="big" style="font-size:42.5px">&ge;8<small style="color:#B9C6D8">รายการ</small></div><div class="d">6 เวทีระดับชาติ/นานาชาติ</div></div>
+    </div>
+    <div class="grow col" style="gap:10px">
+      <div class="row" style="gap:10px;flex:1">
+        <div class="ph grow"><img src="img/design-athon.jpg" alt="Physical UI Design-athon 2026"><div class="cap">Grand Prize + รองอันดับ 1 · PHYSICAL UI DESIGN-ATHON 2026 (NSM × ACM SIGCHI)</div></div>
+        <div class="ph grow"><img src="img/ted-venture.jpg" alt="TED Venture Catalyst 2026"><div class="cap">ชนะเลิศ Startup Thailand League 2026 ภาคเหนือ</div></div>
+      </div>
+      <div class="row" style="gap:10px;flex:1">
+        <div class="ph grow"><img src="img/huawei-ict.jpg" alt="Huawei ICT Competition"><div class="cap">รองชนะเลิศอันดับ 2 เอเชีย-แปซิฟิก · Huawei ICT Competition 2025-26</div></div>
+        <div class="ph grow"><img src="img/dit-award-vr.jpg" alt="DIT Award 2026"><div class="cap">"VR Chiang Saen" · DIT Award 2026</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 หมวด 7.2-7.4 -->
+<section class="s" data-cap="7.2–7.4 ลูกค้า · บุคลากร · การนำองค์กร">
+  <div class="head"><div class="eyebrow">หมวด 7.2–7.4 · ลูกค้า · บุคลากร · การนำองค์กรและธรรมาภิบาล · ต้นทาง: หมวด 3 / 5 / 1</div><h1 class="t">บุคลากรคงอยู่ 100% ตำแหน่งวิชาการเหนือเป้าเกือบสองเท่า และการนำองค์กรมีตัวเลขครบทุกมิติเป็นครั้งแรก</h1><div class="sub">ปี 2567 กรรมการระบุ "ไม่แสดงแนวโน้ม" ทุกตัวด้านการนำองค์กร — ปี 2568 มีค่าฐานและเป้าครบ</div></div>
+  <div class="body row" style="gap:12px">
+    <div class="col" style="flex:0 0 520px;gap:10px">
+      <div class="card" style="padding:10px 12px;flex:1"><div class="lbl">ตำแหน่งวิชาการ (%) เทียบเป้า 35 · ต้นทาง 5.1</div><svg viewBox="0 0 480 230" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="200" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="200" x2="418" y2="200" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">%</text><rect x="51.3" y="131.2" width="30.72" height="68.8" fill="#1C4670" rx="2"/><text x="66.6" y="127.2" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">30</text><text x="82.0" y="214" font-size="14.2" fill="#10192A" text-anchor="middle">2565</text><rect x="147.3" y="114.0" width="30.72" height="86.0" fill="#1C4670" rx="2"/><text x="162.6" y="110.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">37.5</text><text x="178.0" y="214" font-size="14.2" fill="#10192A" text-anchor="middle">2566</text><rect x="243.3" y="77.0" width="30.72" height="123.0" fill="#1C4670" rx="2"/><text x="258.6" y="73.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">53.65</text><text x="274.0" y="214" font-size="14.2" fill="#10192A" text-anchor="middle">2567</text><rect x="339.3" y="67.2" width="30.72" height="132.8" fill="#1C4670" rx="2"/><text x="354.6" y="63.2" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">57.89</text><text x="370.0" y="214" font-size="14.2" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="119.7" x2="418" y2="119.7" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="421" y="123.2" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 35</text><path d="M386,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="400" y="16" font-size="12.8" fill="#1C4670">สูงดี</text></svg><div class="note">ป.เอก 76.31 → 79.49 → 76.92 → 78.94 (เป้า 78) · คงอยู่ 85.96 → 97.37 → 100 → 100</div></div>
+      <div class="row" style="gap:10px">
+        <div class="card kpi grow k" style="padding:10px 12px"><div class="lbl">ผู้ใช้บัณฑิต</div><div class="big" style="font-size:32.5px">4.37</div><div class="d">3.82 → 4.32 → 4.37 → 4.37</div></div>
+        <div class="card kpi grow k" style="padding:10px 12px"><div class="lbl">ผู้รับบริการวิชาการ</div><div class="big" style="font-size:32.5px">4.52</div><div class="d">หน่วยงานใช้ซ้ำ 2 → 7 แห่ง</div></div>
+        <div class="card kpi grow k" style="padding:10px 12px"><div class="lbl">โครงการปิดจบ</div><div class="big" style="font-size:32.5px">8/8</div><div class="d">พึงพอใจ 89.67%</div></div>
+      </div>
+    </div>
+    <div class="grow col" style="gap:10px">
+      <div class="card" style="padding:12px 14px">
+        <div class="lbl">7.4 การนำองค์กร ธรรมาภิบาล จริยธรรม (เต็ม 5 · เป้า 4)</div>
+        <table class="t" style="font-size:17.5px;margin-top:6px">
+          <tr><th>ตัวชี้วัด</th><th class="n">2568</th><th>ตัวชี้วัด</th><th class="n">2568</th></tr>
+          <tr><td>ความเชื่อมั่นต่อผู้นำ</td><td class="n">4.38</td><td>ผิดจรรยาบรรณ (บุคลากร)</td><td class="n">0%</td></tr>
+          <tr><td>การสื่อสารภายใน</td><td class="n">4.38</td><td>ร้องเรียนจริยธรรม 3 กลุ่ม</td><td class="n">0 / 0 / 0</td></tr>
+          <tr><td>รับรู้วิสัยทัศน์ / TEAM</td><td class="n">4.23 / 4.15</td><td>ทักท้วงตรวจสอบภายใน / สตง.</td><td class="n">1 / 0</td></tr>
+          <tr><td>ระบบกำกับดูแล / ผู้บริหาร</td><td class="n">4.54 / 4.54</td><td>Town Hall (คน)</td><td class="n">38 · 40 · 43</td></tr>
+          <tr><td>คำรับรองคณบดี 2567</td><td class="n">14/24 · #6/15</td><td>บริการวิชาการ (รายการ / ผู้รับ)</td><td class="n">5 / &gt;310</td></tr>
+        </table>
+      </div>
+      <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/china-hightech.jpg" alt="China-Thailand High-Tech Young Talent Program"><div class="cap">นักศึกษาในโครงการ China–Thailand High-Tech Young Talent (ม.ค. 2569)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 20 หมวด 7.5 -->
+<section class="s" data-cap="7.5 การเงิน วิจัย ตลาด">
+  <div class="head"><div class="eyebrow">หมวด 7.5 · งบประมาณ การเงิน ตลาด และกลยุทธ์ · ต้นทาง: หมวด 2 / 6.2 / 4.1 · คู่เทียบภายนอกจริง</div><h1 class="t">เบิกจ่ายและทุนภายนอกเหนือเป้า ผลงานตีพิมพ์เทียบเคียงได้กับสถาบันชั้นนำระดับภูมิภาค แต่ Scopus ต่ออาจารย์ยังต่ำกว่าเป้า</h1><div class="sub">ตาราง 7.5-1 / 7.5-2 / 7.5-3 · OpenAlex primary field = Computer Science (ดึง 20 ก.ค. 2569) · BI มฟล.</div></div>
+  <div class="body row" style="gap:12px">
+    <div class="card" style="flex:0 0 470px;padding:10px 12px"><div class="lbl">ผลงานตีพิมพ์ Computer Science รวม 5 ปี (2564–2568) · 7 สถาบัน</div><svg viewBox="0 0 440 380" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><text x="106" y="38.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">มหาสารคาม</text><rect x="112" y="15.8" width="263.0" height="36.4" fill="#A8D08D" rx="2"/><text x="380.0" y="38.0" font-size="14.9" font-weight="600" fill="#10192A">265</text><text x="106" y="90.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">ศิลปากร</text><rect x="112" y="67.8" width="181.6" height="36.4" fill="#A8D08D" rx="2"/><text x="298.6" y="90.0" font-size="14.9" font-weight="600" fill="#10192A">183</text><text x="106" y="142.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">วลัยลักษณ์</text><rect x="112" y="119.8" width="147.9" height="36.4" fill="#A8D08D" rx="2"/><text x="264.9" y="142.0" font-size="14.9" font-weight="600" fill="#10192A">149</text><text x="106" y="194.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">บูรพา</text><rect x="112" y="171.8" width="135.9" height="36.4" fill="#A8D08D" rx="2"/><text x="252.9" y="194.0" font-size="14.9" font-weight="600" fill="#10192A">137</text><text x="106" y="246.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="600">มฟล. (ADT)</text><rect x="112" y="223.8" width="131.0" height="36.4" fill="#1C4670" rx="2"/><text x="248.0" y="246.0" font-size="14.9" font-weight="600" fill="#10192A">132</text><text x="106" y="298.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">นเรศวร</text><rect x="112" y="275.8" width="121.1" height="36.4" fill="#A8D08D" rx="2"/><text x="238.1" y="298.0" font-size="14.9" font-weight="600" fill="#10192A">122</text><text x="106" y="350.0" font-size="14.9" fill="#10192A" text-anchor="end" font-weight="400">อุบลราชธานี</text><rect x="112" y="327.8" width="50.6" height="36.4" fill="#A8D08D" rx="2"/><text x="167.6" y="350.0" font-size="14.9" font-weight="600" fill="#10192A">51</text><rect x="112" y="372" width="10" height="6" fill="#1C4670"/><text x="125" y="378" font-size="11.5" fill="#6B7690">ADT/มฟล.</text><rect x="182" y="372" width="10" height="6" fill="#A8D08D"/><text x="195" y="378" font-size="11.5" fill="#6B7690">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text></svg><div class="note">ADT/มฟล. 23 · 36 · 28 · 21 · 24 = 132 ชิ้น · Scopus สะสม ADT 692 = อันดับ 2 ของ มฟล.</div></div>
+    <div class="grow col" style="gap:10px">
+      <div class="row" style="gap:10px;flex:1">
+        <div class="card grow" style="padding:10px 12px"><div class="lbl">ผลเบิกจ่ายโดยรวม (%) · ปีงบ 66–69</div><svg viewBox="0 0 320 210" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="180" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="180" x2="258" y2="180" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">%</text><rect x="44.1" y="48.6" width="17.92" height="131.4" fill="#1C4670" rx="2"/><text x="53.0" y="44.6" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">86.48</text><text x="62.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">ปีงบ 66</text><rect x="100.1" y="47.9" width="17.92" height="132.1" fill="#1C4670" rx="2"/><text x="109.0" y="43.9" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">86.94</text><text x="118.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">ปีงบ 67</text><rect x="156.1" y="58.5" width="17.92" height="121.5" fill="#1C4670" rx="2"/><text x="165.0" y="54.5" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">79.91</text><text x="174.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">ปีงบ 68</text><rect x="212.1" y="46.5" width="17.92" height="133.5" fill="#1C4670" rx="2"/><text x="221.0" y="42.5" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">87.8</text><text x="230.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">ปีงบ 69</text><line x1="34" y1="50.8" x2="258" y2="50.8" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="261" y="54.3" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 85</text><path d="M226,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="240" y="16" font-size="12.8" fill="#1C4670">สูงดี</text></svg><div class="note">สะสม ณ ก.ค. 69 <b>52.54%</b> vs มฟล. <b>34.10%</b></div></div>
+        <div class="card grow" style="padding:10px 12px"><div class="lbl">Scopus ต่ออาจารย์ (ชิ้น/คน) · เป้า 1.5</div><svg viewBox="0 0 320 210" width="100%" style="display:block;font-family:'Prompt','Leelawadee UI',Tahoma,sans-serif" aria-label="chart"><line x1="34" y1="28" x2="34" y2="180" stroke="#6B7690" stroke-width="1"/><line x1="34" y1="180" x2="258" y2="180" stroke="#6B7690" stroke-width="1"/><text x="30" y="32" font-size="12.2" fill="#6B7690" text-anchor="end">ชิ้น/คน</text><rect x="44.1" y="161.0" width="17.92" height="19.0" fill="#1C4670" rx="2"/><text x="53.0" y="157.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">0.25</text><text x="62.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">2565</text><rect x="100.1" y="158.0" width="17.92" height="22.0" fill="#1C4670" rx="2"/><text x="109.0" y="154.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">0.29</text><text x="118.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">2566</text><rect x="156.1" y="66.0" width="17.92" height="114.0" fill="#1C4670" rx="2"/><text x="165.0" y="62.0" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">1.5</text><text x="174.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">2567</text><rect x="212.1" y="135.9" width="17.92" height="44.1" fill="#1C4670" rx="2"/><text x="221.0" y="131.9" font-size="14.2" font-weight="600" fill="#10192A" text-anchor="middle">0.58</text><text x="230.0" y="194" font-size="14.2" fill="#10192A" text-anchor="middle">2568</text><line x1="34" y1="66.0" x2="258" y2="66.0" stroke="#E07B22" stroke-width="2.2" stroke-dasharray="4 4"/><text x="261" y="69.5" font-size="12.8" font-weight="600" fill="#E07B22">เป้า 1.5</text><path d="M226,2 l-6,9 h4 v10 h4 v-10 h4 z" fill="#1C4670"/><text x="240" y="16" font-size="12.8" fill="#1C4670">สูงดี</text></svg><div class="note">→ ทุนภายใน 1.56 ลบ. · ค่าตอบแทนตีพิมพ์ · Co-authorship 12 (เป้า 6)</div></div>
+      </div>
+      <div class="row" style="gap:10px">
+        <div class="card kpi grow n" style="padding:10px 12px"><div class="lbl">ทุนวิจัยภายนอก</div><div class="big" style="font-size:32.5px">12.14<small style="color:#B9C6D8">ลบ.</small></div><div class="d">เป้า 6.5 · IP ถ่ายทอด 15.79%</div></div>
+        <div class="card kpi grow n" style="padding:10px 12px"><div class="lbl">รายได้ค่าเล่าเรียน</div><div class="big" style="font-size:32.5px">133.14<small style="color:#B9C6D8">ลบ.</small></div><div class="d">129.79 → 133.14 · รับใหม่ 148% ของแผน</div></div>
+        <div class="card kpi grow n" style="padding:10px 12px"><div class="lbl">ต้นทุน/ผู้เรียน/ปี</div><div class="big" style="font-size:32.5px">15.4–39.5k</div><div class="d">MTA · CE · SE · DTBI</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 21 ARIC -->
 <section class="s dark" data-cap="ARIC · ก้าวต่อไปเชิงกลยุทธ์">
-  <div class="head"><div class="eyebrow">โอกาสเชิงกลยุทธ์ · Intelligent Risk · SO1 · แผน 2570–2574</div><h1 class="t">ARIC — ศูนย์นวัตกรรมด้านปัญญาประดิษฐ์และหุ่นยนต์ มฟล.: จากข้อสั่งการนายกสภาฯ สู่แผนจัดตั้งที่ผ่านการกลั่นกรองโดยผู้ทรงคุณวุฒิ</h1><div class="sub">แหล่ง: SAR 2.1ก(3)/4.2ค · ข้อเสนอโครงการจัดตั้งหน่วยงาน ARIC · แผนแนวคิดระยะที่ 1–2 · แผนการใช้พื้นที่อาคาร (ข้อมูลนอกเล่ม SAR ระบุกำกับ)</div></div>
+  <div class="head"><div class="eyebrow">โอกาสเชิงกลยุทธ์ · Intelligent Risk · SO1 · แผน 2570–2574</div><h1 class="t">ARIC — ศูนย์นวัตกรรมด้านปัญญาประดิษฐ์และหุ่นยนต์ มฟล.: จากข้อสั่งการนายกสภาฯ สู่แผนจัดตั้งที่ผ่านการกลั่นกรองโดยผู้ทรงคุณวุฒิ</h1><div class="sub">แหล่ง: SAR 2.1ก(3)/4.2ค · ข้อเสนอโครงการจัดตั้งหน่วยงาน ARIC · แผนแนวคิดระยะที่ 1–2 · แผนการใช้พื้นที่อาคาร (ข้อมูลนอกเล่ม SAR)</div></div>
   <div class="body row" style="gap:12px">
     <div class="col" style="flex:0 0 520px;gap:8px">
       <div class="ph" style="flex:1 1 0;min-height:0"><img src="img/aric-building.jpg" alt="ภาพจำลองอาคาร ARIC"><div class="cap">ภาพจำลองอาคาร ARIC 4 ชั้น ~1,600 ตร.ม. (แผนการใช้พื้นที่ ส.ค. 2569)</div></div>
       <div class="row" style="gap:6px">
-        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 1 · Launchpad</div><div class="note" style="color:#DCE4EE;font-size:11px">ทำงานร่วม บ่มเพาะ จัดแสดง · ~150 คน</div></div>
-        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 2 · Academy</div><div class="note" style="color:#DCE4EE;font-size:11px">ห้องอบรม 6 ห้อง รวม 120 ที่นั่ง</div></div>
-        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 3 · Engine</div><div class="note" style="color:#DCE4EE;font-size:11px">แล็บ AI/หุ่นยนต์ · ห้องเครื่อง GPU</div></div>
-        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 4 · Bridge</div><div class="note" style="color:#DCE4EE;font-size:11px">สำนักงาน ผู้บริหาร พันธมิตร</div></div>
+        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 1 · Launchpad</div><div class="note" style="color:#DCE4EE;font-size:15.4px">ทำงานร่วม บ่มเพาะ จัดแสดง</div></div>
+        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 2 · Academy</div><div class="note" style="color:#DCE4EE;font-size:15.4px">ห้องอบรม 6 ห้อง 120 ที่นั่ง</div></div>
+        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 3 · Engine</div><div class="note" style="color:#DCE4EE;font-size:15.4px">แล็บ AI/หุ่นยนต์ · ห้องเครื่อง GPU</div></div>
+        <div class="card" style="flex:1;padding:7px 9px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><div class="lbl" style="color:var(--gold)">ชั้น 4 · Bridge</div><div class="note" style="color:#DCE4EE;font-size:15.4px">สำนักงาน ผู้บริหาร พันธมิตร</div></div>
       </div>
     </div>
     <div class="grow col" style="gap:8px">
       <div class="row" style="gap:8px">
         <div class="card" style="flex:1;padding:9px 12px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)">
           <div class="lbl" style="color:var(--gold)">กระบวนการตัดสินใจ (Intelligent Risk)</div>
-          <ul class="b" style="margin-top:5px"><li style="color:#DCE4EE;font-size:12px">ข้อสั่งการนายกสภาฯ 28 เม.ย. 69 → หารือผู้ทรงคุณวุฒิ <b style="color:#fff">4 ท่าน</b> (8–25 มิ.ย. 69): รศ.ยืน ภู่วรวรรณ · ศ.ดร.จำรัส ลิ้มตระกูล · ศ.ดร.วรภัทร โตธนะเกษม · ดร.ทวินโชค ตันธุวนิตย์ — <b style="color:#F3E3B8">ทุกท่านสนับสนุน</b></li><li style="color:#DCE4EE;font-size:12px">ปรับทิศทาง: ชั้นการประยุกต์ของ Physical AI ในบริบทไทย · flagship <b style="color:#fff">สุขภาพและสังคมสูงวัย</b> ภาคเหนือตอนบน · 5 ข้อค้นพบ + แผนความเสี่ยง</li><li style="color:#DCE4EE;font-size:12px">รายงานอธิการบดี → เสนอสภาฯ · ข้อเสนอโครงการจัดตั้งหน่วยงาน (ก.ย. 69)</li></ul>
+          <ul class="b" style="margin-top:5px"><li style="color:#DCE4EE;font-size:16.8px">ข้อสั่งการนายกสภาฯ 28 เม.ย. 69 → หารือผู้ทรงคุณวุฒิ <b style="color:#fff">4 ท่าน</b> (มิ.ย. 69): รศ.ยืน ภู่วรวรรณ · ศ.ดร.จำรัส ลิ้มตระกูล · ศ.ดร.วรภัทร โตธนะเกษม · ดร.ทวินโชค ตันธุวนิตย์ — <b style="color:#F3E3B8">ทุกท่านสนับสนุน</b></li><li style="color:#DCE4EE;font-size:16.8px">ทิศทาง: ชั้นการประยุกต์ของ Physical AI · flagship <b style="color:#fff">สุขภาพและสังคมสูงวัย</b> · 5 ข้อค้นพบ + แผนความเสี่ยง</li></ul>
         </div>
         <div class="ph" style="flex:0 0 200px"><img src="img/aric-news.jpg" alt="ข่าว MFU ตั้ง ARIC"><div class="cap">ข่าว: MFU ตั้ง ARIC Hub (ก.ค. 2569)</div></div>
       </div>
       <div class="row" style="gap:8px">
         <div class="card" style="flex:1;padding:9px 12px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)">
           <div class="lbl" style="color:var(--gold)">ระยะที่ 1 · ปี 1–2 · ภายใต้ ADT</div>
-          <div class="big" style="color:#fff;font-size:26px;margin-top:4px">฿5.55<small style="color:#B9C6D8">ล้าน</small></div>
-          <div class="note" style="color:#DCE4EE;font-size:11.5px">แฮกกาธอน → MVP → ออกบูธ ปีละ 3 รอบ · เป้า 10 MVP · 3 paid pilot · รายได้ ฿1.65 ล้าน · คณะกรรมการบริหาร 5–7 คน</div>
+          <div class="big" style="color:#fff;font-size:32.5px;margin-top:4px">฿5.55<small style="color:#B9C6D8">ล้าน</small></div>
+          <div class="note" style="color:#DCE4EE;font-size:16.1px">แฮกกาธอน → MVP → ออกบูธ ปีละ 3 รอบ · 10 MVP · 3 paid pilot</div>
         </div>
         <div class="card" style="flex:1;padding:9px 12px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)">
-          <div class="lbl" style="color:var(--gold)">ระยะที่ 2 · ปี 3+ · มูลนิธิเป็น holding</div>
-          <div class="big" style="color:#fff;font-size:26px;margin-top:4px">฿6.69<small style="color:#B9C6D8">ล้าน/ปี</small></div>
-          <div class="note" style="color:#DCE4EE;font-size:11.5px">มูลนิธิถือหุ้น 15% ทุกบริษัท · scale-up + กองทุนลงทุน · ครุภัณฑ์ผ่านข้อเสนอ MDES 200M+ ปีงบ 2570–2574 (แยกจากงบจัดตั้ง)</div>
+          <div class="lbl" style="color:var(--gold)">ระยะที่ 2 · ปี 3+ · มูลนิธิ holding</div>
+          <div class="big" style="color:#fff;font-size:32.5px;margin-top:4px">฿6.69<small style="color:#B9C6D8">ล้าน/ปี</small></div>
+          <div class="note" style="color:#DCE4EE;font-size:16.1px">มูลนิธิถือหุ้น 15% · ครุภัณฑ์ผ่านข้อเสนอ MDES 200M+ ปีงบ 2570–2574</div>
         </div>
         <div class="card" style="flex:1;padding:9px 12px;background:rgba(200,149,43,.16);border-color:var(--gold)">
           <div class="lbl" style="color:var(--gold-l)">เชื่อมกับ SAR</div>
-          <div class="note" style="color:#F2F5F9;font-size:11.5px;margin-top:4px">SO1 ผู้นำวิจัยเชิงลึก · SC4 · งบ 2569 ผูกเสาหลัก ARIC · ความเสี่ยงสูงสุดปี 2569 (ผู้สืบทอดผู้เชี่ยวชาญ) ตอบด้วย talent pipeline ของศูนย์ · โครงการ MediHack / HealthTech Gold = short-term win ที่ทำแล้ว</div>
+          <div class="note" style="color:#F2F5F9;font-size:16.1px;margin-top:4px">SO1 · SC4 · งบ 2569 ผูกเสาหลัก ARIC · ตอบความเสี่ยงผู้สืบทอดด้วย talent pipeline · MediHack / HealthTech Gold = short-term win</div>
         </div>
       </div>
       <div class="card" style="flex:1;padding:9px 12px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)">
         <div class="row" style="gap:12px;align-items:center">
           <img src="img/aric-logo.png" alt="ARIC" style="height:44px;background:#fff;border-radius:4px;padding:4px 8px">
-          <div class="grow"><div class="lbl" style="color:var(--gold)">อาคารและแผนปรับปรุง (Class D ±30%)</div><div class="note" style="color:#DCE4EE;font-size:11.5px;margin-top:2px">พื้นที่ใช้สอยสุทธิ <b style="color:#fff">1,360 ตร.ม. · 34 ห้อง</b> บนพื้นที่รวม ~1,600 ตร.ม. · ประมาณการปรับปรุง <b style="color:#fff">฿58–68 ล้าน</b> (แยกจากครุภัณฑ์) · ลำดับงาน 7 ระยะ ปีงบ 2571: ห้องเครื่อง GPU ก่อนไตรมาส 2 → ห้องอบรม Q2 (สร้างรายได้เร็วสุด) → ชั้นสาธารณะ Q2–3 → แล็บหุ่นยนต์ Q3 → สำนักงาน Q3–4 → ตรวจรับ Q4</div></div>
+          <div class="grow"><div class="lbl" style="color:var(--gold)">อาคารและแผนปรับปรุง (Class D ±30%)</div><div class="note" style="color:#DCE4EE;font-size:16.1px;margin-top:2px">พื้นที่สุทธิ <b style="color:#fff">1,360 ตร.ม. · 34 ห้อง</b> · ปรับปรุง <b style="color:#fff">฿58–68 ล้าน</b> (แยกจากครุภัณฑ์) · ลำดับงาน 7 ระยะ ปีงบ 2571: ห้องเครื่อง GPU ก่อน Q2 → ห้องอบรม Q2 → ชั้นสาธารณะ Q2–3 → แล็บ Q3 → สำนักงาน Q3–4</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 15 จุดเด่น / โอกาสในการปรับปรุง -->
-<section class="s" data-cap="จุดเด่น · โอกาสในการปรับปรุง · ก้าวต่อไป">
-  <div class="head"><div class="eyebrow">การจำลองประเมินตนเอง · จุดเด่นและโอกาสในการปรับปรุง · สิ่งที่ขอรับจากคณะกรรมการ</div><h1 class="t">เรารู้จุดเด่นและช่องว่างของตนเองก่อนวันตรวจ — และทุกช่องว่างมีเจ้าของ กำหนดเวลา และตัวชี้วัด</h1><div class="sub">ตั้งเป้าผลประเมินปี 2568 ไม่ต่ำกว่าระดับ 3 · ตัวชี้วัด มฟล. 5.7 "สำนักวิชาผ่าน EdPEx200" · เล่ม SAR 93 หน้า 38 ตาราง 11 รูป ไม่มีข้อความ "ไม่พบข้อมูล"</div></div>
+<!-- 22 จุดเด่น -->
+<section class="s" data-cap="จุดเด่น (การจำลองประเมินตนเอง)">
+  <div class="head"><div class="eyebrow">การจำลองประเมินตนเอง · จุดเด่น</div><h1 class="t">จุดเด่นที่ยืนยันด้วยตัวเลข: บุคลากร ผลงานนักศึกษา การเงิน-วิจัย และระบบที่ใช้จริง</h1><div class="sub">เล่ม SAR 93 หน้า 38 ตาราง 11 รูป · ไม่มีข้อความ "ไม่พบข้อมูล" · เป้าผลประเมิน 2568 ไม่ต่ำกว่าระดับ 3</div></div>
   <div class="body row" style="gap:12px">
-    <div class="card grow" style="padding:10px 12px;border-top:3px solid var(--green)">
-      <div class="lbl">จุดเด่น (ยืนยันด้วยตัวเลข)</div>
-      <ul class="b" style="margin-top:6px;font-size:12.5px">
-        <li><b>บุคลากร:</b> คงอยู่ 100% · ลาออกปีแรก 0% · ตำแหน่งวิชาการ 57.89% (เป้า 35) · ป.เอก 78.94%</li>
-        <li><b>ผลงานนักศึกษา:</b> ตีพิมพ์ 58% (เป้า 25) · รางวัลระดับชาติ/นานาชาติ ≥8 · Outbound 4.23%</li>
-        <li><b>การเงิน/วิจัย:</b> ทุนภายนอก 12.14 ลบ. (เป้า 6.5) · เบิกจ่าย 52.54% vs มฟล. 34.10% · Scopus อันดับ 2 มฟล.</li>
-        <li><b>ระบบที่ใช้จริง:</b> สายตรงคณบดี SLA 3–5 วัน · Check-in dashboard · BCP + ซ้อมอพยพ 1.50 นาที · บอร์ดรายเดือน 11 ครั้ง</li>
-        <li><b>คู่เทียบ 3 ระดับ:</b> BI มฟล. · AUN Benchmark 12 สถาบัน · OpenAlex 7 สถาบัน</li>
-      </ul>
+    <div class="grow col" style="gap:10px">
+      <div class="row" style="gap:10px;flex:1">
+        <div class="card grow" style="padding:12px 14px;border-top:3px solid var(--green)"><div class="lbl">บุคลากร (หมวด 5 → 7.3)</div><ul class="b" style="margin-top:8px"><li>คงอยู่ <b>100%</b> · ลาออกปีแรก <b>0%</b> ทุกปี</li><li>ตำแหน่งวิชาการ <b>57.9%</b> (เป้า 35) · ป.เอก <b>78.9%</b></li><li>ค่ายพนักงานใหม่ · พี่เลี้ยง · e-Portfolio · ประกาศสิทธิประโยชน์</li></ul></div>
+        <div class="card grow" style="padding:12px 14px;border-top:3px solid var(--green)"><div class="lbl">ผู้เรียน (หมวด 6 → 7.1)</div><ul class="b" style="margin-top:8px"><li>ผลงานตีพิมพ์ นศ.บว. <b>58%</b> (เป้า 25)</li><li>รางวัลระดับชาติ/นานาชาติ <b>&ge;8</b> รายการ</li><li>Outbound <b>4.23%</b> · ทักษะเท่าทันอนาคต <b>4.51</b></li></ul></div>
+      </div>
+      <div class="row" style="gap:10px;flex:1">
+        <div class="card grow" style="padding:12px 14px;border-top:3px solid var(--green)"><div class="lbl">การเงิน · วิจัย (หมวด 2/6.2 → 7.5)</div><ul class="b" style="margin-top:8px"><li>ทุนภายนอก <b>12.14 ลบ.</b> (เป้า 6.5)</li><li>เบิกจ่าย <b>52.54%</b> vs มฟล. 34.10%</li><li>Scopus สะสม 692 = <b>อันดับ 2</b> ของ มฟล.</li></ul></div>
+        <div class="card grow" style="padding:12px 14px;border-top:3px solid var(--green)"><div class="lbl">ระบบที่ใช้จริง + คู่เทียบ (หมวด 1/4)</div><ul class="b" style="margin-top:8px"><li>สายตรงคณบดี SLA 3–5 วัน · Check-in dashboard · BCP</li><li>บอร์ดรายเดือน 11 ครั้ง · ประกาศ 5 ฉบับ · ผังกระบวนการ 9 ชุด</li><li>คู่เทียบ 3 ระดับ: BI มฟล. · AUN Benchmark 12 สถาบัน · OpenAlex</li></ul></div>
+      </div>
     </div>
-    <div class="card grow" style="padding:10px 12px;border-top:3px solid var(--red)">
-      <div class="lbl">โอกาสในการปรับปรุงที่ยังเปิด (เจ้าของ · กำหนด)</div>
-      <table class="t" style="font-size:12px;margin-top:6px">
+    <div class="ph" style="flex:0 0 380px;min-height:0"><img src="img/showcase-future-tech.jpg" alt="ADT showcases future technology"><div class="cap">นักศึกษาสาธิตเทคโนโลยี VR/AI แก่เยาวชน (ส.ค. 2569)</div></div>
+  </div>
+</section>
+
+<!-- 23 โอกาสในการปรับปรุง -->
+<section class="s" data-cap="โอกาสในการปรับปรุง · ก้าวต่อไป">
+  <div class="head"><div class="eyebrow">การจำลองประเมินตนเอง · โอกาสในการปรับปรุง · สิ่งที่ขอรับจากคณะกรรมการ</div><h1 class="t">ทุกช่องว่างที่ยังเปิดมีเจ้าของ กำหนดเวลา และตัวชี้วัด</h1><div class="sub">ตัวชี้วัด มฟล. 5.7 "สำนักวิชาผ่าน EdPEx200" · แผนพัฒนาสำนักวิชา 2570–2574</div></div>
+  <div class="body row" style="gap:12px">
+    <div class="card grow" style="padding:12px 14px;border-top:3px solid var(--red)">
+      <table class="t" style="font-size:18.2px">
         <tr><th>ตัวชี้วัด</th><th class="n">ผล / เป้า</th><th>มาตรการ · ผู้รับผิดชอบ</th></tr>
         <tr><td>ภาวะมีงานทำ 1 ปี</td><td class="n red">64.48 / 70</td><td>7 โครงการทักษะตลาดแรงงาน · คณะทำงานกิจการ นศ.</td></tr>
-        <tr><td>สำเร็จตามแผน ป.ตรี</td><td class="n red">43.97 / 70</td><td>ติดตามรายภาค + ที่ปรึกษา ≥1 ครั้ง/ภาค · ประธานหลักสูตร</td></tr>
+        <tr><td>สำเร็จตามแผน ป.ตรี</td><td class="n red">43.97 / 70</td><td>ติดตามรายภาค + ที่ปรึกษา &ge;1 ครั้ง/ภาค · ประธานหลักสูตร</td></tr>
         <tr><td>Exit Exam ENG (%S)</td><td class="n red">14.2 / 60</td><td>EMI ทุกหลักสูตร + ติวเข้ม · คณะทำงานวิชาการ</td></tr>
         <tr><td>PSF/UKPSF สะสม</td><td class="n red">2 / 19</td><td>ยื่นเป็นรุ่น ผูก e-Portfolio · รองคณบดี</td></tr>
         <tr><td>Scopus ต่ออาจารย์</td><td class="n red">0.58 / 1.5</td><td>ทุนภายใน 1.56 ลบ. + ค่าตอบแทนตีพิมพ์ · คณะทำงานวิจัย</td></tr>
-        <tr><td>MoU active / Inbound</td><td class="n red">40% / 2.00%</td><td>ทบทวน MoU ทุกฉบับ + Erasmus+ KA171 · วิเทศสัมพันธ์</td></tr>
+        <tr><td>MoU active / Inbound</td><td class="n red">40% / 2.0%</td><td>ทบทวน MoU ทุกฉบับ + Erasmus+ KA171 · วิเทศสัมพันธ์</td></tr>
         <tr><td>ความพึงพอใจผู้เรียน 6 รายการ</td><td class="n red">3.43–3.85 / 4</td><td>แบบสำรวจฉบับใหม่ + PR เลขที่ 20 · คณะทำงาน PR</td></tr>
       </table>
     </div>
-    <div class="col" style="flex:0 0 280px;gap:8px">
-      <div class="card n" style="flex:1;padding:12px 14px">
+    <div class="col" style="flex:0 0 380px;gap:10px">
+      <div class="card n" style="flex:1;padding:14px 16px">
         <div class="lbl">ก้าวต่อไป 12 เดือน</div>
-        <ul class="b" style="margin-top:6px"><li style="color:#DCE4EE;font-size:12px">ป้อนข้อมูล EdPEx ระดับสำนักวิชาเข้า AUN Benchmark — รอบแรก ก.ย. 2569</li><li style="color:#DCE4EE;font-size:12px">รอบสำรวจผู้เรียน/ลูกค้าและบุคลากรฉบับใหม่ ปีการศึกษา 2568 ครบทุกกลุ่ม</li><li style="color:#DCE4EE;font-size:12px">แผนพัฒนาสำนักวิชา 2570–2574 + ARIC ระยะที่ 1</li><li style="color:#DCE4EE;font-size:12px">รุ่น 2 Non-degree · ปรับปรุงหลักสูตร 3 หลักสูตรเริ่มใช้ 2569</li></ul>
+        <ul class="b" style="margin-top:8px"><li style="color:#DCE4EE">ป้อนข้อมูล EdPEx ระดับสำนักวิชาเข้า AUN Benchmark — รอบแรก ก.ย. 2569</li><li style="color:#DCE4EE">รอบสำรวจผู้เรียน/ลูกค้า/บุคลากรฉบับใหม่ครบทุกกลุ่ม</li><li style="color:#DCE4EE">แผนพัฒนา 2570–2574 + ARIC ระยะที่ 1</li><li style="color:#DCE4EE">รุ่น 2 Non-degree · หลักสูตรปรับปรุง 3 หลักสูตรเริ่มใช้</li></ul>
       </div>
-      <div class="card y" style="padding:10px 12px"><div class="lbl">สิ่งที่ขอรับจากคณะกรรมการ</div><div class="txt" style="font-size:12.5px;margin-top:4px">ข้อเสนอแนะต่อ <b>ความเป็นระบบของแนวทาง</b> ในหมวด 4 และ 6 และความเหมาะสมของ <b>คู่เทียบ</b> ที่เลือก เพื่อใช้วางแผนรอบปีการศึกษา 2569</div></div>
+      <div class="card y" style="padding:12px 14px"><div class="lbl">สิ่งที่ขอรับจากคณะกรรมการ</div><div class="txt" style="margin-top:6px">ข้อเสนอแนะต่อ<b>ความเป็นระบบของแนวทาง</b>ในหมวด 4 และ 6 และความเหมาะสมของ<b>คู่เทียบ</b>ที่เลือก เพื่อวางแผนรอบปีการศึกษา 2569</div></div>
     </div>
   </div>
 </section>
@@ -725,7 +802,7 @@ ul.b li b{color:var(--ink)}
 <div id="bar">
   <button id="prev" aria-label="ก่อนหน้า">&#9664;</button>
   <div id="dots"></div>
-  <span id="cnt">01 / 15</span>
+  <span id="cnt">01 / 24</span>
   <button id="next" aria-label="ถัดไป">&#9654;</button>
   <button id="ov" aria-label="ภาพรวม" title="G">&#9638;</button>
 </div>
