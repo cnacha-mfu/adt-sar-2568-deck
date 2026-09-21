@@ -1,0 +1,85 @@
+</div></div>
+<div id="grid"></div>
+<div id="bar">
+  <button id="prev" aria-label="ก่อนหน้า">&#9664;</button>
+  <div id="dots"></div>
+  <span id="cnt">01 / 15</span>
+  <button id="next" aria-label="ถัดไป">&#9654;</button>
+  <button id="ov" aria-label="ภาพรวม" title="G">&#9638;</button>
+</div>
+<script>
+(function(){
+  var stage = document.getElementById('stage');
+  var slides = Array.prototype.slice.call(stage.querySelectorAll('.s'));
+  var dots = document.getElementById('dots');
+  var cnt = document.getElementById('cnt');
+  var i = 0;
+  slides.forEach(function(s, n){
+    var d = document.createElement('i');
+    d.addEventListener('click', function(){ go(n); });
+    dots.appendChild(d);
+    var pg = document.createElement('div'); pg.className = 'pg';
+    pg.textContent = pad(n + 1) + ' / ' + pad(slides.length);
+    s.appendChild(pg);
+    if (n > 0) { var br = document.createElement('div'); br.className = 'brand'; br.textContent = 'ADT · MFU · SAR EdPEx 2568'; s.appendChild(br); }
+  });
+  var dotEls = Array.prototype.slice.call(dots.children);
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function go(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){ s.classList.toggle('on', k === i); });
+    dotEls.forEach(function(d, k){ d.classList.toggle('on', k === i); });
+    cnt.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+    if (document.body.classList.contains('overview')) toggleOv();
+    try { history.replaceState(null, '', '#' + (i + 1)); } catch (e) {}
+  }
+  function fit(){
+    var vp = document.getElementById('viewport');
+    var s = Math.min(vp.clientWidth / 1280, vp.clientHeight / 720) * 0.955;
+    stage.style.transform = 'scale(' + s + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+  document.getElementById('prev').addEventListener('click', function(){ go(i - 1); });
+  document.getElementById('next').addEventListener('click', function(){ go(i + 1); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); go(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(i - 1); }
+    else if (e.key === 'Home') go(0);
+    else if (e.key === 'End') go(slides.length - 1);
+    else if (e.key === 'g' || e.key === 'G' || e.key === 'Escape') toggleOv();
+  });
+  var built = false;
+  function buildGrid(){
+    var grid = document.getElementById('grid');
+    slides.forEach(function(s, n){
+      var t = document.createElement('div'); t.className = 'thumb';
+      var inner = document.createElement('div'); inner.className = 'inner';
+      var c = s.cloneNode(true); c.classList.add('on'); c.style.display = 'flex';
+      inner.appendChild(c); t.appendChild(inner);
+      var cap = document.createElement('div'); cap.className = 'cap';
+      cap.innerHTML = '<b>' + pad(n + 1) + '</b><span>' + (s.dataset.cap || '') + '</span>';
+      t.appendChild(cap);
+      t.addEventListener('click', function(){ go(n); });
+      grid.appendChild(t);
+    });
+    built = true;
+  }
+  function scaleThumbs(){
+    Array.prototype.forEach.call(document.querySelectorAll('.thumb'), function(t){
+      t.querySelector('.inner').style.transform = 'scale(' + (t.clientWidth / 1280) + ')';
+    });
+  }
+  function toggleOv(){
+    if (!built) buildGrid();
+    document.body.classList.toggle('overview');
+    if (document.body.classList.contains('overview')) scaleThumbs();
+  }
+  document.getElementById('ov').addEventListener('click', toggleOv);
+  window.addEventListener('resize', function(){ if (built) scaleThumbs(); });
+  var h = parseInt((location.hash || '').replace('#', ''), 10);
+  go(isNaN(h) ? 0 : h - 1);
+})();
+</script>
+</body>
+</html>
