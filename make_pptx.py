@@ -1,0 +1,45 @@
+"""Build ADT_SAR2568_นำเสนอกรรมการ.pptx from shots/slide-NN.png with speaker notes
+from SCRIPT.md (overview) + SCRIPT_รายละเอียด.md (detail) per slide.
+"""
+import io, sys, os, re
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+from pptx import Presentation
+from pptx.util import Inches, Pt
+
+def parse_script(path):
+    """Return {slide_no: text} from '## N · title' sections."""
+    txt = open(path, encoding="utf-8").read()
+    out = {}
+    for m in re.finditer(r"^## (\d+) · [^\n]*\n(.*?)(?=^## \d+ · |\Z)", txt, re.S | re.M):
+        out[int(m.group(1))] = m.group(2).strip()
+    return out
+
+overview = parse_script("SCRIPT.md")
+detail = parse_script("SCRIPT_รายละเอียด.md")
+
+prs = Presentation()
+prs.slide_width = Inches(13.333)
+prs.slide_height = Inches(7.5)
+blank = prs.slide_layouts[6]
+
+shots = sorted(f for f in os.listdir("shots") if f.startswith("slide-") and f.endswith(".png"))
+for idx, fn in enumerate(shots, start=1):
+    slide = prs.slides.add_slide(blank)
+    slide.shapes.add_picture(os.path.join("shots", fn), 0, 0, width=prs.slide_width, height=prs.slide_height)
+    notes = slide.notes_slide.notes_text_frame
+    ov = overview.get(idx, "")
+    de = detail.get(idx, "")
+    notes.text = ov
+    if de and de != ov:
+        p = notes.add_paragraph(); p.text = ""
+        p = notes.add_paragraph(); p.text = "— รายละเอียดเพิ่มเติม (สำหรับตอบคำถาม) —"
+        for para in de.split("\n\n"):
+            p = notes.add_paragraph(); p.text = para.strip()
+    for p in notes.paragraphs:
+        for r in p.runs:
+            r.font.size = Pt(14)
+
+out = "ADT_SAR2568_นำเสนอกรรมการ.pptx"
+prs.save(out)
+print("saved", out, len(shots), "slides")

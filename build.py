@@ -51,7 +51,7 @@ def grouped(years, ours, comp=None, target=None, ymax=None, unit="", W=420, H=17
 def hbar(items, highlight, W=440, H=190, unit="ชิ้น"):
     """Horizontal bars for institution comparison; highlight = label to colour navy."""
     items = sorted(items, key=lambda x: -x[1])
-    L, R, T, B = 112, 44, 8, 8
+    L, R, T, B = 112, 44, 8, 22
     pw = W - L - R; rh = (H - T - B) / len(items); vmax = max(v for _, v in items) * 1.08
     s = [f'<svg viewBox="0 0 {W} {H}" width="100%" style="display:block;{FONT}" aria-label="chart">']
     for i, (lab, v) in enumerate(items):
@@ -61,7 +61,7 @@ def hbar(items, highlight, W=440, H=190, unit="ชิ้น"):
         s.append(f'<text x="{L-6}" y="{yy+h/2+4:.1f}" font-size="11" fill="{INK}" text-anchor="end" font-weight="{600 if lab==highlight else 400}">{lab}</text>')
         s.append(f'<rect x="{L}" y="{yy:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{col}" rx="2"/>')
         s.append(f'<text x="{L+w+5:.1f}" y="{yy+h/2+4:.1f}" font-size="11" font-weight="600" fill="{INK}">{v}</text>')
-    s.append(f'<rect x="{L}" y="{H-8}" width="10" height="6" fill="{NAVY}"/><text x="{L+13}" y="{H-2}" font-size="8.5" fill="{MUTE}">ADT/มฟล.</text><rect x="{L+70}" y="{H-8}" width="10" height="6" fill="{GREEN}"/><text x="{L+83}" y="{H-2}" font-size="8.5" fill="{MUTE}">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text>')
+    s.append(f'<rect x="{L}" y="{H-14}" width="10" height="6" fill="{NAVY}"/><text x="{L+13}" y="{H-8}" font-size="8.5" fill="{MUTE}">ADT/มฟล.</text><rect x="{L+80}" y="{H-14}" width="10" height="6" fill="{GREEN}"/><text x="{L+93}" y="{H-8}" font-size="8.5" fill="{MUTE}">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text>')
     s.append('</svg>')
     return "".join(s)
 
