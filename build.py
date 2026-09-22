@@ -28,15 +28,12 @@ def grouped(years, ours, comp=None, target=None, ymax=None, unit="", W=420, H=17
         if v is not None:
             s.append(f'<rect x="{ox-bw/2:.1f}" y="{y(v):.1f}" width="{bw}" height="{T+ph-y(v):.1f}" fill="{NAVY}" rx="2"/>')
             lab = f"{v:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{v:.0f}"
-            if has_c:
-                s.append(f'<text x="{ox-bw/2-2:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="end">{lab}</text>')
-            else:
-                s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
+            s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
         if has_c:
             c = comp[yr]; cxx = cx + (bw + 3) / 2
             s.append(f'<rect x="{cxx-bw/2:.1f}" y="{y(c):.1f}" width="{bw}" height="{T+ph-y(c):.1f}" fill="{GREEN}" rx="2"/>')
             lab = f"{c:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{c:.0f}"
-            s.append(f'<text x="{cxx+bw/2+2:.1f}" y="{y(c)-4:.1f}" font-size="10.5" fill="#3F6B2A" text-anchor="start">{lab}</text>')
+            s.append(f'<text x="{cxx+bw/2+1:.1f}" y="{y(c)-14:.1f}" font-size="10.5" fill="#3F6B2A" text-anchor="start">{lab}</text>')
         s.append(f'<text x="{cx:.1f}" y="{T+ph+14}" font-size="10.5" fill="{INK}" text-anchor="middle">{yr}</text>')
     if target is not None:
         ty = y(target)
