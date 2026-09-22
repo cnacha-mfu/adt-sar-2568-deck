@@ -19,21 +19,22 @@ def grouped(years, ours, comp=None, target=None, ymax=None, unit="", W=420, H=17
     s.append(f'<line x1="{L}" y1="{T}" x2="{L}" y2="{T+ph}" stroke="{MUTE}" stroke-width="1"/>')
     s.append(f'<line x1="{L}" y1="{T+ph}" x2="{L+pw}" y2="{T+ph}" stroke="{MUTE}" stroke-width="1"/>')
     s.append(f'<text x="{L-4}" y="{T+4}" font-size="9" fill="{MUTE}" text-anchor="end">{unit}</text>')
-    bw = min(34, slot * 0.32)
+    bw = min(28, slot * 0.26) if comp else min(34, slot * 0.32)
+    lf = 9.5 if comp else 10.5
     for i, yr in enumerate(years):
         cx = L + slot * i + slot / 2
         has_c = comp.get(yr) is not None
-        ox = cx - (bw + 3) / 2 if has_c else cx - bw / 2
+        ox = cx - (bw + 6) / 2 if has_c else cx - bw / 2
         v = ours[i]
         if v is not None:
             s.append(f'<rect x="{ox-bw/2:.1f}" y="{y(v):.1f}" width="{bw}" height="{T+ph-y(v):.1f}" fill="{NAVY}" rx="2"/>')
             lab = f"{v:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{v:.0f}"
-            s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
+            s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="{lf}" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
         if has_c:
-            c = comp[yr]; cxx = cx + (bw + 3) / 2
+            c = comp[yr]; cxx = cx + (bw + 6) / 2
             s.append(f'<rect x="{cxx-bw/2:.1f}" y="{y(c):.1f}" width="{bw}" height="{T+ph-y(c):.1f}" fill="{GREEN}" rx="2"/>')
             lab = f"{c:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{c:.0f}"
-            s.append(f'<text x="{cxx+bw/2+1:.1f}" y="{y(c)-14:.1f}" font-size="10.5" fill="#3F6B2A" text-anchor="start">{lab}</text>')
+            s.append(f'<text x="{cxx+bw/2+1:.1f}" y="{y(c)-14:.1f}" font-size="{lf}" fill="#3F6B2A" text-anchor="start">{lab}</text>')
         s.append(f'<text x="{cx:.1f}" y="{T+ph+14}" font-size="10.5" fill="{INK}" text-anchor="middle">{yr}</text>')
     if target is not None:
         ty = y(target)
