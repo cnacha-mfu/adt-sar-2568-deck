@@ -15,8 +15,7 @@ def parse_script(path):
         out[int(m.group(1))] = m.group(2).strip()
     return out
 
-overview = parse_script("SCRIPT.md")
-detail = parse_script("SCRIPT_รายละเอียด.md")
+notes_src = parse_script("SCRIPT_NOTES.md")
 
 prs = Presentation()
 prs.slide_width = Inches(13.333)
@@ -28,17 +27,15 @@ for idx, fn in enumerate(shots, start=1):
     slide = prs.slides.add_slide(blank)
     slide.shapes.add_picture(os.path.join("shots_jpg", fn), 0, 0, width=prs.slide_width, height=prs.slide_height)
     notes = slide.notes_slide.notes_text_frame
-    ov = overview.get(idx, "")
-    de = detail.get(idx, "")
-    notes.text = ov
-    if de and de != ov:
-        p = notes.add_paragraph(); p.text = ""
-        p = notes.add_paragraph(); p.text = "— รายละเอียดเพิ่มเติม (สำหรับตอบคำถาม) —"
-        for para in de.split("\n\n"):
-            p = notes.add_paragraph(); p.text = para.strip()
-    for p in notes.paragraphs:
+    lines = [l.strip()[2:].strip() for l in notes_src.get(idx, "").splitlines() if l.strip().startswith("- ")]
+    notes.text = ""
+    first = True
+    for line in lines:
+        p = notes.paragraphs[0] if first else notes.add_paragraph()
+        first = False
+        p.text = "• " + line
         for r in p.runs:
-            r.font.size = Pt(14)
+            r.font.size = Pt(16)
 
 out = "ADT_SAR2568_นำเสนอกรรมการ.pptx"
 prs.save(out)
