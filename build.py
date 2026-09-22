@@ -28,17 +28,20 @@ def grouped(years, ours, comp=None, target=None, ymax=None, unit="", W=420, H=17
         if v is not None:
             s.append(f'<rect x="{ox-bw/2:.1f}" y="{y(v):.1f}" width="{bw}" height="{T+ph-y(v):.1f}" fill="{NAVY}" rx="2"/>')
             lab = f"{v:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{v:.0f}"
-            s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
+            if has_c:
+                s.append(f'<text x="{ox-bw/2-2:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="end">{lab}</text>')
+            else:
+                s.append(f'<text x="{ox:.1f}" y="{y(v)-4:.1f}" font-size="10.5" font-weight="600" fill="{INK}" text-anchor="middle">{lab}</text>')
         if has_c:
             c = comp[yr]; cxx = cx + (bw + 3) / 2
             s.append(f'<rect x="{cxx-bw/2:.1f}" y="{y(c):.1f}" width="{bw}" height="{T+ph-y(c):.1f}" fill="{GREEN}" rx="2"/>')
             lab = f"{c:.{decimals}f}".rstrip("0").rstrip(".") if decimals else f"{c:.0f}"
-            s.append(f'<text x="{cxx:.1f}" y="{y(c)-4:.1f}" font-size="10.5" fill="#3F6B2A" text-anchor="middle">{lab}</text>')
+            s.append(f'<text x="{cxx+bw/2+2:.1f}" y="{y(c)-4:.1f}" font-size="10.5" fill="#3F6B2A" text-anchor="start">{lab}</text>')
         s.append(f'<text x="{cx:.1f}" y="{T+ph+14}" font-size="10.5" fill="{INK}" text-anchor="middle">{yr}</text>')
     if target is not None:
         ty = y(target)
         s.append(f'<line x1="{L}" y1="{ty:.1f}" x2="{L+pw}" y2="{ty:.1f}" stroke="{ORANGE}" stroke-width="2.2" stroke-dasharray="4 4"/>')
-        s.append(f'<text x="{L+pw+3}" y="{ty+3.5:.1f}" font-size="9.5" font-weight="600" fill="{ORANGE}">{target_label or ("เป้า " + (f"{target:g}"))}</text>')
+        s.append(f'<text x="{L+pw+3}" y="{ty+11 if comp else ty+3.5:.1f}" font-size="9.5" font-weight="600" fill="{ORANGE}">{target_label or ("เป้า " + (f"{target:g}"))}</text>')
     # good-direction arrow
     ax = L + pw - 40
     s.append(f'<path d="M{ax+8},{2} l-6,9 h4 v10 h4 v-10 h4 z" fill="{NAVY}"/>')

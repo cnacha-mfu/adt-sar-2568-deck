@@ -23,10 +23,10 @@ prs.slide_width = Inches(13.333)
 prs.slide_height = Inches(7.5)
 blank = prs.slide_layouts[6]
 
-shots = sorted(f for f in os.listdir("shots") if f.startswith("slide-") and f.endswith(".png"))
+shots = sorted(f for f in os.listdir("shots_jpg") if f.startswith("slide-") and f.endswith(".jpg"))
 for idx, fn in enumerate(shots, start=1):
     slide = prs.slides.add_slide(blank)
-    slide.shapes.add_picture(os.path.join("shots", fn), 0, 0, width=prs.slide_width, height=prs.slide_height)
+    slide.shapes.add_picture(os.path.join("shots_jpg", fn), 0, 0, width=prs.slide_width, height=prs.slide_height)
     notes = slide.notes_slide.notes_text_frame
     ov = overview.get(idx, "")
     de = detail.get(idx, "")
