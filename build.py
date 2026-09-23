@@ -62,20 +62,20 @@ def hbar(items, highlight, W=440, H=190, unit="ชิ้น"):
         s.append(f'<text x="{L-6}" y="{yy+h/2+4:.1f}" font-size="11" fill="{INK}" text-anchor="end" font-weight="{600 if lab==highlight else 400}">{lab}</text>')
         s.append(f'<rect x="{L}" y="{yy:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{col}" rx="2"/>')
         s.append(f'<text x="{L+w+5:.1f}" y="{yy+h/2+4:.1f}" font-size="11" font-weight="600" fill="{INK}">{v}</text>')
-    s.append(f'<rect x="{L}" y="{H-14}" width="10" height="6" fill="{NAVY}"/><text x="{L+13}" y="{H-8}" font-size="8.5" fill="{MUTE}">ADT/มฟล.</text><rect x="{L+80}" y="{H-14}" width="10" height="6" fill="{GREEN}"/><text x="{L+93}" y="{H-8}" font-size="8.5" fill="{MUTE}">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text>')
+    s.append(f'<rect x="{L}" y="{H-14}" width="10" height="6" fill="{NAVY}"/><text x="{L+13}" y="{H-8}" font-size="8.5" fill="{MUTE}">มฟล.</text><rect x="{L+80}" y="{H-14}" width="10" height="6" fill="{GREEN}"/><text x="{L+93}" y="{H-8}" font-size="8.5" fill="{MUTE}">คู่เทียบ (สถาบันไทยขนาดใกล้เคียง)</text>')
     s.append('</svg>')
     return "".join(s)
 
 charts = {
-    "CHART_EMP": grouped(["2565", "2566", "2567", "2568"], [78.72, 71.36, 65.98, 64.48], comp={"2568": 72.6}, target=70, ymax=100, unit="%", comp_label="มฟล.", W=340, H=280),
+    "CHART_EMP": grouped(["2565", "2566", "2567", "2568"], [78.72, 71.36, 65.98, 64.48], target=70, ymax=100, unit="%", W=370, H=240),
     "CHART_GRAD": grouped(["2565", "2566", "2567", "2568"], [70.85, 86.26, 56.71, 43.97], target=70, ymax=100, unit="%", W=340, H=280),
     "CHART_PUB": grouped(["2565", "2566", "2567", "2568"], [36.36, 34.09, 51.02, 58.00], target=25, ymax=75, unit="%", W=340, H=280),
     "CHART_RANK": grouped(["2565", "2566", "2567", "2568"], [30.0, 37.5, 53.65, 57.89], target=35, ymax=75, unit="%", W=480, H=230),
     "CHART_ENROL": grouped(["2564", "2565", "2566", "2567", "2568"], [499, 780, 559, 502, 537], comp={"2564": 280, "2565": 400, "2566": 410, "2567": 330, "2568": 360}, ymax=900, unit="คน", comp_label="แผนรับ", W=420, H=215, decimals=0),
-    "CHART_EMPLOYER": grouped(["2565", "2566", "2567", "2568"], [4.34, 4.18, 4.05, None], target=4, ymax=5, unit="คะแนน", W=300, H=220),
-    "CHART_RET": grouped(["2565", "2566", "2567", "2568"], [86.79, 89.34, 89.84, 85.28], target=75, ymax=100, unit="%", W=300, H=220),
-    "CHART_GRANT": grouped(["ปีงบ 66", "ปีงบ 67", "ปีงบ 68", "ปีงบ 69"], [14.15, 16.98, 15.73, 7.25], target=6.5, ymax=20, unit="ลบ.", W=320, H=185),
-    "CHART_OA": hbar([("มหาสารคาม", 265), ("ศิลปากร", 183), ("วลัยลักษณ์", 149), ("บูรพา", 137), ("มฟล. (ADT)", 132), ("นเรศวร", 122), ("อุบลราชธานี", 51)], "มฟล. (ADT)", W=440, H=340),
+    "CHART_EMPLOYER": grouped(["2565", "2566", "2567", "2568"], [4.34, 4.18, 4.05, None], target=4, ymax=5, unit="คะแนน", W=370, H=240),
+    "CHART_RET": grouped(["2565", "2566", "2567", "2568"], [86.79, 89.34, 89.84, 85.28], target=75, ymax=100, unit="%", W=370, H=240),
+    "CHART_GRANT": grouped(["ปีงบ 66", "ปีงบ 67", "ปีงบ 68"], [14.15, 16.98, 15.73], target=6.5, ymax=20, unit="ลบ.", W=380, H=150),
+    "CHART_OA": hbar([("มหาสารคาม", 265), ("ศิลปากร", 183), ("วลัยลักษณ์", 149), ("บูรพา", 137), ("มฟล.", 132), ("นเรศวร", 122), ("อุบลราชธานี", 51)], "มฟล.", W=440, H=340),
     "CHART_BUD": grouped(["ปีงบ 66", "ปีงบ 67", "ปีงบ 68", "ปีงบ 69"], [86.48, 86.94, 79.91, 87.80], target=85, ymax=100, unit="%", W=320, H=210),
     "CHART_SCO": grouped(["2565", "2566", "2567", "2568"], [0.25, 0.29, 1.50, 0.58], target=1.5, ymax=2.0, unit="ชิ้น/คน", W=320, H=185),
 }

@@ -25,7 +25,7 @@ FONT_MAP = {"Prompt": "Prompt", "IBM Plex Mono": "Consolas"}
 
 # ---------- chart specs (same data as build.py) ----------
 CHARTS = {
-    "CHART_EMP":  dict(kind="col", cats=["2565","2566","2567","2568"], ours=[78.72,71.36,65.98,64.48], comp={"2568":72.6}, comp_label="มฟล.", target=70, ymax=100, unit="%"),
+    "CHART_EMP":  dict(kind="col", cats=["2565","2566","2567","2568"], ours=[78.72,71.36,65.98,64.48], target=70, ymax=100, unit="%"),
     "CHART_GRAD": dict(kind="col", cats=["2565","2566","2567","2568"], ours=[70.85,86.26,56.71,43.97], target=70, ymax=100, unit="%"),
     "CHART_PUB":  dict(kind="col", cats=["2565","2566","2567","2568"], ours=[36.36,34.09,51.02,58.00], target=25, ymax=75, unit="%"),
     "CHART_RANK": dict(kind="col", cats=["2565","2566","2567","2568"], ours=[30.0,37.5,53.65,57.89], target=35, ymax=75, unit="%"),
@@ -34,8 +34,8 @@ CHARTS = {
     "CHART_ENROL": dict(kind="col", cats=["2564","2565","2566","2567","2568"], ours=[499,780,559,502,537], comp={"2564":280,"2565":400,"2566":410,"2567":330,"2568":360}, comp_label="แผนรับ", ymax=900, unit="คน"),
     "CHART_EMPLOYER": dict(kind="col", cats=["2565","2566","2567","2568"], ours=[4.34,4.18,4.05,None], target=4, ymax=5, unit="คะแนน"),
     "CHART_RET": dict(kind="col", cats=["2565","2566","2567","2568"], ours=[86.79,89.34,89.84,85.28], target=75, ymax=100, unit="%"),
-    "CHART_GRANT": dict(kind="col", cats=["ปีงบ 66","ปีงบ 67","ปีงบ 68","ปีงบ 69"], ours=[14.15,16.98,15.73,7.25], target=6.5, ymax=20, unit="ลบ."),
-    "CHART_OA":   dict(kind="bar", items=[("มหาสารคาม",265),("ศิลปากร",183),("วลัยลักษณ์",149),("บูรพา",137),("มฟล. (ADT)",132),("นเรศวร",122),("อุบลราชธานี",51)], highlight="มฟล. (ADT)"),
+    "CHART_GRANT": dict(kind="col", cats=["ปีงบ 66","ปีงบ 67","ปีงบ 68"], ours=[14.15,16.98,15.73], target=6.5, ymax=20, unit="ลบ."),
+    "CHART_OA":   dict(kind="bar", items=[("มหาสารคาม",265),("ศิลปากร",183),("วลัยลักษณ์",149),("บูรพา",137),("มฟล.",132),("นเรศวร",122),("อุบลราชธานี",51)], highlight="มฟล."),
 }
 NAVY, GREEN, ORANGE, MUTE, INK = "1C4670", "A8D08D", "E07B22", "6B7690", "10192A"
 
@@ -290,7 +290,7 @@ def main():
     prs.save(out); print("saved", out)
     import shutil
     try:
-        shutil.copy(out, os.path.join(r"G:\My Drive\School\SAR", "ADT_SAR2568_นำเสนอกรรมการ_v3.pptx")); print("copied to SAR root as _editable")
+        shutil.copy(out, os.path.join(r"G:\My Drive\School\SAR", "ADT_SAR2568_นำเสนอกรรมการ_v4.pptx")); print("copied to SAR root as _editable")
     except PermissionError:
         print("WARNING: target file is open in PowerPoint; copy skipped")
 
