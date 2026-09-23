@@ -221,7 +221,7 @@ def add_chart(slide, it):
         va.tick_labels.font.size = Pt(8); va.format.line.color.rgb = RGBColor.from_string(MUTE)
         ca = chart.category_axis; ca.tick_labels.font.size = Pt(9); ca.format.line.color.rgb = RGBColor.from_string(MUTE)
         plot = chart.plots[0]; plot.gap_width = 120; plot.overlap = -10
-        plot.has_data_labels = True; dl = plot.data_labels; dl.font.size = Pt(8); dl.font.bold = True; dl.number_format = '0.##'; dl.number_format_is_linked = False; dl.position = XL_LABEL_POSITION.OUTSIDE_END
+        plot.has_data_labels = True; dl = plot.data_labels; dl.font.size = Pt(8); dl.font.bold = True; dl.number_format = ('#,##0' if spec.get('decimals')==0 else 'General'); dl.number_format_is_linked = False; dl.position = XL_LABEL_POSITION.OUTSIDE_END
         plot.series[0].format.fill.solid(); plot.series[0].format.fill.fore_color.rgb = RGBColor.from_string(NAVY)
         if comp:
             plot.series[1].format.fill.solid(); plot.series[1].format.fill.fore_color.rgb = RGBColor.from_string(GREEN)
