@@ -146,7 +146,7 @@ def add_text(slide, it):
         t = r['text']
         if r.get('upper'): t = t.upper()
         run.text = t
-        f = run.font; f.size = Pt(max(6, r['size']*0.75)); f.bold = r['bold']; f.italic = r['italic']
+        f = run.font; f.size = Pt(max(6, r['size']*0.75*0.94)); f.bold = r['bold']; f.italic = r['italic']
         fname = FONT_MAP.get(r['font'], "Prompt")
         f.name = fname; f.color.rgb = RGBColor.from_string(r['color'])
         rPr = run._r.get_or_add_rPr()
