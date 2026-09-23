@@ -81,7 +81,7 @@ foot = open("shell_foot.html", encoding="utf-8").read()
 body = "".join(open(f, encoding="utf-8").read() for f in ["slides_a.html", "slides_b.html", "slides_c.html"])
 for k, v in charts.items():
     assert "{{" + k + "}}" in body, k
-    body = body.replace("{{" + k + "}}", v)
+    body = body.replace("{{" + k + "}}", v.replace("<svg ", f'<svg data-chart="{k}" ', 1))
 assert "{{" not in body
 import re
 def _scale(m):
