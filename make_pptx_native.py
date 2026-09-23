@@ -286,7 +286,7 @@ def main():
     prs.save(out); print("saved", out)
     import shutil
     try:
-        shutil.copy(out, os.path.join(r"G:\My Drive\School\SAR", "ADT_SAR2568_นำเสนอกรรมการ_editable.pptx")); print("copied to SAR root as _editable")
+        shutil.copy(out, os.path.join(r"G:\My Drive\School\SAR", "ADT_SAR2568_นำเสนอกรรมการ_editable_v2.pptx")); print("copied to SAR root as _editable")
     except PermissionError:
         print("WARNING: target file is open in PowerPoint; copy skipped")
 
